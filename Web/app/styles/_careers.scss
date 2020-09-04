@@ -1,0 +1,83 @@
+.current_openings
+{
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        margin: 15px;
+        color:#444445;
+        list-style-type: square;
+        font-size:18px;
+        font-weight: normal;
+        font-family: $secondary-font;
+    }
+    .fa-angle-down
+    {
+        color: $accent-color;
+    }
+    .Apply_btn
+    {
+        float: right;
+        margin: 15px;
+    }
+    a
+    {
+        font-size:14px !important;
+    }
+}
+
+
+.card-header .title {
+    font-size: 17px;
+    color: $accent-color;
+    font-weight: 700;
+    font-size:20px ;
+    font-family: $secondary-font;
+   
+}
+.card-header .accicon {
+  float: right;
+  font-size: 20px;  
+  width: 1.2em;
+}
+.card-header{
+  cursor: pointer;
+  border-bottom: none;
+  text-align: left;
+  background: #FFFFFF 0% 0% no-repeat padding-box !important;
+box-shadow: 0px 3px 6px #00000029 !important;
+}
+.card{
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+margin: 2px;
+    border: 0;
+}
+.card-body{
+  border-top: 1px solid #ddd;
+}
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+.job_details
+{
+    ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      
+        li 
+        {
+            color:#444445;
+            span
+            {
+                font-weight: 700;
+                font-size:16px;
+                font-family: $secondary-font;
+            }
+        }
+    }
+}

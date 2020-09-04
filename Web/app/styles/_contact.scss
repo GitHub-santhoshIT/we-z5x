@@ -1,0 +1,74 @@
+.contact_header
+{
+    padding-bottom: 0 !important;
+    &:after
+    {   
+        border-bottom:0 !important;
+    }
+}
+.form_sec
+{
+    padding-top: 30px;
+    p
+    {
+        font-size:14px;
+        @media screen and (max-width:480px)
+        {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 15px;
+        }
+    }
+    h3
+    {
+        font-size: 56px;
+        font-family: $base-font;
+        font-weight: normal;
+        @media only screen and (max-width:992px)
+        {
+            font-size: 32px;
+        }
+    }
+    h4
+    {
+        font-size: 56px;
+        font-family: $base-font;
+        font-weight: normal;
+        color: #FF9200;
+        @media only screen and (max-width:992px)
+        {
+            font-size: 32px;
+        }
+    }
+    .btn
+    {
+        border-radius: 22px;
+        background-color: $brand-color;
+        float: right;
+        border: 0;
+        width: 170px;
+        height: 44px;
+    }
+    .mail_icon_sec
+    {
+       justify-content: space-between;
+       @media only screen and (max-width:480px)
+       {
+           padding-bottom: 15px;
+       }
+    }
+}
+
+.responsive-map{
+    overflow: hidden;
+    padding-bottom:30.25%;
+    position:relative;
+    height:0;
+    }
+    .responsive-map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }

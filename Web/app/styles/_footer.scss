@@ -1,0 +1,105 @@
+.footer-sec {
+    background-color: #001F41;
+
+    ul {
+        list-style-type: none;
+        padding: 50px 0 30px 0;
+
+        @media only screen and (max-width:480px) {
+            padding: 15px 0;
+        }
+
+        li {
+            color: $white;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: $base-font;
+            font-weight: normal;
+
+            @media only screen and (max-width:480px) {
+                font-size: 12px;
+            }
+
+            a {
+                color: $white;
+                cursor: pointer;
+                font-size: 14px;
+                text-decoration: none;
+                font-family: $base-font;
+                font-weight: normal;
+
+                @media only screen and (max-width:480px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .media-sec {
+        margin: 0 auto;
+        text-align: center;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+
+            li {
+                float: left;
+                padding: 10px;
+
+                a {
+
+                    i.fa.fa-instagram,
+                    i.fa.fa-twitter,
+                    i.fa.fa-facebook {
+                        width: 31px;
+                        height: 30px;
+                        background: #DDDDDD 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        border-radius: 50%;
+                        color: #000;
+                    }
+
+                    i {
+                        float: left;
+                        padding: 8px;
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+/* Copyright sec*/
+.zee-logo-sec
+{
+    float: left;
+    padding: 30px 0;
+    @media only screen and (max-width:480px)
+    {
+        padding: 15px 0;
+    }
+}
+.copy-text
+{
+    float: right;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #444445;
+    font-weight: normal;
+    font-family: $base-font;
+    @media only screen and (max-width:480px)
+    {
+        float: left;
+        padding: 15px 0;
+    }
+    p
+    {
+        font-weight: normal;
+        font-family: $base-font;
+        font-size: 12px;
+    }
+}
+/* Copyright sec*/
