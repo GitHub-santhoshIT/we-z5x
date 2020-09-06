@@ -1,0 +1,115 @@
+.exp_sec
+{
+    
+    p
+    {
+        font-size: 18px;
+        font-family: $secondary-font;
+        color:#444445;
+        font-weight: normal;
+        margin: 0;
+        @media only screen and (max-width:992px)
+        {
+            max-width: 100% !important;
+        }
+    }
+    ul
+    {
+        margin:0;
+        padding: 10px;
+        list-style-type: square;
+        color: $brand-color;
+        li 
+        {
+            span
+            {
+                font-size: 18px;
+                font-family: $secondary-font;
+                color:#444445;
+                font-weight: normal;
+                margin: 0;
+            }
+        }
+    }
+    h3
+    {
+        font-weight: 600;
+        font-family: $base-font;
+        color:$brand-color;
+    }
+}
+
+/*customer_sec*/
+
+.customer-tab
+{
+    h5
+    {
+        font-size: 30px !important;
+    }
+}
+/*customer_sec*/
+.form_sec
+{
+    .value_sec
+    {
+        font-size: 28px;
+        font-family: $base-font;
+        font-weight: 500;
+        color: $brand-color;
+    }
+    .nine_four
+    {
+        @media only screen and (max-width:480px)
+        {
+           h3, h4
+        {
+           text-align: left !important;
+        }
+    }
+   
+    }
+}
+.best_tech
+{
+.value_sec
+{
+    h3
+    {
+        font-size: 28px;
+        font-family: $base-font;
+        font-weight: 500;
+        color: $brand-color;
+    }
+    p
+    {
+        font-size: 18px;
+        font-family: $secondary-font;
+        font-weight: normal;
+        color: #444445;
+    }
+    img
+    {
+        box-shadow: none;
+    }
+    .media_text
+    {
+        font-weight: normal;
+        color: #444445;
+        font-size: 18px;
+        font-family: $secondary-font;
+    }
+}
+.logo_slider
+{
+    img
+    {
+        box-shadow: none;
+    }
+}
+.logo-carousel
+{
+    border-bottom:2px solid #DAE9F9  ;
+    margin-bottom: 60px;
+}
+}

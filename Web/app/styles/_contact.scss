@@ -23,7 +23,7 @@
     {
         font-size: 56px;
         font-family: $base-font;
-        font-weight: normal;
+        font-weight: 600;
         @media only screen and (max-width:992px)
         {
             font-size: 32px;
@@ -58,17 +58,20 @@
        }
     }
 }
-
-.responsive-map{
-    overflow: hidden;
-    padding-bottom:30.25%;
-    position:relative;
-    height:0;
-    }
-    .responsive-map iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
+.map_sec
+{
+    padding: 0;
+    .responsive-map{
+        overflow: hidden;
+        padding-bottom:30.25%;
+        position:relative;
+        height:0;
+        }
+        .responsive-map iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        }
+}

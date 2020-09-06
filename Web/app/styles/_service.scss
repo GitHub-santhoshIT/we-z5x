@@ -250,6 +250,10 @@ a#nav-profile-tab {
     right: 20px;
     color: $brand-color;
 }
+@media only screen and (max-width:480px)
+{
+    border-bottom: 3px solid #003A78;
+}
 }
 a#nav-home-tab{
     font-size: 14px;
@@ -259,6 +263,10 @@ a#nav-home-tab{
     &:after
     {
         color: $brand-color;
+    }
+    @media only screen and (max-width:480px)
+    {
+        border-bottom: 3px solid #003A78;
     }
 }
 a#nav-contact-tab {
@@ -271,6 +279,10 @@ a#nav-contact-tab {
     right: 40px;
     color: $brand-color;
 }
+@media only screen and (max-width:480px)
+{
+    border-bottom: 2px solid #003A78;
+}
 }
 a#nav-about-tab {
     font-size: 14px;
@@ -281,6 +293,14 @@ a#nav-about-tab {
     {
     right: 35px;
     color: $brand-color;
+    @media only screen and (max-width:480px)
+{
+    border-bottom: 0px solid #003A78;
+}
+}
+@media only screen and (max-width:480px)
+{
+    border-bottom: 1px solid #003A78;
 }
 }
   .tab-content{

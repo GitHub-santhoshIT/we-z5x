@@ -19,7 +19,8 @@ $(document).ready(function() {
       responsive: [{
         breakpoint: 768,
         settings: {
-          slidesToShow: 4
+		  slidesToShow: 4,
+		  
         }
       }, {
         breakpoint: 520,
@@ -29,7 +30,7 @@ $(document).ready(function() {
       }]
     });
   });
-
+  
   /*counter*/
   (function ($) {
 	$.fn.countTo = function (options) {
