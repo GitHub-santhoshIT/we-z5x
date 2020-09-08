@@ -20,6 +20,21 @@
             padding: 0;
 
             .nav-item {
+                &.active::after {
+                    content: "";
+                    display: block;
+                    width: 30%;
+                    border-bottom: 2px solid orange !important;
+                    margin-left: 20px;
+                }
+                &:active:hover:after {
+                        content: "";
+                      display: block;
+                        width: 50%;
+                        margin-left: 20px;
+                     border-bottom: 2px solid $accent-color;
+                     }
+               
                 
                 >a {
                     padding: 10px 20px;
@@ -29,29 +44,29 @@
                     color: #444445;
                  
 
-                    &:active:after {
-                        content: "";
-                        display: block;
-                        width: 50%;
+                    // &:active:after {
+                    //     content: "";
+                    //     display: block;
+                    //     width: 50%;
                         
-                        border-bottom: 2px solid $accent-color;
+                    //     border-bottom: 2px solid $accent-color;
 
-                        &:after {
-                            content: "";
-                            display: block;
-                            width: 50%;
-                            padding-top: 5px;
-                            border-bottom: 2px solid $accent-color;
-                        }
-                    }
+                    //     &:after {
+                    //         content: "";
+                    //         display: block;
+                    //         width: 50%;
+                    //         padding-top: 5px;
+                    //         border-bottom: 2px solid $accent-color;
+                    //     }
+                    // }
 
-                    &:hover:after {
-                        content: "";
-                        display: block;
-                        width: 50%;
+                    // &:hover:after {
+                    //     content: "";
+                    //     display: block;
+                    //     width: 50%;
                        
-                        border-bottom: 2px solid $accent-color;
-                    }
+                    //     border-bottom: 2px solid $accent-color;
+                    // }
                 }
 
                 .openings_tab {

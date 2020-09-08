@@ -1,3 +1,48 @@
+.banner_sec
+{
+    background-image: url(../images/Services-bg.svg);
+    background-position: right center;
+    background-size: 118%;
+    background-repeat: no-repeat;
+    background-color: none;
+    background-origin: border-box;
+    @media only screen and (max-width:480px)
+    {
+        background:none;
+        background-color: #f6f9fd;
+    }
+    .banner_center
+    {
+        padding-top: 0;
+        position: relative;
+    }
+    .main_text {
+        top: 50%;
+        position: absolute;
+        left: 0;
+        transform: translate(0%, -50%);
+        @media only screen and (max-width:480px)
+        {
+            padding-top: 30px;
+            top: none;
+        position: static;
+        left: none;
+        transform: none;
+        }
+    }
+   
+    .Hero-img_service img
+    {
+        width: 100% !important;
+        margin-bottom: 55px !important;
+        img
+        {
+            padding-bottom: 0 !important;
+        }
+    }
+}
+
+
 .exp_sec
 {
     
@@ -43,10 +88,29 @@
 
 .customer-tab
 {
+    padding: 0 !important;
     h5
     {
         font-size: 30px !important;
     }
+  sup {
+        padding-right: 15px;
+        color: #F5C600;
+        font-weight: normal;
+        position: absolute;
+        margin-top: 34px;
+    }
+    span.title {
+        margin-top: 29px;
+        position: absolute;
+        padding-left: 25px;
+    }
+  .Associate-counter {
+       @media only screen and (max-width:480px)
+       {
+        border-bottom: 0 !important;
+       }
+}
 }
 /*customer_sec*/
 .form_sec
@@ -70,6 +134,7 @@
    
     }
 }
+
 .best_tech
 {
 .value_sec

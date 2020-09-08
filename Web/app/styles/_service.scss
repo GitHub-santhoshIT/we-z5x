@@ -1,3 +1,54 @@
+.banner_sec
+{
+    background-image: url(../images/Services-bg.svg);
+    background-position: right center;
+    background-size: 118%;
+    background-repeat: no-repeat;
+    background-color: none;
+    background-origin: border-box;
+    @media only screen and (max-width:480px)
+    {
+        background:none;
+        background-color: #f6f9fd;
+    }
+    .banner_center
+    {
+        padding-top: 0;
+        position: relative;
+        h1
+        {
+            letter-spacing: 0 !important;
+        }
+    }
+    .main_text {
+        top: 50%;
+        position: absolute;
+        left: 0;
+        transform: translate(0%, -50%);
+        @media only screen and (max-width:480px)
+        {
+            padding-top: 30px;
+            top: none;
+        position: static;
+        left: none;
+        transform: none;
+        }
+    }
+   
+    .Hero-img_services img
+    {
+       width: 85%;
+       padding-top: 30px;
+        margin-bottom:40px !important;
+        img
+        {
+            padding-bottom: 0 !important;
+          
+            
+        }
+    }
+}
+
 .servicebanner_sec
 {
     h1

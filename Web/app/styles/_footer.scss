@@ -6,7 +6,7 @@
         padding: 50px 0 30px 0;
 
         @media only screen and (max-width:480px) {
-            padding: 15px 0;
+            padding: 15px 0 0 0;
         }
 
         li {
@@ -51,7 +51,7 @@
                 a {
 
                     i.fa.fa-instagram,
-                    i.fa.fa-twitter,
+                    i.fa.fa-behance,
                     i.fa.fa-facebook {
                         width: 31px;
                         height: 30px;
@@ -76,11 +76,12 @@
 .zee-logo-sec
 {
     float: left;
+    padding: 19px 0;
    
   img
   {
       box-shadow: none !important;
-      padding: 25px 0;
+     
   }
     @media only screen and (max-width:480px)
     {
@@ -95,6 +96,7 @@
     color: #444445;
     font-weight: normal;
     font-family: $base-font;
+    padding: 23px 0;
     @media only screen and (max-width:480px)
     {
         float: left;
@@ -106,6 +108,7 @@
         font-family: $base-font;
         font-size: 12px;
         color:#444445 !important;
+        padding:0 !important;
     }
 }
 /* Copyright sec*/

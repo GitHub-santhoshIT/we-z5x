@@ -14,6 +14,7 @@ h3
     color: $brand-color;
     font-family: $base-font;
     font-weight: 700;
+    // padding-bottom: 28px;
     @media only screen and (max-width:992px) {
         font-size: 24px;
     }
@@ -21,13 +22,14 @@ h3
 
 
 .common-link {
-    border-left: 2px solid $accent-color;
+    border-left: 3px solid $accent-color;
     margin: 0 auto;
     padding-left: 7px;
     font-size: 16px;
     // text-decoration: none !important;
     font-weight: 500;
     // font-family: $secondary-font;
+    color: #3F444D;
     &:hover {
         text-decoration: none;
     }

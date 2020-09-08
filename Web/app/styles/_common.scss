@@ -21,7 +21,7 @@
 }
 
 .slick-slide img {
-    width: 100%;
+    width: 75% !important;
 }
 
 .slick-track::before,
@@ -117,7 +117,7 @@
         font-size: 18px;
         font-weight: normal;
         color: $text-color;
-        padding: 15px 0;
+
         font-family: $secondary-font;
         // font-family: $base-font;
 
@@ -908,8 +908,11 @@
         .counter-row {
             color: #fff;
             padding: 40px;
-            margin: 0 auto;
             text-align: center;
+            .row
+            {
+                margin: 0 auto;
+            }
 
             @media only screen and (max-width:992px) {
                 padding: 15px;
@@ -949,9 +952,9 @@
                     float: left;
                     margin: 0;
                     padding: 0;
-                    font-weight: normal;
+                    font-weight: 300;
                     // font-family: $secondary-font;
-
+                    font-size: 50px;
                     &:after {
                         content: '+';
                       
@@ -1004,7 +1007,7 @@
 .testimonial {
 
     a {
-        border-left: 2px solid $accent-color;
+        border-left: 3px solid $accent-color;
         margin: 0 auto;
         padding-left: 7px;
         font-size: 16px;
@@ -1232,6 +1235,11 @@ h3
     left: 50%;
     top: 12px;
     transform: translate(-50%, -2%);
+    @media only screen and (max-width:480px)
+    {
+        max-width: 140px;
+        width: 100%;
+    }
    
 }
 .shadow_div_value
@@ -1290,4 +1298,14 @@ h3
         max-width: 50px;
     }
 
+}
+.slick-dots
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+button:focus
+{
+    outline: none !important;
 }
