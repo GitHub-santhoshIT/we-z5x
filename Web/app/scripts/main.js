@@ -135,26 +135,26 @@ jQuery(function ($) {
 
 
 /*testimonial*/
-const slides=document.querySelector(".slider").children;
-const indicatorImages=document.querySelector(".slider-indicator").children;
+const slides=document.querySelector('.slider').children;
+const indicatorImages=document.querySelector('.slider-indicator').children;
 
 for(var i=0;i<indicatorImages.length;i++)
 {
    
-    indicatorImages[i].addEventListener("click",function(){
+    indicatorImages[i].addEventListener('click',function(){
       
         for(var j=0;j<indicatorImages.length;j++)
         {
-            indicatorImages[j].classList.remove("active");
+            indicatorImages[j].classList.remove('active');
         }
-        this.classList.add("active");
-        const id=this.getAttribute("data-id");
+        this.classList.add('active');
+        const id=this.getAttribute('data-id');
         for(var j=0;j<slides.length;j++)
         {
-            slides[j].classList.remove("active");
+            slides[j].classList.remove('active');
 		}
 		
-		slides[id].classList.add("active");
+		slides[id].classList.add('active');
     })
 }
 
