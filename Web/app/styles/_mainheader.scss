@@ -20,7 +20,28 @@
             padding: 0;
 
             .nav-item {
-               
+                &.active.open
+                {
+                    background:$brand-color !important;
+                    border-radius: 26px;
+                    border: none !important;
+                    .openings_tab
+                    {
+                        color: $white !important;
+                        border: 0px solid #D2D2D2;
+                        border-radius: 26px;
+                    }
+                
+                &.active.open::after
+                {
+                    content: "";
+                    display: block;
+                    width: 0%;
+                    border-bottom: 0px solid orange !important;
+                    margin-left: 20px;
+                   
+                }
+                }
                 &.active::after {
                     content: "";
                     display: block;
