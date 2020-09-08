@@ -10,12 +10,12 @@
 $(document).ready(function() {
     $('.logo-carousel').slick({
       slidesToShow: 5,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       autoplay: true,
       autoplaySpeed: 1000,
       arrows: false,
-      dots: false,
-      pauseOnHover: false,
+      dots: true,
+      pauseOnHover: true,
       responsive: [{
         breakpoint: 768,
         settings: {
