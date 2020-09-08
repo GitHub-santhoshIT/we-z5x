@@ -17,7 +17,14 @@
 
 .logo-carousel {
     overflow: inherit;
-
+img
+{
+    filter:grayscale(100%);
+    &:hover
+    {
+        filter: grayscale(0%);
+    }
+}
 }
 
 .slick-slide img {
@@ -921,10 +928,17 @@
             @media only screen and (max-width:480px) {
                 padding: 0px;
             }
+            .prj_counter
+            {
+                margin-left: 50px;
+                text-align: center;
+            }
 
             .Associate-counter {
                 border-right: none !important;
-                margin-right: 30px;
+                margin-right: 56px;
+                text-align: right;
+                float: right;
 
                 @media only screen and (max-width:992px) {
                     margin-right: 0px !important;
@@ -1115,7 +1129,7 @@
 /* Slider */
 .logo_slider
 {
-        margin-top: 32px;
+        margin-top: 0px;
     .row {
         overflow: hidden;
       }  
@@ -1185,7 +1199,36 @@
             left: -40px;
           }
       }
-      
+      .slick-dots
+      {
+          bottom: 0 !important;
+          padding-bottom: 0px;
+      }
+      .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #FF6000;
+        border: 2px solid #ff6000;
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 8px;
+        line-height: 9px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+         color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: none;
+        border: 2px solid grey;
+        border-radius: 50%;
+        padding: 0;
+    }
 }
 
 

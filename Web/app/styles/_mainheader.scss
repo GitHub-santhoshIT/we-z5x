@@ -20,12 +20,14 @@
             padding: 0;
 
             .nav-item {
+               
                 &.active::after {
                     content: "";
                     display: block;
                     width: 30%;
                     border-bottom: 2px solid orange !important;
                     margin-left: 20px;
+                   
                 }
                 &:active:hover:after {
                         content: "";
@@ -72,7 +74,8 @@
                 .openings_tab {
                     border: 1px solid #D2D2D2;
                     border-radius: 26px;
-
+                  
+                  
                     .green_circle {
                         content: "";
                         width: 6px !important;

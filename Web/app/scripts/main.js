@@ -30,6 +30,8 @@ $(document).ready(function() {
       }]
     });
   });
+
+  
   
   /*counter*/
   (function ($) {

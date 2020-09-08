@@ -6,6 +6,55 @@
         border-bottom:0 !important;
     }
 }
+.mail_icon
+{
+    ul
+    {
+        li
+        {
+            padding-left: 53px;
+        }
+    }
+}
+.location
+{
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        padding: 0px 0 30px 0;
+        
+
+        @media only screen and (max-width:480px) {
+            padding: 15px 0 0 0;
+        }
+        li 
+        {
+           
+          img
+          {
+              float: left;
+              font-size: 21px;
+          }
+          div
+          {
+            padding: 0 0px 0 27px;
+            text-align: left;
+          }
+            color: #000;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: $base-font;
+            font-weight: normal;
+
+            @media only screen and (max-width:480px) {
+                font-size: 12px;
+            }
+
+        }
+    }
+}
 .Hero-img_contact
 {
     padding-top: 400px;
@@ -53,7 +102,7 @@
     {
         font-size: 56px;
         font-family: $base-font;
-        font-weight: normal;
+        font-weight: 600;
         color: #FF9200;
         @media only screen and (max-width:992px)
         {
