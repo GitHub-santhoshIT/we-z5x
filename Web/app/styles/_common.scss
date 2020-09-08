@@ -23,12 +23,14 @@ img
     &:hover
     {
         filter: grayscale(0%);
+        transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) ;
     }
 }
 }
 
 .slick-slide img {
-    width: 75% !important;
+    width: 60% !important;
+    padding-bottom: 25px !important;
 }
 
 .slick-track::before,
@@ -93,7 +95,7 @@ img
 
 /* JsFiddle Example only/don't use */
 .logo-carousel {
-    margin-top: 32px;
+    margin-top: 0px;
     border-bottom:2px solid #DAE9F9;
 }
 
@@ -1352,3 +1354,6 @@ button:focus
 {
     outline: none !important;
 }
+
+
+

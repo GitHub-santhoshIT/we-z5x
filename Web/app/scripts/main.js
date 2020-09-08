@@ -157,3 +157,5 @@ for(var i=0;i<indicatorImages.length;i++)
 		slides[id].classList.add("active");
     })
 }
+
+/*tabs*/
