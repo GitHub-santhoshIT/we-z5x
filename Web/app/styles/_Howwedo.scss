@@ -1,3 +1,11 @@
+.mobility
+{
+    p
+    {
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+}
 .Hero-img_howwedo
 {
     width: 80%;
@@ -31,4 +39,125 @@ box-shadow: -16px -15px 5px 0px rgba(210,226,243,0.75);
         font-weight: normal;
         font-family: $secondary-font;
     }
+}
+
+.timelines
+{
+    .line_project
+    {
+        border-bottom:1px solid $brand-color;
+            width: 98%;
+        margin: 0 auto;
+        margin-top: 30px;
+        &:before
+        {
+            content:"\f111";
+            color:$brand-color;
+            font-family:FontAwesome;
+            margin-top: -13px;
+    /* left: 0; */
+    position: absolute;
+        }
+        &:after
+        {
+            content:"\f111";
+            color:$brand-color;
+            font-family:FontAwesome;
+            margin-top: -13px;
+    right: 110px;
+    position: absolute;
+        }
+    }
+    h6
+    {
+        font-weight: bold;
+        font-size: 20px;
+        font-family: $secondary-font;
+        letter-spacing: 0.8px;
+        color: $brand-color;
+    }
+    .number_circle
+    {
+        background: #D2E2F3 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 3px 11px;
+        color:$brand-color;
+        font-size: 18px;
+        font-family: $base-font;
+        position: relative;
+        margin: 0 auto;
+        top: 12px;
+    z-index: 999;
+    margin-top: 17px;
+    &:before
+    {
+        border-left:1px solid $brand-color;
+        content:" ";
+        bottom: 30px;
+    position: absolute;
+    /* display: block; */
+    left: 15px;
+    padding-top: 30px;
+    }
+    }
+    .number_circle_five
+    {
+        background: #D2E2F3 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 3px 11px;
+        color:$brand-color;
+        font-size: 18px;
+        font-family: $base-font;
+        position: relative;
+        margin: 0 auto;
+        top: 12px;
+    z-index: 999;
+    margin-top: 17px;
+    &:before
+    {
+        border-left:1px solid $brand-color;
+        content:" ";
+        bottom: 10px;
+    position: absolute;
+    /* display: block; */
+    left: -35px;
+    padding-top: 50px;
+    }
+    &:after
+    {
+        border-left:1px solid $brand-color;
+        content:" ";
+        bottom: 10px;
+    position: absolute;
+    /* display: block; */
+    right: -35px;
+    padding-top: 50px;
+    }
+    }
+    .number-text
+    {
+      
+        background: #F6F9FD 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        position: relative;
+        min-height: 330px;
+        height: 100%;
+        padding: 40px 15px;
+    }
+    p
+    {
+        font-weight: normal;
+        font-size: 18px;
+        font-family: $secondary-font;
+        letter-spacing: 0.54px;
+        color:#444445;
+    }
+
+
 }

@@ -5,9 +5,17 @@
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 2px 45px #1780E036;
         border-radius: 7px;
-        border: 1px solid #1136A6;
+     
         position: relative;
         margin-bottom: 10px;
+        img
+        {
+            &:hover
+            {
+                border: 1px solid #1136A6;
+                border-radius: 7px;
+            }
+        }
     }
 }
 
@@ -335,8 +343,7 @@ img
 
 /*how we do*/
 .howwedo_tab {
-    padding-top: 30px;
-    padding-bottom: 30px;
+   
 
     h3 {
         color: $brand-color;
@@ -350,13 +357,13 @@ img
 
     p {
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 620px;
         width: 100%;
         text-align: center;
         padding: 15px 0;
         font-size: 18px;
         font-weight: normal;
-        // font-family: $base-font;
+        font-family: $secondary-font;
 
         @media only screen and (max-width:992px) {
             font-size: 16px;
@@ -402,8 +409,7 @@ img
     background-image: url('../images/CTA-bg.svg');
     background-position: bottom left;
     background-repeat: no-repeat;
-    height: 100%;
-
+    background-size: 91%;
     .org_text {
 
         background: #2B2B2B 0% 0% no-repeat padding-box;
@@ -443,10 +449,11 @@ img
 /* Organization Sec*/
 
 /*case study sec*/
-
+.casestudy_sec
+{
     p {
         margin: 0 auto;
-        max-width: 600px;
+        max-width: 620px;
         width: 100%;
         text-align: center;
         padding: 15px 0;
@@ -458,16 +465,11 @@ img
             font-size: 16px;
         }
 
-        @media only screen and (max-width:992px) {
+        @media only screen and (max-width:480px) {
+            font-size: 14px;
             max-width: 330px;
         }
     }
-
-
-        @media only screen and (max-width:480px) {
-           
-        }
-
         .intro_text {
             background: #FFFFFF 0% 0% no-repeat padding-box;
             box-shadow: 0px 2px 45px #1780E036;
@@ -481,9 +483,7 @@ img
             h5 {
                 color: $brand-color;
                 text-align: left;
-                // font-family: $secondary-font;
                 font-weight: 700;
-
                 @media only screen and (max-width:992px) {
                     font-size: 18px;
                 }
@@ -522,7 +522,7 @@ img
                 width: 100%;
                 height: 100%;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100% 104%;
                 background-position: initial;
 
                 @media only screen and (max-width:480px) {
@@ -558,9 +558,14 @@ img
                 width: 100%;
                 height: 100%;
                 background-color: #102397;
-                opacity: 0.69;
+                opacity: 0;
                 box-shadow: 0px 3px 6px #00000029;
                 border-radius: 8px;
+                &:hover
+                {
+                    opacity: 0.69;
+                    transition: all 0.2s ease;
+                }
 
                 p {
                     color: #fff;
@@ -614,109 +619,9 @@ img
             }
         }
 
-    
+}
 
-    .cs_rowtwo {
-        height: 100%;
 
-        @media only screen and (max-width:480px) {
-            padding: 15px;
-        }
-
-        .app-col {
-            #element-with-background-image {
-                position: relative;
-                background-image: url("../images/Video-Streaming-App-bg.png");
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: initial;
-
-                a {
-                    border-left: 0;
-
-                    i {
-                        font-size: 9px !important;
-                        right: 20px;
-                        position: absolute;
-                        bottom: 15px;
-                        background: #FFFFFF;
-                        width: 15px;
-                        height: 15px;
-                        border-radius: 50%;
-                        padding: 3px 5px 4px 5px;
-
-                    }
-                }
-            }
-
-            #color-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #102397;
-                opacity: 0.69;
-                box-shadow: 0px 3px 6px #00000029;
-                border-radius: 8px;
-
-                p {
-                    color: #fff;
-                    bottom: 30px;
-                }
-            }
-
-            .auction_text {
-                position: absolute;
-                bottom: 25px;
-                width: 100%;
-
-                h5 {
-                    padding: 0;
-                    margin: 0;
-                    color: $white;
-                    padding-left: 25px;
-                    text-align: left;
-                    font-weight: 700;
-                    // font-family: $secondary-font;
-                    font-size: 20px;
-
-                    @media only screen and (max-width:992px) {
-                        font-size: 16px !important;
-                    }
-                }
-
-                p {
-                    padding: 0;
-                    margin: 0;
-                    color: $white;
-                    font-size: 12px;
-                    padding-top: 15px;
-                    padding-left: 25px;
-                    text-align: left;
-                    font-weight: normal;
-                    // font-family: $secondary-font;
-
-                    @media only screen and (max-width:992px) {
-                        font-size: 11px !important;
-                    }
-                }
-
-                a {
-                    border-left: 0;
-
-                    .fa-chevron-right {
-                        right: 15px;
-                    }
-                }
-
-            }
-
-        }
-
-    }
 
         .app-row {
             @media only screen and (max-width:480px) {
@@ -731,6 +636,10 @@ img
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: initial;
+                @media only screen and (max-width:992px)
+                {
+                    background-size: 100% 100%;
+                }
 
                 a {
                     border-left: 0;
@@ -756,9 +665,14 @@ img
                     width: 100%;
                     height: 100%;
                     background-color: #102397;
-                    opacity: 0.69;
+                    opacity: 0;
                     box-shadow: 0px 3px 6px #00000029;
                     border-radius: 8px;
+                    &:hover
+                    {
+                        opacity: 0.69;
+                        transition: all 0.2s ease;
+                    }
 
                     .auction_text {
                         position: absolute;
@@ -818,7 +732,10 @@ img
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: initial;
-
+                @media only screen and (max-width:992px)
+                {
+                    background-size: 100% 100%;
+                }
                 a {
                     border-left: 0;
 
@@ -843,9 +760,14 @@ img
                     width: 100%;
                     height: 100%;
                     background-color: #102397;
-                    opacity: 0.69;
+                    opacity: 0;
                     box-shadow: 0px 3px 6px #00000029;
                     border-radius: 8px;
+                    &:hover
+                    {
+                        opacity: 0.69;
+                        transition: all 0.2s ease;
+                    }
 
                     .auction_text {
                         position: absolute;
@@ -909,14 +831,19 @@ img
         background: #2B2B2B 0% 0% no-repeat padding-box;
         opacity: 0.64;
         padding: 24px;
+        @media only screen and (max-width:992px)
+        {
+            padding: 24px !important;
+        }
 
         @media only screen and (max-width:480px) {
-            padding: 1px;
+            padding: 0px !important;
+            margin:0;
         }
 
         .counter-row {
             color: #fff;
-            padding: 40px;
+            padding: 40px 0;
             text-align: center;
             .row
             {
@@ -932,22 +859,49 @@ img
             }
             .prj_counter
             {
-                margin-left: 50px;
-                text-align: center;
+              justify-content: center;
+              padding-right: 100px;
+              .count-text
+              {
+                  span
+                  {
+                    font-size: 50px; font-weight: 300;margin-top: -16px;
+                    position: absolute;
+                   
+                  }
+                  .title
+                  {
+                    margin-top: 20px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #fff;
+                    font-family: $secondary-font;
+                    letter-spacing: 2px;
+                    @media only screen and (max-width:992px)
+                    {
+                        margin-top: 3px !important;
+                    }
+                  }
+              }
+              @media only screen and (max-width:480px) {
+              
+                  justify-content:flex-start;
+            }
             }
 
             .Associate-counter {
                 border-right: none !important;
-                margin-right: 56px;
+                justify-content: center;
                 text-align: right;
-                float: right;
+            
 
                 @media only screen and (max-width:992px) {
-                    margin-right: 0px !important;
+                  
                 }
 
                 @media only screen and (max-width:480px) {
                     padding-bottom: 15px;
+                      justify-content:flex-start;
                 }
             }
 
@@ -960,9 +914,29 @@ img
                 @media only screen and (max-width:480px) {
                     border-right: 0;
                     border-bottom: 2px dashed #FFFFFF;
-                    padding-top: 15px;
-                    padding-bottom: 1px;
+                    padding: 6px 0 !important;
                 }
+                .count-text
+              {
+                  span
+                  {
+                    font-size: 50px; font-weight: 300;margin-top: -16px;
+                    position: absolute;
+                  }
+                  .title
+                  {
+                    margin-top: 20px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #fff;
+                    font-family: $secondary-font;
+                    letter-spacing: 2px;
+                    @media only screen and (max-width:992px)
+                    {
+                        margin-top: 3px !important;
+                    }
+                  }
+              }
 
                 h2 {
                     float: left;
@@ -971,6 +945,12 @@ img
                     font-weight: 300;
                     // font-family: $secondary-font;
                     font-size: 50px;
+
+                    font-family: $secondary-font;
+                    @media only screen and (max-width:992px)
+                    {
+                        font-size: 35px;
+                    }
                     &:after {
                         content: '+';
                       
@@ -1207,7 +1187,7 @@ img
           padding-bottom: 0px;
       }
       .slick-dots li.slick-active button:before {
-        opacity: .75;
+        opacity: 3.75;
         color: #FF6000;
         border: 2px solid #ff6000;
     }
@@ -1354,6 +1334,3 @@ button:focus
 {
     outline: none !important;
 }
-
-
-
