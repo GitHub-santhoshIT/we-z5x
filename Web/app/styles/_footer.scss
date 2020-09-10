@@ -1,5 +1,9 @@
 .footer-sec {
     background-color: #001F41;
+    @media only screen and (max-width:480px)
+    {
+        padding-top: 15px;
+    }
     .location
     {
         ul
@@ -42,7 +46,9 @@
         padding: 50px 0 30px 0;
 
         @media only screen and (max-width:480px) {
-            padding: 15px 0 0 0;
+            padding:0;
+            margin: 0;
+            line-height:26px;
         }
 
         li {
@@ -74,7 +80,12 @@
     .media-sec {
         margin: 0 auto;
         text-align: center;
-
+        @media only screen and (max-width:480px)
+        {
+            margin: 0;
+            text-align:left;
+        }
+     
         ul {
             padding: 0;
             margin: 0;
@@ -83,6 +94,10 @@
             li {
                 float: left;
                 padding: 10px;
+                @media only screen and (max-width:480px)
+                {
+                    padding: 8px;
+                }
 
                 a {
 
@@ -100,6 +115,10 @@
                     i {
                         float: left;
                         padding: 8px;
+                        @media only screen and (max-width:480px)
+                        {
+                            padding: 10px;
+                        }
 
 
                     }

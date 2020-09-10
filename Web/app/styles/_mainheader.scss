@@ -1,4 +1,38 @@
 .header_sec {
+  
+         
+    .dropdown { 
+        position: static !important; 
+    } 
+      
+    .dropdown-menu { 
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; 
+        margin-top: 0px !important; 
+        width: 100% !important; 
+        .service_detail
+        {
+            border-bottom: 1px solid #CBE3FA;
+            margin-bottom: 15px;
+            p
+            {
+                color:#444445;
+            }
+        }
+        img:hover
+        {
+            border: 2px solid #000;
+            // transition: all 0.2s ease;
+        }
+        p
+        {
+            text-align: left;
+            font-weight: normal;
+            font-size: 14px;
+            font-family: $base-font;
+            color: #677897;
+        }
+    } 
+
 
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
