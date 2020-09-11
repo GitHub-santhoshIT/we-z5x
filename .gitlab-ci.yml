@@ -8,7 +8,7 @@ stages:
   - deploy
 
 deploy:
-  stage: dev
+  stage: deploy
   environment:
     name: dev
   variables:
