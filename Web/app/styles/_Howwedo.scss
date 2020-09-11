@@ -46,9 +46,10 @@ box-shadow: -16px -15px 5px 0px rgba(210,226,243,0.75);
     .line_project
     {
         border-bottom:1px solid $brand-color;
-            width: 98%;
+            width: 100%;
         margin: 0 auto;
         margin-top: 30px;
+        position:relative;
         &:before
         {
             content:"\f111";
@@ -64,8 +65,9 @@ box-shadow: -16px -15px 5px 0px rgba(210,226,243,0.75);
             color:$brand-color;
             font-family:FontAwesome;
             margin-top: -13px;
-    right: 110px;
+            right:0;
     position: absolute;
+   
         }
     }
     h6
@@ -149,6 +151,10 @@ box-shadow: -16px -15px 5px 0px rgba(210,226,243,0.75);
         min-height: 330px;
         height: 100%;
         padding: 40px 15px;
+        @media only screen and (max-width:480px)
+        {
+            min-height: 180px;
+        }
     }
     p
     {

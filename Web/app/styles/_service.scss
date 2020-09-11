@@ -40,6 +40,10 @@
        width: 85%;
        padding-top: 30px;
         margin-bottom:40px !important;
+        @media only screen and (max-width:992px)
+        {
+            margin-bottom: 18px !important;
+        }
         img
         {
             padding-bottom: 0 !important;
@@ -348,7 +352,14 @@ a#nav-about-tab {
       {
           @media only screen and (max-width:480px)
           {
-              margin-top: 120px;
+              margin-top: 130px;
+          }
+      }
+      .mobile_spaces
+      {
+          @media only screen and (max-width:480px)
+          {
+              margin-top: 150px !important;
           }
       }
    @media only screen and (max-width:768px)
@@ -424,6 +435,10 @@ a#nav-about-tab {
       .iot_text
       {
           padding: 30px;
+          @media only screen and (max-width:480px)
+          {
+              padding: 15px 0;
+          }
       }
       h5
       {
@@ -433,6 +448,10 @@ a#nav-about-tab {
       .list_text
       {
         padding-left: 135px;
+        @media only screen and (max-width:480px)
+        {
+            padding-left: 0px;
+        }
           ul
           {
               list-style-type: square;
@@ -616,6 +635,16 @@ a#nav-about-tab {
                 letter-spacing: 0.56px;
                 font-weight: normal;
                 font-family: $base-font;
+                @media only screen and (max-width:992px)
+                {
+                    width: 132px;
+                    padding: 16px;
+                }
+                @media only screen and (max-width:480px)
+                {
+                    width: 110px;
+                    padding: 16px;
+                }
                 span 
                 {
                     transform: skewX(18deg);

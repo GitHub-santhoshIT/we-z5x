@@ -1001,7 +1001,10 @@ img
 
 /*testimonial-sec*/
 .testimonial {
-
+    @media only screen and (max-width:480px)
+    {
+        overflow-x: hidden;
+    }
     a {
         border-left: 3px solid $accent-color;
         margin: 0 auto;
