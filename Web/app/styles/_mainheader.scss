@@ -1,8 +1,21 @@
 .header_sec {
   
          
+        .service_nav
+        {
+            float: left !important;
+            
+        }
+        .dropdown-toggle
+        {
+            &:after
+            {
+                margin-left: -0.745em !important;
+            }
+        }
     .dropdown { 
         position: static !important; 
+      
     } 
       
     .dropdown-menu { 
@@ -13,15 +26,25 @@
         {
             border-bottom: 1px solid #CBE3FA;
             margin-bottom: 15px;
-            p
+            padding: 15px 0;
+            .service_offer
             {
-                color:#444445;
+                font-weight: 700;
+                p
+                {
+                    color:#444445;
+                   
+                    font-weight: 500;
+                }
             }
+          
         }
         img:hover
         {
-            border: 2px solid #000;
-            // transition: all 0.2s ease;
+            background: transparent linear-gradient(122deg, #102397 0%, #00EAF8 100%) 0% 0% no-repeat padding-box;
+            border: 3px solid #003A78;
+            border-radius: 4px;
+            transition: all 0.2s linear;
         }
         p
         {
@@ -30,6 +53,13 @@
             font-size: 14px;
             font-family: $base-font;
             color: #677897;
+        }
+        .dropdown_thumbnail
+        {
+            &:hover
+            {
+                color: $brand-color;
+            }
         }
     } 
 
