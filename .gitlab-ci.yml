@@ -1,0 +1,22 @@
+before_script:
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+
+stages:
+  - deploy
+
+deploy:
+  stage: dev
+  environment:
+    name: dev
+  variables:
+    AWS_ACCOUNT_ID: "647985004047"
+    AWS_SESSION_TOKEN: ""
+  script:
+    - aws sts assume-role --role-arn "arn:aws:iam::$AWS_ACCOUNT_ID:role/z5x_jenkins" --role-session-name "jenkins-connect" > assume-role-output.txt
+    - export AWS_ACCESS_KEY_ID=`cat assume-role-output.txt | jq -c '.Credentials.AccessKeyId' | tr -d '"' | tr -d ' '`
+    - export AWS_SECRET_ACCESS_KEY=`cat assume-role-output.txt | jq -c '.Credentials.SecretAccessKey' | tr -d '"' | tr -d ' '`
+    - export AWS_SESSION_TOKEN=`cat assume-role-output.txt | jq -c '.Credentials.SessionToken' | tr -d '"' | tr -d ' '`
+    - aws s3 ls
