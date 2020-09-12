@@ -1,12 +1,15 @@
 
 .banners_sec {
     background-image: url('../images/Hero-bg.png');
-    background-size: 62%;
+    background-size: 63%;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-color: #f6f9fd;
     height:600px;
-
+@media only screen and (max-width:480px)
+{
+    height: 100%;
+}
     .banner_center {
         padding-top: 80px;
         vertical-align: middle;
@@ -16,6 +19,7 @@
         }
 
         .main_text {
+            padding-top:70px;
             h6 {
                 font-weight: normal;
                 font-size: 18px;

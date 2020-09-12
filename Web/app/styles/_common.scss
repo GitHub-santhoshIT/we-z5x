@@ -8,7 +8,17 @@
      
         position: relative;
         margin-bottom: 10px;
-      p
+     
+        img
+        {
+            &:hover
+            {
+                border: 1px solid #1136A6;
+                border-radius: 7px;
+            }
+        }
+    }
+     p
       {
           
         >a
@@ -20,15 +30,6 @@
           
         }
       }
-        img
-        {
-            &:hover
-            {
-                border: 1px solid #1136A6;
-                border-radius: 7px;
-            }
-        }
-    }
 }
 
 .slick-slide {
