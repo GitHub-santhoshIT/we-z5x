@@ -8,6 +8,18 @@
      
         position: relative;
         margin-bottom: 10px;
+      p
+      {
+          
+        >a
+        {
+            &:hover
+            {
+                text-decoration: none !important;
+            }
+          
+        }
+      }
         img
         {
             &:hover
@@ -147,6 +159,7 @@ img
             max-width: 330px;
 
         }
+       
 
         .bold_text {
             font-weight: 700;
