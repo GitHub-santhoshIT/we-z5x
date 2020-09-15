@@ -1,0 +1,24 @@
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    nav {
+        &.fixed-top {
+            background-color: #F7F6F6;
+        }
+
+        .navbar-nav {
+
+            .nav-item {
+                font-size: 18px;
+            margin-right: 30px;
+                font-weight: 400;
+
+                .nav-link {
+                    color: white
+                }
+            }
+        }
+    }
+}
