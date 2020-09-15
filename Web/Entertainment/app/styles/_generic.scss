@@ -23,3 +23,41 @@ section {
 .semidark-bg {
   background-color: $semidark-bg;
 }
+
+.text-semidark {
+  color: $semidark-bg;
+}
+
+.mediumdark-bg {
+  background-color: $mediumdark-bg;
+}
+
+.text-mediumdark {
+  color: $mediumdark-bg;
+}
+
+
+.dark-bg-gradient{
+  background: $dark-bg;
+ &::before{
+   content: "";
+   position: absolute;
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(230,229,229,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,229,229,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(230,229,229,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00e6e5e5',GradientType=0 ); /* IE6-9 */
+
+width: 100%;
+left: 0;
+right: 0;
+z-index: 1;
+height: 50%;
+ }
+ position: relative;
+ .data-cards-holder{
+   position: relative;
+   z-index: 2;
+ }
+ 
+}

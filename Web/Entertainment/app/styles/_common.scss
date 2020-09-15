@@ -199,15 +199,201 @@
 
         .counter-item {
             text-align: center;
+
+            h2 {
+                display: inline-block;
+            }
+
+            span {
+                display: block;
+                line-height: normal;
+                text-align: right;
+                margin-top: 10px;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
         }
     }
 }
 
 .data-cards-holder {
     padding-bottom: 120px;
-     
+
 }
-.circle-animate-block{
+
+.circle-animate-block {
     background-color: #cecece;
-    padding:120px;
+    padding: 120px;
 }
+
+.data-cards {
+    margin-top: 60px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+            border-right: 1px solid #FFFFFF29;
+
+            .carditem-1 {
+                padding-right: 30px;
+                margin-left: 30px;
+            }
+
+            &:first-child {
+                .carditem-1 {
+                    padding-right: 30px;
+                    margin-left: 0px;
+                }
+            }
+
+            &:last-child {
+                border-right: 0;
+
+                .carditem-1 {
+                    margin-right: 0px;
+                }
+
+                // margin-right: 0;
+            }
+        }
+    }
+}
+
+.hr-data-cards {
+    border-radius: 30px;
+    margin-bottom: 30px;
+    @include interaction2;
+    position: relative;
+
+    &.light-view {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 30px;
+
+            @include interaction2;
+        }
+
+        &:hover {
+            &:before {
+                background-color: #919095;
+                // width: calc(100% + 30px);
+                transform: scale(1.05, 1);
+            }
+
+            // width: calc(100% + 30px);
+            .hr-data-media {
+                @include interaction2;
+                transform: scale(1.05, 1);
+                left: -10px // transform: scale(1.05, 1);
+            }
+        }
+    }
+
+    .hr-data-media {
+        overflow: hidden;
+        border-radius: 30px;
+        @include interaction2;
+
+        img {
+            position: relative;
+            filter: grayscale(100%);
+            @include interaction2;
+        }
+
+
+    }
+
+    &:hover {
+
+        .hr-data-media {
+            img {
+                filter: grayscale(0%);
+            }
+        }
+
+    }
+
+    .hr-data-content {
+        .hr-label-holder {
+
+            position: relative;
+            padding-left: 40px;
+            font-size: 16px;
+            height: 30px;
+            margin-bottom: 20px;
+            color: #100F0F;
+
+            &:before {
+                background: rgba(255, 255, 255, 0.5);
+                top: 12px;
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 2px;
+                left: 0;
+            }
+        }
+
+        h4 {
+            padding-bottom: 60px;
+            color: white;
+
+        }
+
+        p {
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+.round-block-holder {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    h3{
+        left: 0;
+        z-index: 1;
+        right: 0;
+        width: 100%;
+        top: 0;
+        position: absolute;
+    }
+    .round-block {
+        position: relative;
+        height: 400px;
+        left: 25%;
+        width: 400px;
+        border-radius: 400px;
+        background-size: cover;
+        @include interaction2;
+        overflow: hidden;
+        &.enlarge-circle {
+            width: 100%;
+            left: 0%;
+            position: absolute;
+            border-radius: 0;
+        }
+    }
+
+    background-color: cyan;
+    width: 100%;
+
+}
+
+// .round-block {
+//     margin: 20px;
+//     background-color: black;
+//   }
+
+//   .enlarge-circle {
+//     background-color: green;
+//   }
