@@ -1,0 +1,183 @@
+.data-cards{
+    ul{
+        padding:0 ;
+        margin:0 ;
+        display: flex;
+
+        li{
+            list-style-type: none;
+            border-right: 1px solid #FFFFFF29;
+            margin-right: 20px;
+            &:last-child{
+                border-right:0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+.carditem-1 {
+    height: auto;
+    position: relative;
+
+    &:before {
+        content: "";
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .has-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        border-radius: 20px;
+        background-color: $dark-bg;
+        opacity: 0;
+        @include interaction2;
+        z-index: 1;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25), 0 -10px 20px -5px rgba(0, 0, 0, 0.25);
+
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        .has-bg {
+            opacity: 1;
+            transform: scale(1.25, 1.25);
+
+
+
+        }
+
+        h5 {
+            color: white;
+        }
+
+        h6 {
+            color: white
+        }
+
+        h5 {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 2;
+        padding: 0;
+h4{
+    color:white;
+}
+        h5 {
+            a {
+                color: white;
+
+                &:hover {
+                    color: $brand-secondary;
+                }
+            }
+        }
+
+
+    }
+}
+
+.carditem-2 {
+    height: auto;
+    position: relative;
+
+    &:before {
+        content: "";
+        border-left: 1px solid #FFFFFF29;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .has-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        border-radius: 20px;
+        background-color: $dark-bg;
+        opacity: 0;
+        @include interaction2;
+        z-index: 1;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25), 0 -10px 20px -5px rgba(0, 0, 0, 0.25);
+
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        .has-bg {
+            opacity: 1;
+            transform: scale(1.25, 1.25);
+
+
+
+        }
+
+        h5 {
+            color: white;
+        }
+
+        h6 {
+            color: white
+        }
+
+        h5 {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 2;
+        padding: 0;
+
+        h5 {
+            a {
+                color: $fulldark-bg;
+
+                &:hover {
+                    color: $brand-secondary;
+                }
+            }
+        }
+
+
+    }
+
+}

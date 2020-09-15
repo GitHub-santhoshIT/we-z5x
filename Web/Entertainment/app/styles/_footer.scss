@@ -1,0 +1,93 @@
+footer {
+    background-color: #000;
+    
+
+    .primary-footer {
+        margin-bottom: 60px;
+        padding-top: 40px;
+        .footer-links{
+            ul {
+                padding: 0;
+                margin: 0;
+    
+                li {
+                    list-style: none;
+                    margin-bottom: 5px;
+                    font-size: 18px;
+
+                    &:last-child {
+                        margin-bottom:0px;
+                    }
+                    a {
+                        color: $white;
+                        @include interaction1;
+                        &:hover{
+                            text-decoration: none;
+                            opacity: 0.75;
+                        }
+                    }
+                }
+            }
+        }
+     
+    }
+
+    .secondary-footer {
+        border-top:1px solid white;
+        padding:30px 0;
+        h6 {
+            margin-bottom: 0;
+        }
+
+        .footer-links {
+            ul {
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style: none;
+                    font-size: 16px;
+                    display: inline;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 30px;
+                    }
+
+                    a {
+                    @include interaction1;
+
+                        color: $white;
+                        &:hover{
+                            text-decoration: none;
+                        opacity: 0.75;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            ul {
+                float: right;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style-type: none;
+                    display: inline;
+                    margin-right: 15px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

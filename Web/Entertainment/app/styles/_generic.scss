@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+  .container {
+
+    max-width: 1200px;
+  }
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  &>[class^="col-"],
+  &>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.semidark-bg {
+  background-color: $semidark-bg;
+}
