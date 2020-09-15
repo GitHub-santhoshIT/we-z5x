@@ -6,14 +6,10 @@
             float: left !important;
             
         }
-        .dropdown-toggle
-        {
-            display:none;
-            &:after
-            {
-                margin-left: -0.745em !important;
-            }
-        }
+        // .dropdown-toggle
+        // {
+          
+        // }
     .dropdown { 
         position: static !important; 
       
@@ -23,11 +19,19 @@
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important; 
         margin-top: 0px !important; 
         width: 100% !important; 
+        background-color:#F8FAFD !important;
         .service_detail
         {
             border-bottom: 1px solid #CBE3FA;
             margin-bottom: 15px;
-            padding: 15px 0;
+            padding-top: 15px;
+            p
+            {
+                @media only screen and (max-width:480px)
+                {
+                    text-align: left !important;
+                }
+            }
             .service_offer
             {
                 font-weight: 700;
@@ -36,16 +40,26 @@
                     color:#444445;
                    
                     font-weight: 500;
+                    @media only screen and (max-width:480px)
+                    {
+                        text-align: left !important;
+                    }
                 }
             }
           
         }
-        img:hover
+        img
         {
             background: transparent linear-gradient(122deg, #102397 0%, #00EAF8 100%) 0% 0% no-repeat padding-box;
             border: 3px solid #003A78;
             border-radius: 4px;
             transition: all 0.2s linear;
+            width:100% !important;
+            @media only screen and (max-width:480px)
+            {
+                width: auto !important;
+                max-width: none !important;
+            }
         }
         p
         {
@@ -73,7 +87,11 @@
       
             border-bottom: 2px solid orange !important;
    }
-
+   .navbar
+   {
+       padding:0;
+       margin:0;
+  
     #navbartext {
         justify-content: flex-end;
     }
@@ -177,5 +195,5 @@
             }
         }
     }
-
+}
 }
