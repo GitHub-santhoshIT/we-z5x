@@ -144,7 +144,7 @@
         li {
             display: table-cell;
             list-style: none;
-            border-right: 1px solid red;
+            border-right: 1px solid #b1b1b1;
             padding-right: 15px;
             padding-left: 15px;
 
@@ -357,16 +357,23 @@
 
 .round-block-holder {
     overflow: hidden;
+    .ring-contain-text{
+        position: absolute;
+        left: 30%;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        h2{
+            color:$mediumdark-bg;
+  
+
+        }
+    }
     height: 400px;
     position: relative;
-    h3{
-        left: 0;
-        z-index: 1;
-        right: 0;
-        width: 100%;
-        top: 0;
-        position: absolute;
-    }
+ 
     .round-block {
         position: relative;
         height: 400px;
@@ -374,9 +381,18 @@
         width: 400px;
         border-radius: 400px;
         background-size: cover;
+        
+            filter: grayscale(100%);
+
+        
         @include interaction2;
-        overflow: hidden;
         &.enlarge-circle {
+            .ring-contain-text{
+                h2{
+                    color:white;
+                }
+            }
+            filter: grayscale(0%);
             width: 100%;
             left: 0%;
             position: absolute;
@@ -384,7 +400,7 @@
         }
     }
 
-    background-color: cyan;
+    
     width: 100%;
 
 }
@@ -397,3 +413,15 @@
 //   .enlarge-circle {
 //     background-color: green;
 //   }
+.start-hr-stroke{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 80px;
+        background-color: #b1b1b1;
+        height: 1px;
+        left: -100px;
+        top: 20px;
+    }
+}
