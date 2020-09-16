@@ -43,6 +43,8 @@ autoplaySpeed: 5000,
   });
   $('.sider-counter').slick({
     slidesToShow: 1,
+  fade: true,
+
     slidesToScroll: 1,
     autoplay: true,
     dots:true,
@@ -268,3 +270,53 @@ $( window ).ready(function() {
 
 });
           
+
+
+  //scroll add class for the circle
+//   window.onscroll = function() {myFunction()};
+
+// var header = document.getElementById("expandcircle");
+// var sticky = header.offsetTop({top:'200px'});
+
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("enlarge-circle");
+//   } 
+//   else {
+//     header.classList.remove("enlarge-circle");
+//   }
+// }
+
+
+$.fn.visible = function(partial) {
+
+  var $t = $(this),
+    $w = $(window),
+    viewTop = $w.scrollTop(),
+    viewBottom = viewTop + $w.height(),
+    _top = $t.offset().top,
+    _bottom = _top + $t.height(),
+    compareTop = partial === true ? _bottom : _top,
+    compareBottom = partial === true ? _top : _bottom;
+
+  return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+}
+
+$(document).ready(function(e) {
+  checkVisible();
+});
+
+$(window).scroll(function(e) {
+  checkVisible();
+});
+
+
+function checkVisible() {
+  $('.round-block').each(function(i, k) {
+    if ($(this).visible()) {
+      $(k).addClass('enlarge-circle');
+    } else {
+      $(k).removeClass('enlarge-circle');
+    }
+  });
+}
