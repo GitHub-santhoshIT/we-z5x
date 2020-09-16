@@ -207,6 +207,7 @@ background-size:cover ;
         background-repeat: no-repeat;
         background-position: 0 0;
         border-radius: 20px;
+        background-size: cover;
         background-color: $dark-bg;
         opacity: 0;
         @include interaction2;
