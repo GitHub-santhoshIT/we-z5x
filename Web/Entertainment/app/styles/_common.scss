@@ -144,7 +144,7 @@
         li {
             display: table-cell;
             list-style: none;
-            border-right: 1px solid red;
+            border-right: 1px solid #b1b1b1;
             padding-right: 15px;
             padding-left: 15px;
 
@@ -374,6 +374,10 @@
         width: 400px;
         border-radius: 400px;
         background-size: cover;
+        img{
+            filter: grayscale(100%);
+
+        }
         @include interaction2;
         overflow: hidden;
         &.enlarge-circle {
@@ -384,7 +388,7 @@
         }
     }
 
-    background-color: cyan;
+    
     width: 100%;
 
 }
@@ -397,3 +401,15 @@
 //   .enlarge-circle {
 //     background-color: green;
 //   }
+.start-hr-stroke{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 80px;
+        background-color: #b1b1b1;
+        height: 1px;
+        left: -100px;
+        top: 20px;
+    }
+}
