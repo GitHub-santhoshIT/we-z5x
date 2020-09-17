@@ -18,7 +18,10 @@ $('.home-block-carousel').slick({
   infinite: true,
   fade: true,
   autoplay: true,
-autoplaySpeed: 5000,
+  autoplaySpeed: 6000,
+  // cssEase: 'linear',
+  // speed: 500,
+  draggable: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true
