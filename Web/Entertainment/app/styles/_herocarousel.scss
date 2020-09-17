@@ -1,6 +1,17 @@
 
 .hero-slider {
-   
+    .slider__counter {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff !important;
+        mix-blend-mode: difference;
+        pointer-events: none;
+      }
+      
     .slick-prev
     {
             background-image:url("../images/icon_Arrow_left.svg");

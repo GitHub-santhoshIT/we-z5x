@@ -145,7 +145,8 @@
 // ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 // { color: #FFF;
 //   background: #068900;}
-
+.scroll_icons
+{
 #site_content
 { width: 100%;
   overflow: hidden;
@@ -303,6 +304,7 @@ table tr td
   transform: translate(0, -50%);
   left: 20px;
   z-index: 2;
+  opacity: 0;
 }
 @media (max-width: 1024px) {
   .scroll-indicator-controller {
@@ -380,6 +382,7 @@ table tr td
     transition: opacity 0.4s ease;
   }
 }
+}
 
 
 
@@ -428,3 +431,67 @@ table tr td
 //     }
 //   }
 // }
+
+
+.slider {
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 3rem;
+    height: 3rem;
+    transform: translateY(-50%);
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: #f08a5d;
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+  }
+
+  .slick-prev {
+    left: 10vw;
+  }
+
+  .slick-next {
+    right: 10vw;
+  }
+}
+
+.slider__item {
+  position: relative;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.slider__counter {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
