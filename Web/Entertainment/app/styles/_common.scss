@@ -259,30 +259,32 @@
 
 .data-cards-holder {
     padding-bottom: 120px;
-    p
-    {
+
+    p {
         color: #292833;
-    font-size: 24px;
-    font-weight: normal;
+        font-size: 24px;
+        font-weight: normal;
     }
 
 }
-.view_all
-{
-    padding:30px 0;
+
+.view_all {
+    padding: 30px 0;
 }
-   
+
 .circle-animate-block {
     background-color: #cecece;
     padding: 120px;
 }
+
 .data-cards.about_us {
     border-bottom: 1px solid #B1B1B1;
     padding-bottom: 15px;
 }
+
 .data-cards {
     margin-top: 60px;
-   
+
 
     ul {
         padding-left: 0;
@@ -396,7 +398,7 @@
     }
 
     .hr-data-content {
-     
+
 
         h4 {
             padding-bottom: 60px;
@@ -497,12 +499,17 @@
     height: 100vh;
 }
 
- 
 
- 
+
+
 
 .fullwidth-content-block {
     padding: 60px 0;
+    h2{
+        padding: 0;
+        margin:0px 0 30px 0 ;
+        line-height: 1;
+    }
 }
 
 .client-logo-block {
@@ -590,4 +597,8 @@
     img {
         height: 60px;
     }
+}
+
+.about-main-cards-block {
+    padding: 60px 0;
 }
