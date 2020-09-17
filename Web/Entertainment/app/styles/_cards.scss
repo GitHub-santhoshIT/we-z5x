@@ -296,7 +296,9 @@
 
         p {
             a {
-                color: $fulldark-bg;
+                color: $dark-bg;
+                font-weight:500;
+                font-size:24px;
 
                 &:hover {
                     color: $brand-secondary;
