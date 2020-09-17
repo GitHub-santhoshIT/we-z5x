@@ -40,3 +40,29 @@
     
     
 }
+
+.inner-full-banner{
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2{
+        line-height: 1;
+    }
+    h3{
+        color:white;
+    }
+    &.with-bg{
+        h2{
+            color:white;
+        }
+        p{
+            color:white;
+        }
+    }
+}
