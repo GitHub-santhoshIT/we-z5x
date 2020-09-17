@@ -277,10 +277,7 @@
     padding: 120px;
 }
 
-.data-cards.about_us {
-    border-bottom: 1px solid #B1B1B1;
-    padding-bottom: 15px;
-}
+
 
 .data-cards {
     margin-top: 60px;
@@ -505,9 +502,10 @@
 
 .fullwidth-content-block {
     padding: 60px 0;
-    h2{
+
+    h2 {
         padding: 0;
-        margin:0px 0 30px 0 ;
+        margin: 0px 0 30px 0;
         line-height: 1;
     }
 }
@@ -601,4 +599,17 @@
 
 .about-main-cards-block {
     padding: 60px 0;
+}
+
+.more-view {
+    border-top: 1px solid #b1b1b1;
+    padding: 20px 0;
+    margin-top: 30px;
+
+}
+
+.about-cards {
+    &.data-cards ul li:after {
+        border-color:#b1b1b1;
+    }
 }
