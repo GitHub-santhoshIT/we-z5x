@@ -22,4 +22,19 @@
             }
         }
     }
+    .down_arrow
+    {
+        display: block;
+        left: 10px;
+        position: absolute;
+        bottom: 168px;
+        transition: all 5s ease;
+        scroll-behavior: smooth;
+        img
+        {
+            width: 30px;
+            bottom: -80px;
+            position: absolute;
+        }
+    }
 }
