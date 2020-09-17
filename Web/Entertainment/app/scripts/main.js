@@ -1,14 +1,5 @@
 console.log('\'Allo \'Allo!');
 
-// Uncomment to enable Bootstrap tooltips
-// https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
-// $(function () { $('[data-toggle="tooltip"]').tooltip(); });
-
-// Uncomment to enable Bootstrap popovers
-// https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
-// $(function () { $('[data-toggle="popover"]').popover(); });
-
-///////////////// fixed menu on scroll for desktop
 if ($(window).width() > 992) {
   $(window).scroll(function(){  
      if ($(this).scrollTop() > 40) {
@@ -463,7 +454,7 @@ $(document).ready(function() {
     if (currentScrollTop >= prevScrollTop && currentScrollTop > 44) {
       $src.css({
         'position': 'fixed',
-        'top': '50'
+        'top': '1000'
       });
       $('.scroll-indicator-controller').slideDown();
     } else {

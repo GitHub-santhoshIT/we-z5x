@@ -1,27 +1,57 @@
 .carditem-1 {
     position: relative;
-&.large{
-    &:hover {
-        .has-bg {
-            opacity: 1;
-            transform: scale(1.1, 1.3);
-        }
+&.large-height{
+    .data-content {
+        height: 400px;
     }
-    .data-content{
-        height: 260px;
-        h4{
-
-            font-size: 42px;
-            font-weight: 600;
-            line-height: 46px;
-            padding-bottom: 30px;
-
-        }
-    }
-
 }
+    &.large {
+        &:hover {
+            .has-bg {
+                opacity: 1;
+                transform: scale(1.1, 1.3);
+            }
+        }
+
+        .data-content {
+            height: 260px;
+
+            h4 {
+
+                font-size: 42px;
+                font-weight: 600;
+                line-height: 46px;
+                padding-bottom: 30px;
+
+            }
+        }
+
+    }
 
     &.light-view {
+        &.light-text {
+            &:hover {
+                .has-bg {
+                    background-color: $dark-bg;
+                }
+
+                p {
+                    color: white;
+                }
+
+                h4 {
+                    color: white;
+                }
+
+                p {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
         .has-bg {
             background-color: $semidark-bg;
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.25), 0px -5px 10px 0px rgba(255, 255, 255, 1);
@@ -45,13 +75,13 @@
                 color: $fulldark-bg;
 
                 &::before {
-                    background:$fulldark-bg;
+                    background: $fulldark-bg;
 
                 }
             }
 
             h4 {
-                color:$fulldark-bg;
+                color: $fulldark-bg;
             }
 
             p {
@@ -79,6 +109,7 @@
             .has-bg {
                 background-color: $dark-bg;
             }
+
             p {
                 color: white;
             }
@@ -107,6 +138,7 @@
 
             p {
                 margin-bottom: 0;
+
                 a {
                     color: white;
 
@@ -125,12 +157,12 @@
         width: calc(100%);
         background-repeat: no-repeat;
         background-position: 0 0;
-background-size:cover ;
+        background-size: cover;
         opacity: 0;
         @include interaction2;
         z-index: 1;
 
-        left:-15px;
+        left: -15px;
 
         &:before {
             content: "";
@@ -251,6 +283,7 @@ background-size:cover ;
         z-index: 2;
         padding: 0;
         padding-bottom: 35px;
+
         h5 {
             a {
                 color: $fulldark-bg;
@@ -260,11 +293,13 @@ background-size:cover ;
                 }
             }
         }
-        p{
-            a{
-                color:$fulldark-bg;
-                &:hover{
-                    color:$brand-secondary;
+
+        p {
+            a {
+                color: $fulldark-bg;
+
+                &:hover {
+                    color: $brand-secondary;
                 }
             }
         }
