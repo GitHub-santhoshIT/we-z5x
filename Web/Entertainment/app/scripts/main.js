@@ -450,12 +450,15 @@ $(document).ready(function() {
     // Variable declaration for search container
     var $src = $('.scroll-indicator-controller');
     var currentScrollTop = $(this).scrollTop()
-
+   
     if (currentScrollTop >= prevScrollTop && currentScrollTop > 44) {
+     
       $src.css({
         'position': 'fixed',
-        'top': '1000'
+        'top': '100',
+        'opacity':'1'
       });
+      
       $('.scroll-indicator-controller').slideDown();
     } else {
       $src.css({
@@ -467,3 +470,38 @@ $(document).ready(function() {
     prevScrollTop = currentScrollTop
   });
 });
+
+
+
+
+/*hero carousel*/
+
+var $slider = $('.hero-slider');
+
+if ($slider.length) {
+  var currentSlide;
+  var slidesCount;
+  var sliderCounter = document.createElement('div');
+  sliderCounter.classList.add('slider__counter');
+  
+  var updateSliderCounter = function(slick, currentIndex) {
+    currentSlide = slick.slickCurrentSlide() + 1;
+    slidesCount = slick.slideCount;
+    $(sliderCounter).text(currentSlide + '/' +'5') 
+  };
+
+  $slider.on('init', function(event, slick) {
+    $slider.append(sliderCounter);
+    updateSliderCounter(slick);
+  });
+
+  $slider.on('afterChange', function(event, slick, currentSlide) {
+    updateSliderCounter(slick, currentSlide);
+  });
+
+  $slider.slick();
+}
+
+
+
+
