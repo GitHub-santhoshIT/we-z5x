@@ -1,10 +1,12 @@
 .carditem-1 {
     position: relative;
-&.large-height{
-    .data-content {
-        height: 400px;
+
+    &.large-height {
+        .data-content {
+            height: 400px;
+        }
     }
-}
+
     &.large {
         &:hover {
             .has-bg {
@@ -47,7 +49,7 @@
                     a {
                         color: white;
                         text-decoration: none;
-                        font-weight: 700;
+                        font-weight: 600;
                     }
                 }
             }
@@ -90,7 +92,7 @@
 
                 a {
                     color: $fulldark-bg;
-                    font-weight: 700 !important;
+                    font-weight: 600;
 
                     &:hover {
                         color: $brand-secondary;
@@ -180,20 +182,13 @@
     &:hover {
         .has-bg {
             opacity: 1;
-            transform: scale(1.2, 1.1);
-            // opacity: 1;
-            // width: calc(100% + 64px);
-            // margin: 0 auto;
-            // position: absolute;
-            // left: -32px;
-            // height: calc(100% + 60px);
-            // top: -32px;
+            transform: scale(1.2, 1.2);
         }
     }
 
     .data-content {
-  
-        
+
+
 
         height: 240px;
         position: relative;
@@ -213,7 +208,6 @@
 }
 
 .carditem-2 {
-    height: auto;
     position: relative;
 
     &:before {
@@ -238,6 +232,7 @@
         opacity: 0;
         @include interaction2;
         z-index: 1;
+        margin: 0 auto;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 1), 0 -10px 20px -5px rgba(0, 0, 0, 0.25);
 
         &:before {
@@ -253,7 +248,7 @@
     &:hover {
         .has-bg {
             opacity: 1;
-            transform: scale(1.25, 1.25);
+            transform: scale(1.15, 1.1)
         }
 
         h5 {
@@ -264,44 +259,178 @@
             color: white
         }
 
-        p {
-            a {
-                color: white;
-                text-decoration: none;
-            }
+
+        a.common-link-text {
+            color: white;
+            text-decoration: none;
         }
+
     }
 
     &-content {
         position: relative;
         z-index: 2;
         padding: 0;
-        padding-bottom: 35px;
+        min-height: 180px;
 
-        h5 {
-            a {
-                color: $fulldark-bg;
 
-                &:hover {
-                    color: $brand-secondary;
-                }
-            }
-        }
 
-        p {
-            a {
-                color: $dark-bg;
-                font-weight:500;
-                font-size:24px;
 
-                &:hover {
-                    color: $brand-secondary;
-                }
-            }
+
+
+
+    }
+
+    a.common-link-text {
+        color: $dark-bg;
+        font-weight: 500;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            color: $brand-secondary;
         }
     }
 }
 
+.hr-data-cards {
+    border-radius: 30px;
+    margin-bottom: 60px;
+    @include interaction2;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        border-radius: 30px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        @include interaction2;
+    }
+
+    &.dark-view {
+        &:hover {
+            background-color: $dark-bg;
+
+            // box-shadow:10px 10px 10px -5px #000000, 0px -5px 10px 0px rgba(255, 255, 255, 0.2);
+            &:before {
+                content: "";
+                background-color: $dark-bg;
+                transform: scale(1.025, 1);
+                box-shadow: rgb(0, 0, 0) 10px 10px 10px -5px, rgba(255, 255, 255, 0.2) 0px -5px 10px 0px;
+            }
+
+            .hr-data-content {
+                h4 {
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+
+    &.light-view {
+        &:hover {
+            background-color: #919095;
+
+            &:before {
+                content: "";
+                background-color: #919095;
+                transform: scale(1.025, 1);
+            }
+
+            .hr-data-content {
+                h4 {
+                    color: white;
+                }
+            }
+
+        }
+
+    }
+
+    &:hover {
+        &:before {
+            content: "";
+            background-color: $dark-bg;
+            transform: scale(1.025, 1);
+        }
+
+        .hr-data-media {
+            transform: scale(1.05, 1);
+
+            img {
+                transform: scale(1, 1);
+
+            }
+        }
 
 
-//new hr cards
+
+    }
+
+    .hr-data-media {
+        overflow: hidden;
+        border-radius: 30px;
+        @include interaction2;
+
+        img {
+            transform: scale(1.05, 1);
+            position: relative;
+            height: 480px;
+            filter: grayscale(100%);
+            @include interaction2;
+        }
+    }
+
+    .hr-data-content {
+        padding: 0 60px 0 30px;
+
+        h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .common-link-dark {
+            color: white;
+
+            &:hover {
+                color: $brand-secondary !important;
+
+            }
+        }
+
+    }
+
+    &:hover {
+        .hr-data-content {
+            h4 {
+                color: white;
+            }
+
+            p {
+                color: white
+            }
+
+            .common-link-dark {
+
+                color: white;
+
+
+            }
+
+
+        }
+
+        .hr-data-media {
+            img {
+                filter: grayscale(0%);
+            }
+        }
+
+    }
+}

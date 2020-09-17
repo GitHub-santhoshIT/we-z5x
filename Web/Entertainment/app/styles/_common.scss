@@ -165,11 +165,7 @@
 }
 
 
-.common-link {
-    &:hover {
-        color: $brand-secondary;
-    }
-}
+
 
 .entertainment-block {
     background-color: $semidark-bg;
@@ -186,7 +182,6 @@
 
 .entertainment-cards {
     background-color: $semidark-bg;
-    padding-bottom: 60px;
 }
 
 .sider-counter-holder {
@@ -258,11 +253,11 @@
 }
 
 .data-cards-holder {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
 
     p {
         color: #292833;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: normal;
     }
 
@@ -336,80 +331,7 @@
     }
 }
 
-.hr-data-cards {
-    border-radius: 30px;
-    margin-bottom: 30px;
-    @include interaction2;
-    position: relative;
 
-    &.light-view {
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            border-radius: 30px;
-
-            @include interaction2;
-        }
-
-        &:hover {
-            &:before {
-                background-color: #919095;
-                // width: calc(100% + 30px);
-                transform: scale(1.05, 1);
-            }
-
-            // width: calc(100% + 30px);
-            .hr-data-media {
-                @include interaction2;
-                transform: scale(1.05, 1);
-                left: -10px // transform: scale(1.05, 1);
-            }
-        }
-    }
-
-    .hr-data-media {
-        overflow: hidden;
-        border-radius: 30px;
-        @include interaction2;
-
-        img {
-            position: relative;
-            filter: grayscale(100%);
-            @include interaction2;
-        }
-
-
-    }
-
-    &:hover {
-
-        .hr-data-media {
-            img {
-                filter: grayscale(0%);
-            }
-        }
-
-    }
-
-    .hr-data-content {
-
-
-        h4 {
-            padding-bottom: 60px;
-            color: white;
-
-        }
-
-        p {
-            a {
-                color: white;
-            }
-        }
-    }
-}
 
 .round-block-holder {
     overflow: hidden;
@@ -612,4 +534,17 @@
     &.data-cards ul li:after {
         border-color:#b1b1b1;
     }
+}
+.two-block-holder{
+    padding-top: 120px;
+}
+.purpose-two-block{
+    padding: 60px 0;
+}
+.jurney-block{
+    h2{
+        margin-bottom: 60px;
+    }
+    padding-bottom: 60px;
+
 }
