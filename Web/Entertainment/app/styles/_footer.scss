@@ -91,11 +91,14 @@ footer {
 }
 .bottom-footer{
     background-color: $mediumdark-bg;
-padding:60px 0;
+padding:45px 0;
 ul{
     li{
         list-style: none;
-        border-right:1px solid red;
+        border-right:1px solid white;
+        &:last-child{
+            border-right:0;
+        }
     }
 }
 }

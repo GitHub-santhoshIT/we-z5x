@@ -307,3 +307,116 @@
         }
     }
 }
+
+
+
+//new hr cards
+.new-hr-data-cards {
+    border-radius: 30px;
+    margin-bottom: 30px;
+    @include interaction2;
+    position: relative;
+&:hover{
+    background-color: $dark-bg;
+}
+    // &.light-view {
+    //     &:before {
+    //         content: "";
+    //         position: absolute;
+    //         left: 0;
+    //         height: 100%;
+    //         width: 100%;
+    //         border-radius: 30px;
+
+    //         @include interaction2;
+    //     }
+
+    //     &:hover {
+    //         &:before {
+    //             background-color: #919095;
+    //             // width: calc(100% + 30px);
+    //             transform: scale(1.05, 1);
+    //         }
+
+    //         // width: calc(100% + 30px);
+    //         .hr-data-media {
+    //             @include interaction2;
+    //             transform: scale(1.05, 1);
+    //             left: -10px // transform: scale(1.05, 1);
+    //         }
+    //     }
+    // }
+
+    .hr-data-media {
+        overflow: hidden;
+        border-radius: 30px;
+        @include interaction2;
+
+        img {
+            position: relative;
+            filter: grayscale(100%);
+            @include interaction2;
+        }
+
+
+    }
+
+    &:hover {
+        .hr-data-content {
+            h4{
+                color:white;
+            }
+            p{
+                color:white
+            }
+            .hr-label-holder{
+                color:white;
+            }
+        }
+
+        .hr-data-media {
+            img {
+                filter: grayscale(0%);
+            }
+        }
+
+    }
+
+    .hr-data-content {
+    
+        p{
+            color:$fulldark-bg;
+        }
+        .hr-label-holder {
+
+            position: relative;
+            padding-left: 40px;
+            font-size: 16px;
+            height: 30px;
+            margin-bottom: 20px;
+            color: #100F0F;
+
+            &:before {
+                background: rgba(0,0, 0, 0.5);
+                top: 12px;
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 2px;
+                left: 0;
+            }
+        }
+
+        h4 {
+            padding-bottom: 60px;
+            color: $dark-bg;
+
+        }
+
+        p {
+            a {
+                color: white;
+            }
+        }
+    }
+}
