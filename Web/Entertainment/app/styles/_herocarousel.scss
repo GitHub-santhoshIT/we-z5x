@@ -1,184 +1,154 @@
-
 .hero-slider {
-    .slider__counter {
-        position: absolute;
-        bottom: 2rem;
-        right: 3rem;
-        z-index: 1;
-        font-weight: 600;
-        font-weight: normal;
-        font-size: 36px;
-        font-family: Neue Haas Grotesk;
-        color: #FFFFFF !important;
-      }
-      
-    .slick-prev
-    {
-            background-image:url("../images/icon_Arrow_left.svg");
-            background-repeat: no-repeat;
-            top: 90%;
-            position: absolute;
-            left: 5px !important;
-        
-        &:before
-        {
-            content: " " !important;
-            // font-family: Fontawesome !important;
-            // font-size: 61px !important;
-            // color: #fff !important;
-            // // background-image:url("../images/icon_Arrow_left.svg");
-            // // background-repeat: no-repeat;
-
-          
-          
-        }
-      
-       
-    }
-    .slick-next
-    {
-        background-image:url("../images/icon_Arrow_right.svg");
-            background-repeat: no-repeat;
-            top: 90%;
-            position: absolute;
-            right: 1% !important;
-        &:before
-        {
-             content: " ";
-            // font-family: Fontawesome;
-            // font-size: 61px;
-            // color: #fff;
-        }
-    }
-    .home-block-carousel {
-        .slick-active{
-            .slide{
-                h2{
-                    margin-top: 0;
-
-                }
-            }
-        }
-        margin-bottom: 0;
-        .slide {
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            position: relative;
-            &-content {
-                width: 100%;
-            height: 100vh;
-
-            position: relative;
-
-                h2 {
-                    color: white;
-                    margin-top: 30px;
+	.slider__counter {
+		position: absolute;
+		bottom: 2rem;
+		right: 3rem;
+		z-index: 1;
+		font-size: 36px;
+		color: #FFFFFF !important;
+	}
+	.slick-prev {
+		background-image: url("../images/icon_Arrow_left.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		background-position: center;
+		&:before {
+			content: " " !important;
+		}
+	}
+	.slick-next {
+		background-image: url("../images/icon_Arrow_right.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		background-position: center;
+		&:before {
+			content: " ";
+		}
+	}
+	.home-block-carousel {
+		.slick-active {
+			.slide {
+				h2 {
+					margin-top: 0;
+				}
+			}
+		}
+		margin-bottom: 0;
+		.slide {
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			position: relative;
+			&-content {
+				width: 100%;
+				height: 100vh;
+				position: relative;
+				h2 {
+					color: white;
+					margin-top: 30px;
                     transition: all 0.5s ease;
-                
-                    span
-                    {
-                        text-decoration: underline;
-                        
-                    }
-                }
-                .down_arrow
-                {
-                    display: block;
-                    left: 10px;
-                    position: absolute;
-                    bottom: 168px;
-                    transition: all 5s ease;
-                    scroll-behavior: smooth;
-                    img
-                    {
-                        width: 30px;
-                        bottom: -80px;
-                        position: absolute;
-                    }
-                    &:after
-                    {
-                        content: "";
-                         font-family: Fontawesome;
-                        font-size: 50px;
-                        display: block;
-                        padding-top: 30px;
-                        padding-bottom: 0px;
-                        position: absolute;
-                        color:#fff;
-                        // background-image: url('images/downarrow.svg');
-                    }
-                }
-              
-            }
-            p{
-                text-align: right;
-                position: absolute;
-                right: 140px;
-                    margin-bottom: 0;
-                    bottom: 100px;
-                    a.annual_report
-                    {
-                        padding-top: 70px !important;
-                    }
-                   
-                a{
-                    color:white;
                     position: relative;
-                    text-decoration: none;
-                   
-                    &:before{
-                        top:50%;
-                        content: "";
-                        position: absolute;
-                        width: 100px;
-                        height: 1px;
-                        background: rgba(255,255,255,0.5);
-                        left: -120px;
-                    }
-                }
-            }
-        
-        }
-        .slick-dots {
-            bottom: 30px;
-            li {
-                height: auto;
-                width: auto;
-                button {
-                    width: 25px;
-                    height: auto;
-                    &:before {
-                        opacity: 1;
-                        border-radius: 20px;
-                        content: "";
-                        background-color: $brand-primary;
-                        width: 100%;
-                        height: 4px;
-                    }
-                }
-                &.slick-active button:before {
-                    opacity: 1;
-                    background-color: white;
-                }
-            }
-        }
+					span {
+                    position: relative;
 
-        .slick-prev{
-            left: 0;
-            z-index: 999;
-            height: 90%;
-            padding: 0 30px;
-            text-align: center;
-        }
-        .slick-next{
-            right: 0;
-            z-index: 999;
-            height: 90%;
-            padding: 0 30px;
-            text-align: center;
-        }
-
-    }
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            height: 3px;
+                            background-color: white;
+                            bottom: 10px;
+                        }
+						
+					}
+				}
+				.down_arrow {
+					display: block;
+					left: 10px;
+					position: absolute;
+					bottom: 168px;
+					transition: all 5s ease;
+					scroll-behavior: smooth;
+					img {
+						width: 30px;
+						bottom: -80px;
+						position: absolute;
+					}
+					&:after {
+						content: "";
+						font-family: Fontawesome;
+						font-size: 50px;
+						display: block;
+						padding-top: 30px;
+						padding-bottom: 0px;
+						position: absolute;
+						color: #fff;
+					}
+				}
+			}
+			p {
+				text-align: right;
+				position: absolute;
+				right: 140px;
+				margin-bottom: 0;
+				bottom: 100px;
+				a.annual_report {
+					padding-top: 70px !important;
+				}
+				a {
+					color: white;
+					position: relative;
+					text-decoration: none;
+					&:before {
+						top: 50%;
+						content: "";
+						position: absolute;
+						width: 100px;
+						height: 1px;
+						background: rgba(255, 255, 255, 0.5);
+						left: -120px;
+					}
+				}
+			}
+		}
+		.slick-dots {
+			bottom: 30px;
+			li {
+				height: auto;
+				width: auto;
+				button {
+					width: 25px;
+					height: auto;
+					&:before {
+						opacity: 1;
+						border-radius: 20px;
+						content: "";
+						background-color: $brand-primary;
+						width: 100%;
+						height: 4px;
+					}
+				}
+				&.slick-active button:before {
+					opacity: 1;
+					background-color: white;
+				}
+			}
+		}
+		.slick-prev {
+			left: 0;
+			z-index: 999;
+			height: 90%;
+			padding: 0 30px;
+			text-align: center;
+		}
+		.slick-next {
+			right: 0;
+			z-index: 999;
+			height: 90%;
+			padding: 0 30px;
+			text-align: center;
+		}
+	}
 }
