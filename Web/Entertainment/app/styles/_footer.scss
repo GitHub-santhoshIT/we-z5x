@@ -1,7 +1,5 @@
 footer {
     background-color: #000;
-    
-
     .primary-footer {
         margin-bottom: 60px;
         padding-top: 40px;
@@ -90,4 +88,14 @@ footer {
             }
         }
     }
+}
+.bottom-footer{
+    background-color: $mediumdark-bg;
+padding:60px 0;
+ul{
+    li{
+        list-style: none;
+        border-right:1px solid red;
+    }
+}
 }
