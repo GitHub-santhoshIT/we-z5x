@@ -13,22 +13,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
         &.fixed-top {
             background-color: rgba(0,0,0, 0.5);
             .navbar-nav {
+               
                 .nav-item {
-    
+                   
                     .nav-link {
                         color: white
+                      
                     }
                 }
             }
         }
         .navbar-nav {
+            a.nav-link.search_img img
+            {
+                width: 33px !important;
+            }
             .nav-item {
                 font-size: 18px;
             margin-right: 30px;
                 font-weight: 400;
 
                 .nav-link {
-                    color: white
+                    color: white;
+                   
                 }
             }
         }

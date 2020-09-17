@@ -47,6 +47,7 @@
                     a {
                         color: white;
                         text-decoration: none;
+                        font-weight: 700;
                     }
                 }
             }
@@ -89,6 +90,7 @@
 
                 a {
                     color: $fulldark-bg;
+                    font-weight: 700 !important;
 
                     &:hover {
                         color: $brand-secondary;
@@ -118,6 +120,7 @@
                 a {
                     color: $fulldark-bg;
                     text-decoration: none;
+                    font-weight: 700;
                 }
             }
         }
