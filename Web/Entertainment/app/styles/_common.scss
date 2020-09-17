@@ -139,7 +139,7 @@
     ul {
         padding: 0;
         margin: 0;
-        display: table;
+        display: flex;
 
         li {
             display: table-cell;
@@ -189,7 +189,12 @@
 }
 
 .sider-counter-holder {
-    background-color: $semidark-bg;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1f0f0+0,ffffff+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(241,240,240,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(241,240,240,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(241,240,240,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f0f0', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
     ;
     .slick-dots
     {   
@@ -422,6 +427,8 @@
  
     .round-block {
         position: relative;
+        background-repeat: no-repeat;
+        background-position: 0 0;
         height: 400px;
         left: 25%;
         width: 400px;
@@ -474,3 +481,66 @@
 
 
 
+.vp-fullheight{
+    height: 100vh;
+}
+.fullwidth-content-block{
+
+}
+.hr-label-holder{
+    position: relative;
+    padding-left: 40px;
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 20px;
+    &.dark{
+        color:$dark-bg;
+        &:before{
+            background: #100F0F;
+            content: "";
+        }
+    }
+    &:before{
+        top: 12px;
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 0;
+    }
+}
+.fullwidth-content-block{
+    padding:60px 0;
+}
+
+.client-logo-block{
+    padding:60px 0;
+    .client-logos{
+        ul{
+            text-align: center;
+            padding:0;
+            margin:0;
+            li{
+                margin-bottom: 20px;
+                margin-right: 20px;
+                list-style: none;
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                border-radius: 100px;
+                display: inline-block;
+                position: relative;;
+         
+                
+    img{
+        width: 60%;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+
+    }
+            }
+        }
+    }
+}

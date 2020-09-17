@@ -12,11 +12,11 @@ console.log('\'Allo \'Allo!');
 if ($(window).width() > 992) {
   $(window).scroll(function(){  
      if ($(this).scrollTop() > 40) {
-        $('#navbar_top').addClass("fixed-top");
+        $('#navbar_top').addClass('fixed-top');
         // add padding top to show content behind navbar
         $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
       }else{
-        $('#navbar_top').removeClass("fixed-top");
+        $('#navbar_top').removeClass('fixed-top');
          // remove padding top from body
         $('body').css('padding-top', '0');
       }   
@@ -100,7 +100,7 @@ function easyScrollDots(dotfixedOptions) {
         const scrollIndiTemplate = '<div class="scroll-indicator-controller"><span></span></div>';
         document.querySelector('body').lastElementChild.insertAdjacentHTML('afterend', scrollIndiTemplate);
         const scrollIndiController = document.querySelector('.scroll-indicator-controller');
-        if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)) { scrollIndiController.classList.add('indi-mobile'); }
+        if ((typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1)) { scrollIndiController.classList.add('indi-mobile'); }
         const scrollIndiElems = Array.prototype.slice.call(scrollIndi);
 
         scrollIndiElems.forEach(function (e, i) {

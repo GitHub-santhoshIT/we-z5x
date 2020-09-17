@@ -260,5 +260,13 @@ background-size:cover ;
                 }
             }
         }
+        p{
+            a{
+                color:$fulldark-bg;
+                &:hover{
+                    color:$brand-secondary;
+                }
+            }
+        }
     }
 }
