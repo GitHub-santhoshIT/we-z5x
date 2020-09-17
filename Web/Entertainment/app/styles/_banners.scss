@@ -22,12 +22,12 @@
             }
         }
     }
-    .down_arrow
+    .down_arrow-grey
     {
         display: block;
-        left: 10px;
+        left: 60px;
         position: absolute;
-        bottom: 168px;
+        bottom: 100px;
         transition: all 5s ease;
         scroll-behavior: smooth;
         img
@@ -37,4 +37,6 @@
             position: absolute;
         }
     }
+    
+    
 }
