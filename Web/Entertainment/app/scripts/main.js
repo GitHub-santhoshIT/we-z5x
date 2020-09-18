@@ -19,8 +19,6 @@ $('.home-block-carousel').slick({
   fade: true,
   autoplay: true,
   autoplaySpeed: 6000,
-  // cssEase: 'linear',
-  // speed: 500,
   draggable: false,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -120,7 +118,6 @@ function easyScrollDots(dotfixedOptions) {
                 indiScrollTopCollection[scrollIndiIdScroll] = indiScrollTop;
             });
 
-            // const indiOffsetValues = Object.values(indiScrollTopCollection); not supported in ie
             const indiOffsetValues = Object.keys(indiScrollTopCollection).map(function (itm) { return indiScrollTopCollection[itm]; });
             const indiOffsetMin = function () {
                 const indiRemoveMinuses = indiOffsetValues.filter(function (x) { return x > -150; });
@@ -149,16 +146,13 @@ function easyScrollDots(dotfixedOptions) {
     
 function scrollIndiClicked(indiId) {
     if (window.jQuery) {
-        // if jquery is availble then we can use jquery animations
         if (dotFixedNavPresent === true && dotFixedNavId.length) {
-            // there is a fixed nav and its id has been defined
             const dotNavHeightElem = document.getElementById(dotFixedNavId);
             const dotNavHeight = dotNavHeightElem.clientHeight;
             const dotDocumentHtml = $('html, body');
             const indiElement = $('#' + indiId);
     
             if (dotFixedNavUp === true) {
-                // fix nav on upward scroll only
                 dotDocumentHtml.animate({
                     scrollTop: indiElement.offset().top
                 }, 700);
@@ -172,29 +166,24 @@ function scrollIndiClicked(indiId) {
                 }, 400);
             }
             else {
-                // fixed nav scroll
                 dotDocumentHtml.animate({
                     scrollTop: indiElement.offset().top - dotNavHeight
                 }, 700);
             }
         }
         else {
-            // normal scroll
             $('html, body').animate({
                 scrollTop: $('#' + indiId).offset().top
             }, 700);
         }    
     }
     else {
-        // there is no jquery so we use vanilla scroll animations
         if (dotFixedNavPresent === true && dotFixedNavId.length) {
-            // there is a fixed nav and its id has been defined
             const dotNavHeightElem = document.getElementById(dotFixedNavId);
             const dotNavHeight = dotNavHeightElem.clientHeight;
             const indiElement = document.getElementById(indiId);
     
             if (dotFixedNavUp === true) {
-                // fix nav on upward scroll only
                 window.scrollTo({
                     top: indiElement.offsetTop,
                     left: 0,
@@ -212,7 +201,6 @@ function scrollIndiClicked(indiId) {
                 }, 400);
             }
             else {
-                // fixed nav scroll
                 window.scrollTo({
                     top: indiElement.offsetTop - dotNavHeight,
                     left: 0,
@@ -221,7 +209,6 @@ function scrollIndiClicked(indiId) {
             }
         }
         else {
-            // normal scroll
             window.scrollTo({
                 top: document.getElementById(indiId).offsetTop,
                 left: 0,
@@ -232,66 +219,28 @@ function scrollIndiClicked(indiId) {
 }
 
 
-// Init
 easyScrollDots({
   'fixedNav': false,
   'fixedNavId': '',
   'fixedNavUpward': false
 });
 
-/**
- * This was built using the scrollie jQuery Plugin
- * https://github.com/Funsella/jquery-scrollie
- */
-
-
-
-
-
 /*scroll to arrow*/
     $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $('a').on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== '') {
-      // Prevent default anchor click behavior
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
 
 
-/* scroll to arrow*/
-
-
-  //scroll add class for the circle
-//   window.onscroll = function() {myFunction()};
-
-// var header = document.getElementById("expandcircle");
-// var sticky = header.offsetTop({top:'200px'});
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("enlarge-circle");
-//   } 
-//   else {
-//     header.classList.remove("enlarge-circle");
-//   }
-// }
 
 
 $.fn.visible = function(partial) {
@@ -335,7 +284,6 @@ function checkVisible() {
 		options = options || {};
 		
 		return $(this).each(function () {
-			// set options for current element
 			var settings = $.extend({}, $.fn.countTo.defaults, {
 				from:            $(this).data('from'),
 				to:              $(this).data('to'),
@@ -343,12 +291,8 @@ function checkVisible() {
 				refreshInterval: $(this).data('refresh-interval'),
 				decimals:        $(this).data('decimals')
 			}, options);
-			
-			// how many times to update the value, and how much to increment the value on each update
 			var loops = Math.ceil(settings.speed / settings.refreshInterval),
 				increment = (settings.to - settings.from) / loops;
-			
-			// references & variables that will change with each update
 			var self = this,
 				$self = $(this),
 				loopCount = 0,
@@ -357,13 +301,11 @@ function checkVisible() {
 			
 			$self.data('countTo', data);
 			
-			// if an existing interval can be found, clear it first
 			if (data.interval) {
 				clearInterval(data.interval);
 			}
 			data.interval = setInterval(updateTimer, settings.refreshInterval);
 			
-			// initialize the element with the starting value
 			render(value);
 			
 			function updateTimer() {
@@ -377,7 +319,6 @@ function checkVisible() {
 				}
 				
 				if (loopCount >= loops) {
-					// remove the interval
 					$self.removeData('countTo');
 					clearInterval(data.interval);
 					value = settings.to;
@@ -412,14 +353,12 @@ function checkVisible() {
 }(jQuery));
 
 jQuery(function ($) {
-  // custom formatting example
   $('.count-number').data('countToOptions', {
 	formatter: function (value, options) {
 	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
 	}
   });
   
-  // start all the timers
   $('.timer').each(count);  
   
   function count(options) {
@@ -435,7 +374,6 @@ $(document).ready(function() {
   var prevScrollTop = $(window).scrollTop()
   
   $(window).on('scroll', function(e) {
-    // Variable declaration for search container
     var $src = $('.scroll-indicator-controller');
     var currentScrollTop = $(this).scrollTop()
    
