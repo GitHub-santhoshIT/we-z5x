@@ -141,6 +141,11 @@
         margin: 0;
         display: flex;
 
+        @media(max-width:767px) {
+            display: block;
+
+        }
+
         li {
             display: table-cell;
             list-style: none;
@@ -148,6 +153,12 @@
             padding-right: 15px;
             padding-left: 15px;
             width: 25%;
+
+            @media(max-width:767px) {
+                border-right: 0;
+                width: 100%;
+                display: block;
+            }
 
             &:first-child {
                 padding-left: 0;
@@ -578,9 +589,18 @@
             background-color: $semidark-bg;
             border-radius: 20px;
 
+            img {
+                filter: grayscale(100%);
+                @include interaction2;
+            }
+
             &:hover {
                 .expand-circle {
                     bottom: 20px;
+                }
+
+                img {
+                    filter: grayscale(0);
                 }
             }
 
@@ -603,45 +623,57 @@
         }
     }
 }
-.profile-description-block{
 
-    &-head{
+.profile-description-block {
+
+    &-head {
         border-bottom: 1px solid #b1b1b1;
         padding-bottom: 5px;
         margin-bottom: 30px;
 
     }
-    &-data{
-  
-        ul{
+
+    &-data {
+
+        ul {
             padding-left: 15px;
-            li{
+
+            li {
                 font-size: 16px;
                 margin-bottom: 10px;
-                &:last-child{
+
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
-   
+
 
     }
 
 }
-.profile-modal{
-    .modal-content{
+
+.profile-modal {
+    .modal-content {
         background-color: $semidark-bg;
 
     }
-    .modal-body{
+
+    .modal-body {
         padding: 30px;
 
     }
-    button.close{
-        &:hover, &:focus, &:visited{
-border:0; outline: 0;
+
+    button.close {
+
+        &:hover,
+        &:focus,
+        &:visited {
+            border: 0;
+            outline: 0;
 
         }
+
         cursor: pointer;
         position: absolute;
         right: 20px;
