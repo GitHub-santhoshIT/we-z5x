@@ -5,11 +5,11 @@
         bottom: 2rem;
         right: 3rem;
         z-index: 1;
-        font-size: 1.5rem;
         font-weight: 600;
-        color: #fff !important;
-        mix-blend-mode: difference;
-        pointer-events: none;
+        font-weight: normal;
+        font-size: 36px;
+        font-family: Neue Haas Grotesk;
+        color: #FFFFFF !important;
       }
       
     .slick-prev
@@ -18,7 +18,7 @@
             background-repeat: no-repeat;
             top: 90%;
             position: absolute;
-            left: 1% !important;
+            left: 5px !important;
         
         &:before
         {
@@ -77,7 +77,11 @@
                     margin-top: 30px;
                     transition: all 0.5s ease;
                 
-                    
+                    span
+                    {
+                        text-decoration: underline;
+                        
+                    }
                 }
                 .down_arrow
                 {
@@ -111,12 +115,19 @@
             p{
                 text-align: right;
                 position: absolute;
-                right: 15px;
+                right: 140px;
                     margin-bottom: 0;
                     bottom: 100px;
+                    a.annual_report
+                    {
+                        padding-top: 70px !important;
+                    }
+                   
                 a{
                     color:white;
                     position: relative;
+                    text-decoration: none;
+                   
                     &:before{
                         top:50%;
                         content: "";
