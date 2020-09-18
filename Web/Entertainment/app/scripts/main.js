@@ -431,3 +431,13 @@ if ($slider.length) {
 
 
 
+
+
+//style added
+$('.content').each(function() {
+  var $this = $(this);
+if($this.attr('style')){
+  console.log($(this).attr('style'));
+  $this.parent().addClass("class-new");
+}
+});
