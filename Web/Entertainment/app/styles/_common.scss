@@ -619,6 +619,8 @@
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0), 0px -5px 10px 0px rgba(255, 255, 255, 0);
             border-radius: 20px;
             margin-bottom: 10px;
+            
+        
 
             &:hover {
                 box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.2), 0px -5px 10px 0px white;
@@ -626,12 +628,14 @@
         }
 
         &-media {
+            height: 420px;
             overflow: hidden;
             position: relative;
             background-color: $semidark-bg;
             border-radius: 20px;
 
             img {
+                height: 360px;
                 filter: grayscale(100%);
                 @include interaction2;
             }
