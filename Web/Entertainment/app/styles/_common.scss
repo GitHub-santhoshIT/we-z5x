@@ -147,7 +147,7 @@
             border-right: 1px solid #b1b1b1;
             padding-right: 15px;
             padding-left: 15px;
-            width:25%;
+            width: 25%;
 
             &:first-child {
                 padding-left: 0;
@@ -279,30 +279,50 @@
    
 
     ul {
-        padding: 0;
-        margin: 0;
+        padding-left: 0;
 
         li {
             list-style-type: none;
-            border-right: 1px solid #FFFFFF29;
+            position: relative;
+
+            &:after {
+
+                content: "";
+                border-right: 1px solid #FFFFFF29;
+                position: absolute;
+                right: 0;
+                height: 100%;
+                top: 0;
+            }
+
+            &:last-child {
+                &:after {
+                    content: "";
+
+                    border-right: 0;
+                }
+
+
+            }
 
             .carditem-1 {
-                padding-right: 30px;
+                // padding-right: 30px;
                 // margin-left: 30px;
             }
 
             &:first-child {
                 .carditem-1 {
-                    padding-right: 30px;
-                    margin-left: 0px;
+                    // padding-right: 30px;
+                    // margin-left: 0px;
                 }
             }
 
             &:last-child {
-                border-right: 0;
 
+                // padding-right: 0px;
+                // border-right: 0;
                 .carditem-1 {
-                    margin-right: 0px;
+                    // padding-right: 0;
                 }
 
                 // margin-right: 0;
@@ -576,8 +596,9 @@
         background-color: transparent;
         height: 100%;
         right: 10px;
-display: flex;
-align-items: center;
+        display: flex;
+        align-items: center;
+
         img {
             height: 16px;
         }
@@ -586,5 +607,23 @@ align-items: center;
             border: 0;
             background-color: transparent;
         }
+    }
+}
+
+
+
+.viewport-arrow {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9;
+    bottom: 60px;
+
+    a {
+        display: inline-block;
+    }
+
+    img {
+        height: 60px;
     }
 }

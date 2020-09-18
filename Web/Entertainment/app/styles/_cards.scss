@@ -124,7 +124,7 @@
 
         .data-content {
             .hr-label-holder {
-                color: white;
+                color: $mediumdark-bg;
 
                 &::before {
                     background: rgba(255, 255, 255, 0.5);
@@ -162,7 +162,7 @@
         @include interaction2;
         z-index: 1;
 
-        left: -15px;
+        margin: 0 auto;
 
         &:before {
             content: "";
@@ -177,7 +177,14 @@
     &:hover {
         .has-bg {
             opacity: 1;
-            transform: scale(1.1, 1.1);
+            transform: scale(1.2, 1.1);
+            // opacity: 1;
+            // width: calc(100% + 64px);
+            // margin: 0 auto;
+            // position: absolute;
+            // left: -32px;
+            // height: calc(100% + 60px);
+            // top: -32px;
         }
     }
 
@@ -419,4 +426,8 @@
             }
         }
     }
+}
+
+p{
+    border:0
 }
