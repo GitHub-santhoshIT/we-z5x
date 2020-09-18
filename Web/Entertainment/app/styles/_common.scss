@@ -628,14 +628,34 @@
         }
 
         &-media {
-            height: 420px;
+            height: 360px;
             overflow: hidden;
             position: relative;
             background-color: $semidark-bg;
             border-radius: 20px;
+            display: flex;
+            align-items: flex-end;
+            &:after{
+                content: "";
+                position: absolute;
+ 
+
+ 
+         background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(241,240,240,1) 100%);
+         background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(241,240,240,1) 100%); 
+         background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(241,240,240,1) 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f1f0f0',GradientType=0 );
+
+                width: 100%;
+                height: 40%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
 
             img {
-                height: 360px;
+                height: 340px;
+                margin: 0 auto;
                 filter: grayscale(100%);
                 @include interaction2;
             }
@@ -651,6 +671,7 @@
             }
 
             .expand-circle {
+                z-index: 1;
                 cursor: pointer;
                 position: absolute;
                 right: 20px;
@@ -665,6 +686,7 @@
                 font-size: 30px;
                 font-weight: 300;
                 transition: all 0.5s ease;
+                z-index: 1;
             }
         }
     }
