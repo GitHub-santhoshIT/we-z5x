@@ -532,19 +532,131 @@
 
 .about-cards {
     &.data-cards ul li:after {
-        border-color:#b1b1b1;
+        border-color: #b1b1b1;
     }
 }
-.two-block-holder{
+
+.two-block-holder {
     padding-top: 120px;
 }
-.purpose-two-block{
+
+.purpose-two-block {
     padding: 60px 0;
 }
-.jurney-block{
-    h2{
+
+.jurney-block {
+    h2 {
         margin-bottom: 60px;
     }
+
     padding-bottom: 60px;
 
+}
+
+.profile-block {
+    background-color: $semidark-bg;
+}
+
+.profile-block {
+    padding: 60px 0;
+
+    .profile-card {
+        &-holder {
+            transition: all 0.5s ease;
+            box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0), 0px -5px 10px 0px rgba(255, 255, 255, 0);
+            border-radius: 20px;
+            margin-bottom: 10px;
+
+            &:hover {
+                box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.2), 0px -5px 10px 0px white;
+            }
+        }
+
+        &-media {
+            overflow: hidden;
+            position: relative;
+            background-color: $semidark-bg;
+            border-radius: 20px;
+
+            &:hover {
+                .expand-circle {
+                    bottom: 20px;
+                }
+            }
+
+            .expand-circle {
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                bottom: -40px;
+                background-color: $brand-secondary;
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+                text-align: center;
+                color: white;
+                line-height: 40px;
+                font-size: 30px;
+                font-weight: 300;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+.profile-description-block{
+
+    &-head{
+        border-bottom: 1px solid #b1b1b1;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+
+    }
+    &-data{
+  
+        ul{
+            padding-left: 15px;
+            li{
+                font-size: 16px;
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+   
+
+    }
+
+}
+.profile-modal{
+    .modal-content{
+        background-color: $semidark-bg;
+
+    }
+    .modal-body{
+        padding: 30px;
+
+    }
+    button.close{
+        &:hover, &:focus, &:visited{
+border:0; outline: 0;
+
+        }
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: $brand-secondary;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        text-align: center;
+        color: white;
+        line-height: 40px;
+        font-size: 30px;
+        font-weight: 300;
+        transition: all 0.5s ease;
+        z-index: 1;
+        opacity:1;
+    }
 }
