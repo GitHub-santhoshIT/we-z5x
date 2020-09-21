@@ -227,8 +227,8 @@ easyScrollDots({
 
 /*scroll to arrow*/
     $(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
+  $('a').on('click', function(event) {
+    if (this.hash !== '') {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
@@ -438,6 +438,6 @@ $('.content').each(function() {
   var $this = $(this);
 if($this.attr('style')){
   console.log($(this).attr('style'));
-  $this.parent().addClass("class-new");
+  $this.parent().addClass('class-new');
 }
 });
