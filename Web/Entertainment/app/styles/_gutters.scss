@@ -34,3 +34,10 @@
       padding-left: 0;
     }
   }
+
+  .common-gutter-block{
+    padding: 60px 0;
+    @media(max-width: 767px){
+      padding: 30px 0;
+    }
+  }
