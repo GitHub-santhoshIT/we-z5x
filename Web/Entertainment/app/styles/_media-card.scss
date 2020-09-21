@@ -18,6 +18,9 @@
     padding: 40px 30px;
     border-radius: 30px;
     background-color: $semidark-bg;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center right;
 
     &-content {
         .date-stamp {}
@@ -52,7 +55,7 @@
 
     &.dark-view {
         a.common-link-dark {
-            color: white;
+            color: #292833;
         }
     }
 
@@ -60,43 +63,51 @@
 
 .table-data-holder {
     .data-grid {
-    
+
         ul.grid-row {
             padding: 0;
             margin: 0 0 30px 0;
-        
+
             li {
                 list-style-type: none;
                 display: flex;
                 border-bottom: 1px solid #b1b1b1;
                 border-left: 0;
                 border-right: 0;
-                line-height: 40px;
                 height: 60px;
                 line-height: 60px;
                 align-items: center;
-        
+
+                @media(max-width:767px) {
+                    display: block;
+                    padding: 15px 0;
+                    height: auto;
+                    line-height: auto;
+                }
                 &:last-child {
                     border-bottom: 0;
                 }
-        
+
                 .date-stamp {
                     margin-right: 45px;
                     min-width: 130px;
+
+                    @media(max-width:767px) {
+                        margin-bottom: 10px;
+                    }
                 }
-        
+
                 h6 {
                     margin-bottom: 0;
                 }
-        
+
                 margin-bottom: 0;
                 font-weight: 600;
-        
-        
-        
+
+
+
             }
         }
 
     }
 }
-
