@@ -3,41 +3,173 @@ header {
     z-index: 99;
     width: 100%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
 
 
     nav {
         &.fixed-top {
-            background-color: rgba(0,0,0, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
+
             .navbar-nav {
-               
+
                 .nav-item {
-                   
+
                     .nav-link {
                         color: white
-                      
                     }
                 }
             }
         }
+
         .navbar-nav {
-            a.nav-link.search_img img
-            {
+            a.nav-link.search_img img {
                 width: 33px !important;
             }
+
             .nav-item {
                 font-size: 18px;
-            margin-right: 30px;
+                margin-right: 30px;
                 font-weight: 400;
 
                 .nav-link {
                     color: white;
-                   
+
                 }
             }
         }
+
+        @media(max-width:767px) {
+            .navbar-collapse {
+                background-color: white;
+                margin-top: 10px;
+                padding: 00px 20px;
+
+                ul.navbar-nav {
+                    li.nav-item {
+                        margin-right: 0;
+                        line-height: 36px;
+                        border-bottom: 1px solid #b1b1b1;
+
+                        a.nav-link {
+                            color: $fulldark-bg;
+                        }
+                      
+&:nth-child(6){
+    border-bottom: 0;
+}
+                    }
+                }
+
+            }
+        }
+
     }
 }
+
+
+
+/* Icon 1 */
+
+/* Icon 1 */
+
+.nav-icon3 {
+    width: 40px;
+    height: 35px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:visited {
+        outline: 0;
+    }
+}
+
+.nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+
+
+
+
+
+
+/* Icon 3 */
+
+.nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+
+.nav-icon3 span:nth-child(2) {
+    top: 12px;
+}
+
+.nav-icon3 span:nth-child(3) {
+    top: 12px;
+}
+
+.nav-icon3 span:nth-child(4) {
+    top: 24px;
+}
+
+.nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+/* Icon 4 */
