@@ -33,6 +33,11 @@
                 height: 300px;
                 margin-bottom: 30px;
             }
+            &.people-oveflow{
+                left: -33.33333%;
+                position: relative;
+                padding-left: 15px;
+            }
         }
     }
 
@@ -63,9 +68,15 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    @media(max-width:767px) {
+        height: 70vh;
 
+    }
     h2 {
         line-height: 1;
+    }
+    @media(max-width:767px) {
+        font-size: 40px;
     }
 
     h3 {

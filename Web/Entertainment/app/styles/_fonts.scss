@@ -44,6 +44,10 @@ h3 {
     font-size: 54px;
     font-weight: 600;
     line-height: 48px;
+    @media(max-width:767px) {
+        font-size: 36px;
+        line-height: normal;
+    }
 }
 
 h4 {

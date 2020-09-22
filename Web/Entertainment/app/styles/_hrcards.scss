@@ -213,4 +213,12 @@
 
         left: 0;
     }
+    &.light-view{
+        color:white;
+    &::before {
+        content: "";
+        background-color: white;
+
+    }
+    }
 }
