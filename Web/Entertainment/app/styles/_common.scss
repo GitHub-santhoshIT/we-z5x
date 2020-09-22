@@ -184,10 +184,19 @@
 
     h2 {
         margin-top: 120px;
+
+        @media(max-width: 767px) {
+            margin-top: 30px;
+        }
     }
 
     p {
         margin-top: 180px;
+
+        @media(max-width: 767px) {
+            margin-top: 0px;
+
+        }
     }
 }
 
@@ -565,6 +574,10 @@
     z-index: 9;
     bottom: 60px;
 
+    @media(max-width:767px) {
+        display: none;
+    }
+
     a {
         display: inline-block;
     }
@@ -576,6 +589,11 @@
 
 .about-main-cards-block {
     padding: 60px 0;
+
+    @media(max-width:767px) {
+        padding: 30px 0;
+
+    }
 }
 
 .more-view {
@@ -778,10 +796,12 @@
 
 #myCarousel .nav a {
     border-radius: 0px;
-    padding: 30px;
-    color: rgb(97, 66, 66);
+    padding: 00px 30px;
+    color: #614242;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
 }
 
 #myCarousel .nav a:hover {
@@ -838,13 +858,77 @@
 
 .journey-stick-block {
     // position: relative;
-    background-color: red; height: 370px;
-// overflow-y:scroll;
+    background-color: red;
+    height: 370px;
+    // overflow-y:scroll;
 
     .version-block {
         background-color: cyan;
     }
 
 }
+
  
 
+  .custom-sroll{
+
+    .wrap {
+        display: flex;
+        
+      }
+      
+      .wrap > div {
+        flex: 1;
+      }
+      
+    
+      
+      .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+      
+      .wrap > div:nth-child(2) {
+        height: 400px;
+        overflow-y: scroll  ;
+    
+    
+
+          &::-webkit-scrollbar {
+            display: none;
+            }
+
+
+      }
+      .stick-points{
+    
+          padding:60px 0;
+     
+          ol{
+    padding: 0;
+    margin:0;
+            list-style: none;
+            counter-reset: my-awesome-counter;
+          li{
+              margin-bottom: 90px;
+              counter-increment: my-awesome-counter;
+            position: relative;
+            padding: 0 90px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+              &:before{
+                content:"0" counter(my-awesome-counter) " ";
+                color: #EAEAEA;
+                font-size: 120px;
+                position: absolute;
+                top: -90px;
+                z-index: -1;
+                left:45px;
+                font-weight: 600;
+              }
+          }
+        }
+      }
+  }

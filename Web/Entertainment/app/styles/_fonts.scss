@@ -4,39 +4,52 @@ body {
     color: $fulldark-bg;
     font-weight: 400;
 }
+
 h1,
 .head {
     font-size: 100px;
     font-weight: 600;
+
     @media(max-width:767px) {
         font-size: 60px;
     }
 }
+
 h2 {
     font-size: 80px;
     font-weight: 600;
     line-height: 80px;
     margin-bottom: 30px;
+
     @media(max-width:767px) {
-        font-size: 60px;
+        font-size: 40px;
         line-height: normal;
         line-height: 1;
     }
 }
+
 h2.large-head {
     font-size: 160px;
+
     @media(max-width:1024px) {
         font-size: 100px;
     }
+
     @media(max-width:767px) {
         font-size: 60px;
     }
 }
+
 h3 {
     font-size: 54px;
     font-weight: 600;
     line-height: 48px;
+    @media(max-width:767px) {
+        font-size: 36px;
+        line-height: normal;
+    }
 }
+
 h4 {
     font-size: 36px;
     font-weight: 600;
@@ -58,14 +71,16 @@ h6 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
 
 }
-.fw-600{
+
+.fw-600 {
     font-weight: 600;
 }
-.fw-normal{
+
+.fw-normal {
     font-weight: normal;
 }
