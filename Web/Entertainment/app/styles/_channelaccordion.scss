@@ -1,3 +1,49 @@
 p{
     outline: 0;
 }
+
+.channel_accordian
+{
+    .card-header .title {
+        font-size: 17px;
+        color: #000;
+        font-weight: 700;
+    }
+    .card-header .accicon {
+      float: right;
+      font-size: 20px;  
+      width: 1.2em;
+    }
+    .card-header{
+      cursor: pointer;
+      border-bottom: none;
+      background:none;
+      .accicon
+      {
+       
+          &:after
+          {
+              content: "-";
+          }
+      }
+    }
+    .card{
+      border-bottom: 0x solid #ddd !important;
+      
+    }
+    .card-body{
+      border-top: 1px solid #ddd;
+      ul
+      {
+         li
+         {
+            list-style-image: url('../images/download_icon.svg') !important;
+         }
+      }
+    }
+    .card-header:not(.collapsed) .rotate-icon {
+      transform: rotate(180deg);
+    }
+
+    
+}   
