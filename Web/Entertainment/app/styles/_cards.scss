@@ -122,7 +122,7 @@
                 a {
                     color: $fulldark-bg;
                     text-decoration: none;
-                    font-weight: 700;
+                  
                 }
             }
         }
@@ -146,6 +146,7 @@
 
                 a {
                     color: white;
+                    font-weight: 600;
 
                     &:hover {
                         color: $brand-secondary;
@@ -157,17 +158,24 @@
 
     .has-bg {
         position: absolute;
-        height: 100%;
-        border-radius: 15px;
-        width: calc(100%);
+        height: calc(100% + 60px);
+        width: calc(100% + 0px);
+        top: -30px;
+        left: 0;
+        right: 0;
+        transition-property: width;
         background-repeat: no-repeat;
         background-position: 0 0;
+        border-radius: 10px;
         background-size: cover;
+        background-color: #F1F0F0;
         opacity: 0;
         @include interaction2;
+        transition: all 0.3s ease-out;
         z-index: 1;
-
         margin: 0 auto;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 1), 0 -10px 20px -5px rgba(0, 0, 0, 0.25);
+
 
         &:before {
             content: "";
@@ -182,7 +190,15 @@
     &:hover {
         .has-bg {
             opacity: 1;
-            transform: scale(1.2, 1.2);
+            // transform: scale(1.2, 1.2);
+            width: calc(100% + 90px);
+            left: -45px;
+
+            @media(max-width:767px) {
+                width: calc(100% +30px);
+                left: -15px;
+            }
+
         }
     }
 
@@ -210,6 +226,10 @@
 .carditem-2 {
     position: relative;
 
+    @media(max-width:767px) {
+        margin-bottom: 30px;
+    }
+
     &:before {
         content: "";
         border-left: 1px solid #FFFFFF29;
@@ -220,17 +240,33 @@
         z-index: 1;
     }
 
+    h5 {
+        font-size: 18px;
+        font-weight: 600;
+
+        @media(max-width:767px) {
+            margin-bottom: 0;
+        }
+    }
+
+    h6 {
+        @media(max-width:767px) {
+            line-height: 28px;
+        }
+    }
+
+
     .has-bg {
         position: absolute;
         height: 120%;
         width: 100%;
         top: -10%;
-        left:0;  
+        left: 0;
         right: 0;
         transition-property: width;
         background-repeat: no-repeat;
         background-position: 0 0;
-        border-radius: 20px;
+        border-radius: 10px;
         background-size: cover;
         background-color: #F1F0F0;
         opacity: 0;
@@ -254,7 +290,7 @@
         .has-bg {
             opacity: 1;
             width: 120%;
-            left:-10%;
+            left: -10%;
             // transform: scale(1.15, 1.1)
         }
 
@@ -279,13 +315,16 @@
         padding: 0;
         min-height: 180px;
 
+        @media(max-width:767px) {
+            min-height: auto;
 
+        }
     }
 
     a.common-link-text {
         color: $dark-bg;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 16px;
         position: relative;
         z-index: 1;
 

@@ -5,24 +5,36 @@ footer {
         margin-bottom: 60px;
         padding-top: 40px;
 
+        @media(max-width:767px) {
+            margin-bottom: 30px;
+            padding-top: 30px;
+        }
+        .footer-logo {
+            @media(max-width:767px) {
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+        }
         .footer-links {
             ul {
                 padding: 0;
                 margin: 0;
-
+                line-height: normal;
+                @media(max-width:767px){
+                   margin-bottom: 15px;
+                }
+                  
                 li {
                     list-style: none;
                     margin-bottom: 5px;
                     font-size: 18px;
-
+                    font-weight: 600;
                     &:last-child {
                         margin-bottom: 0px;
                     }
-
                     a {
                         color: $white;
                         @include interaction1;
-
                         &:hover {
                             text-decoration: none;
                             opacity: 0.75;
@@ -31,13 +43,11 @@ footer {
                 }
             }
         }
-
     }
 
     .secondary-footer {
         border-top: 1px solid white;
         padding: 30px 0;
-
         h6 {
             margin-bottom: 0;
         }

@@ -136,55 +136,18 @@
 
 
 .microcards-block {
-    .row.large-guterrs{
-        // .wrap>div:nth-child(2) {
-        // }
-        .wrap>div:nth-child(2){
+    .row>div {
+        border-right: 1px solid #b1b1b1;
 
-        }
-    }
-    .row.large-gutters>div{
-            border-right: 1px solid #b1b1b1;
-            &:last-child{
-                border-right: 0;
-            }
-    }
-    ul {
-        // padding: 0;
-        // margin: 0;
-        // display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         @media(max-width:767px) {
-            display: block;
-        }
-        li {
-            display: table-cell;
-            list-style: none;
-            border-right: 1px solid #b1b1b1;
-            padding-right: 15px;
-            padding-left: 15px;
-            width: 20%;
+            border-right: 0;
 
-            @media(max-width:767px) {
-                border-right: 0;
-                width: 100%;
-                display: block;
-            }
-
-            &:first-child {
-                padding-left: 0;
-            }
-
-            &:last-child {
-                border-right: 0;
-
-            }
         }
 
-
+        &:last-child {
+            border-right: 0;
+        }
     }
-
 }
 
 
@@ -248,6 +211,11 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
+
+            @media(max-width:767px) {
+                height: 300px;
+            }
+
 
             h2 {
                 &.inside-bg {
@@ -353,6 +321,17 @@
 .data-cards {
     margin-top: 60px;
 
+    // .wrap>div:nth-child(2)
+    .row>div {
+        border-right: 1px solid hsla(0,0%,100%,.16);
+
+        @media(max-width:767px) {
+            border-right: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+    }
 
     ul {
         padding-left: 0;
@@ -411,6 +390,12 @@
 
 .round-block-holder {
     overflow: hidden;
+    height: 400px;
+    position: relative;
+
+    @media(max-width:767px) {
+        height: 300px;
+    }
 
     .ring-contain-text {
         position: absolute;
@@ -421,17 +406,31 @@
         align-items: center;
         white-space: nowrap;
 
+        @media(max-width:767px) {
+            height: 300px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+
         h2 {
             color: $mediumdark-bg;
+            left: 0;
+            margin: 0 auto;
+            height: auto;
+            width: 100%;
 
-
+            @media(max-width:767px) {
+                color: white;
+                text-align: center;
+            }
         }
     }
 
-    height: 400px;
-    position: relative;
 
     .round-block {
+
         position: relative;
         background-repeat: no-repeat;
         background-position: 0 0;
@@ -440,11 +439,19 @@
         width: 400px;
         border-radius: 400px;
         background-size: cover;
-
         filter: grayscale(100%);
-
-
         @include interaction2;
+
+        @media(max-width:767px) {
+            left: 0;
+            width: 100%;
+            border-radius: 0;
+            height: 300px;
+            filter: grayscale(0%);
+
+        }
+
+
 
         &.enlarge-circle {
             .ring-contain-text {
