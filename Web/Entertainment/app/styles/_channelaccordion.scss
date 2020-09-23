@@ -21,29 +21,57 @@ p{
       .accicon
       {
        
-          &:after
-          {
-              content: "-";
-          }
+          // &:after
+          // {
+          //     content: "-";
+          // }
       }
     }
     .card{
-      border-bottom: 0x solid #ddd !important;
+    
+      border: 0;
+    border-bottom: 1px solid #ddd !important;
       
     }
     .card-body{
       border-top: 1px solid #ddd;
+      // .row
+      // {
+      //   border-bottom: 1px solid #B1B1B1;
+      //   padding: 15px 0;
+      // }
+      .card_submenu
+      {
+        border-bottom: 1px solid #ddd !important;
+        margin-bottom: 10px;
+      
+      }
       ul
       {
          li
          {
-            list-style-image: url('../images/download_icon.svg') !important;
+            // list-style-image: url('../images/download_icon.svg') !important;
+            list-style-type: none;
          }
       }
     }
     .card-header:not(.collapsed) .rotate-icon {
-      transform: rotate(180deg);
+      img
+      {
+        display: none;
     }
-
+      &:after
+      
+      {
+        content: " ";
+        
+        background-image: url('../images/icon_Opened.svg') !important;
+        display: block;
+        width: 30px;
+        height: 15px;
+      }
+      // transform: rotate(180deg);
+     
+  }
     
 }   
