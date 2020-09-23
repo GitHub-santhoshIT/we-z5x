@@ -137,15 +137,14 @@
 
 .microcards-block {
     ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-
+        // padding: 0;
+        // margin: 0;
+        // display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         @media(max-width:767px) {
             display: block;
-
         }
-
         li {
             display: table-cell;
             list-style: none;
@@ -580,7 +579,7 @@
 
     a {
         display: inline-block;
-        padding-left:30px;
+        padding-left: 30px;
     }
 
     img {
@@ -869,92 +868,95 @@
 
 }
 
- 
 
-  .custom-sroll{
+
+.custom-sroll {
 
     .wrap {
         display: flex;
-        
-      }
-      
-      .wrap > div {
+
+    }
+
+    .wrap>div {
         flex: 1;
-      }
-      
-    
-      
-      .sticky {
+    }
+
+
+
+    .sticky {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-      }
-      
-      .wrap > div:nth-child(2) {
+    }
+
+    .wrap>div:nth-child(2) {
         height: 400px;
-        overflow-y: scroll  ;
-    
-    
+        overflow-y: scroll;
 
-          &::-webkit-scrollbar {
+
+
+        &::-webkit-scrollbar {
             display: none;
-            }
+        }
 
 
-      }
-      .stick-points{
-    
-          padding:60px 0;
-     
-          ol{
-    padding: 0;
-    margin:0;
+    }
+
+    .stick-points {
+
+        padding: 60px 0;
+
+        ol {
+            padding: 0;
+            margin: 0;
             list-style: none;
             counter-reset: my-awesome-counter;
-          li{
-              margin-bottom: 90px;
-              counter-increment: my-awesome-counter;
-            position: relative;
-            padding: 0 90px;
-            &:last-child{
-                margin-bottom: 0;
-            }
-              &:before{
-                content:"0" counter(my-awesome-counter) " ";
-                color: #EAEAEA;
-                font-size: 120px;
-                position: absolute;
-                top: -90px;
-                z-index: -1;
-                left:45px;
-                font-weight: 600;
-              }
-          }
-        }
-      }
-  }
 
-  .zindagi_card
-  {
+            li {
+                margin-bottom: 90px;
+                counter-increment: my-awesome-counter;
+                position: relative;
+                padding: 0 90px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:before {
+                    content: "0"counter(my-awesome-counter) " ";
+                    color: #EAEAEA;
+                    font-size: 120px;
+                    position: absolute;
+                    top: -90px;
+                    z-index: -1;
+                    left: 45px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.zindagi_card {
     .date-stamp h6 {
         color: #000 !important;
     }
-    h5,a {
+
+    h5,
+    a {
         color: #000 !important;
     }
-  }
-  .Granularity
-  {
-      .consistent_sec
-      {
-          li
-          {
-              border-right:1px solid #B1B1B1;
-              &:last-child
-              {
-                border-right:0 !important;
+}
 
-              }
-          }
-      }
-  }
+.Granularity {
+    .consistent_sec {
+        li {
+            border-right: 1px solid #B1B1B1;
+
+            &:last-child {
+                border-right: 0 !important;
+
+            }
+        }
+    }
+}

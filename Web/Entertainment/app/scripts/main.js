@@ -22,8 +22,25 @@ $('.home-block-carousel').slick({
   draggable: false,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        draggable: true,
+    
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
   });
+
 
   $('.management-talk-carousel').slick({
     slidesToShow: 1,
