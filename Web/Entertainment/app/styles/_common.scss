@@ -136,6 +136,19 @@
 
 
 .microcards-block {
+    .row.large-guterrs{
+        // .wrap>div:nth-child(2) {
+        // }
+        .wrap>div:nth-child(2){
+
+        }
+    }
+    .row.large-gutters>div{
+            border-right: 1px solid #b1b1b1;
+            &:last-child{
+                border-right: 0;
+            }
+    }
     ul {
         // padding: 0;
         // margin: 0;
