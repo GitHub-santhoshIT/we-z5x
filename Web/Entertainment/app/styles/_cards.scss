@@ -397,6 +397,8 @@
 
         .common-link-dark {
             color: white;
+            position: absolute;
+            bottom: 30px;
 
             &:hover {
                 color: $brand-secondary !important;
