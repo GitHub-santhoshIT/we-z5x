@@ -545,7 +545,9 @@
             height: 480px;
             filter: grayscale(100%);
             @include interaction2;
-
+            @media(max-width: 1024px) {
+                height:auto;
+            }
             @media(max-width: 767px) {
                 transform: scale(1);
                 height: auto;
