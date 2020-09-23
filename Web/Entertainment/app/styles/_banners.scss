@@ -1,6 +1,14 @@
 .about-banner {
-
     position: relative;
+
+    h2 {
+
+        @media(max-width:767px) {
+            br {
+                display: none;
+            }
+        }
+    }
 
     &:before {
         content: "";
@@ -22,9 +30,10 @@
     }
 
     height: 100vh;
+
     @media(max-width:767px) {
         height: auto;
-        padding: 60px 0;
+        padding: 120px 0 0px 0;
     }
 
     .round-c-block {
@@ -33,7 +42,8 @@
                 height: 300px;
                 margin-bottom: 30px;
             }
-            &.people-oveflow{
+
+            &.people-oveflow {
                 left: -33.33333%;
                 position: relative;
                 padding-left: 15px;
@@ -68,13 +78,17 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+
     @media(max-width:767px) {
         height: 70vh;
 
     }
+
     h2 {
         line-height: 1;
+
     }
+
     @media(max-width:767px) {
         font-size: 40px;
     }

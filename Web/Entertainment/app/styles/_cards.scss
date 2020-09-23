@@ -9,6 +9,10 @@
     &.large-height {
         .data-content {
             height: 400px;
+
+            @media(max-width:767px) {
+                height: 300px;
+            }
         }
     }
 
@@ -43,9 +47,16 @@
 
     &.light-view {
         &.light-text {
+            .has-bg {
+                background-size: cover;
+                background-position: center;
+
+            }
+
             &:hover {
                 .has-bg {
                     background-color: $dark-bg;
+
                 }
 
                 p {
@@ -64,13 +75,39 @@
                     }
                 }
             }
+
+            .data-content {
+
+                @media(max-width:767px) {
+                    p {
+                        color: white;
+                    }
+
+                    h4 {
+                        color: white;
+                    }
+
+                    p {
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
         }
 
         .has-bg {
             background-color: $semidark-bg;
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.25), 0px -5px 10px 0px rgba(255, 255, 255, 1);
-            background-size: contain;
-            background-position: bottom;
+
+            @media(max-width:767px) {
+                background-size: contain;
+                background-position: bottom;
+            }
+
+
         }
 
         &:hover {

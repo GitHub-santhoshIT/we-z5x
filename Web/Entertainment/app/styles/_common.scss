@@ -478,6 +478,10 @@
 .fullwidth-content-block {
     padding: 60px 0;
 
+    @media(max-width:767px) {
+        padding: 30px 0;
+    }
+
     h2 {
         padding: 0;
         margin: 0px 0 30px 0;
@@ -488,7 +492,17 @@
 .client-logo-block {
     padding: 60px 0;
 
+    @media(max-width:767px) {
+        padding: 30px 0;
+    }
+
     .client-logos {
+        margin-top: 50px;
+
+        @media(max-width:767px) {
+            margin-top: 0;
+        }
+
         ul {
             text-align: center;
             padding: 0;
@@ -504,7 +518,12 @@
                 border-radius: 100px;
                 display: inline-block;
                 position: relative;
-                ;
+
+                // padding: 60px 0;
+                @media(max-width:767px) {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
 
                 img {
                     width: 60%;
@@ -538,11 +557,10 @@
         right: 10px;
         display: flex;
         align-items: center;
-
+        top: 0;
         img {
             height: 16px;
         }
-
         &:hover {
             border: 0;
             background-color: transparent;
@@ -916,5 +934,18 @@
 .consistent_sec {
     .row>div {
         border-right: 1px solid #B1B1B1;
+    }
+}
+
+.data-cards.about-cards {
+    .row>div {
+        border-right: 1px solid #B1B1B1;
+
+        &:last-child {
+
+            .carditem-1 {
+                margin-bottom: 0;
+            }
+        }
     }
 }
