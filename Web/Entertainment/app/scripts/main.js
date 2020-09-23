@@ -659,6 +659,3 @@ $('.container').stickem({
    };
  
  })(jQuery, window , document);
-
- //humburger menu
- 
