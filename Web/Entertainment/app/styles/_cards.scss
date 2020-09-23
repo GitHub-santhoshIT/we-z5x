@@ -187,8 +187,11 @@
         margin: 0 auto;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 1), 0 -10px 20px -5px rgba(0, 0, 0, 0.25);
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             opacity: 1;
+            height: calc(100%);
+            top: 0;
+            background-color: #292833;
         }
 
 
@@ -242,8 +245,6 @@
 
 .carditem-2 {
     position: relative;
-
-
 
     &:before {
         content: "";
@@ -311,6 +312,8 @@
             @media(max-width:767px) {
                 width: 100%;
                 left: 0;
+                height: 100%;
+                opacity: 0;
 
 
             }
@@ -318,15 +321,27 @@
 
         h5 {
             color: white;
+
+            @media(max-width:767px) {
+                color: $fulldark-bg;
+            }
         }
 
         h6 {
-            color: white
+            color: white;
+
+            @media(max-width:767px) {
+                color: $fulldark-bg;
+            }
         }
 
         a.common-link-text {
             color: white;
             text-decoration: none;
+
+            @media(max-width:767px) {
+                color: $fulldark-bg;
+            }
         }
 
     }
@@ -339,7 +354,7 @@
 
         @media(max-width:767px) {
             min-height: auto;
-            padding: 0 20px;
+
 
         }
     }
@@ -355,10 +370,7 @@
             color: $brand-secondary;
         }
 
-        @media(max-width:767px) {
-            margin-left: 20px;
 
-        }
     }
 }
 
@@ -520,9 +532,9 @@
             color: white;
             position: absolute;
             bottom: 30px;
-            @media only screen and (max-width:480px)
-            {
-                position:inherit;
+
+            @media only screen and (max-width:480px) {
+                position: inherit;
                 bottom: 0px;
             }
 
