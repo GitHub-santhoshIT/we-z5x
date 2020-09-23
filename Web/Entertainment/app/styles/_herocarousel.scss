@@ -6,6 +6,10 @@
         z-index: 1;
         font-size: 36px;
         color: #FFFFFF !important;
+
+        @media(max-width:767px) {
+            display: none !important;
+        }
     }
 
     .slick-prev {
@@ -14,8 +18,21 @@
         position: absolute;
         background-position: center;
 
+        // @media(max-width:767px) {
+        //     display: none !important;
+        // }
         &:before {
             content: " " !important;
+        }
+
+
+    }
+
+    .slick-dots {
+        display: none;
+
+        @media(max-width:767px) {
+            display: block;
         }
     }
 
@@ -24,6 +41,10 @@
         background-repeat: no-repeat;
         position: absolute;
         background-position: center;
+
+        // @media(max-width:767px) {
+        //     display: none !important;
+        // }
 
         &:before {
             content: " ";
@@ -54,7 +75,7 @@
                 position: relative;
 
                 @media(max-width:767px) {
-                    height: 70vh;
+                    height: 400px;
 
                 }
 
@@ -65,7 +86,11 @@
                     position: relative;
 
                     @media(max-width:767px) {
-                        font-size: 40px;
+                        font-size: 36px;
+
+                        br {
+                            display: none;
+                        }
                     }
 
                     span {
@@ -118,6 +143,11 @@
                 margin-bottom: 0;
                 bottom: 100px;
 
+                @media(max-width:767px) {
+                    bottom: 60px;
+                    right: 190px;
+                }
+
                 a.annual_report {
                     padding-top: 70px !important;
                 }
@@ -127,6 +157,13 @@
                     position: relative;
                     text-decoration: none;
 
+                    @media(max-width:767px) {
+                        br {
+
+                            display: none;
+                        }
+                    }
+
                     &:before {
                         top: 50%;
                         content: "";
@@ -135,6 +172,14 @@
                         height: 1px;
                         background: rgba(255, 255, 255, 0.5);
                         left: -120px;
+
+                        @media(max-width:767px) {
+                            width: 46px;
+                            left: -60px;
+                            background: rgba(255, 255, 255, 1);
+
+                        }
+
                     }
                 }
             }
