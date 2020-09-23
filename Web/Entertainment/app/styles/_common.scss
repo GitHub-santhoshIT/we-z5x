@@ -637,6 +637,7 @@
     padding: 60px 0;
 
     .profile-card {
+        margin-bottom: 30px;
         &-holder {
             transition: all 0.5s ease;
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0), 0px -5px 10px 0px rgba(255, 255, 255, 0);
@@ -649,7 +650,10 @@
         }
 
         &-media {
-            height: 360px;
+            height: 340px;
+            @media(max-width:768px){
+                height: 360px;
+            }
             overflow: hidden;
             position: relative;
             background-color: $semidark-bg;
@@ -672,15 +676,22 @@
             }
 
             img {
-                height: 340px;
+                width:100%;
                 margin: 0 auto;
                 filter: grayscale(100%);
                 @include interaction2;
+                @media(max-width:767px){
+                    height: 320px;
+                    width: auto;
+                }
             }
 
             &:hover {
                 .expand-circle {
                     bottom: 20px;
+                    @media(max-width:767px){
+                     
+                    }
                 }
 
                 img {
@@ -705,6 +716,9 @@
                 font-weight: 300;
                 transition: all 0.5s ease;
                 z-index: 1;
+                @media(max-width:767px){
+                    bottom: 0;
+                }
             }
         }
     }
