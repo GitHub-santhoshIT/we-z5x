@@ -176,7 +176,7 @@ table tr td {
   background: #B1B1B1;
   margin: 0 0 10px 0;
   cursor: pointer;
-  transition: background 0.4s ease;
+  transition: all 0.4s ease;
   will-change: transition;
 }
 
@@ -185,9 +185,8 @@ table tr td {
   position: absolute;
   left: calc(100% + 8px);
   white-space: nowrap;
-  top: -1px;
-  font-family: arial, sans-serif;
-  font-size: 16px;
+  top: -4px;
+  font-size: 14px;
   line-height: 17px;
   width: 0;
   overflow: hidden;
@@ -203,7 +202,7 @@ table tr td {
   content: " ";
   padding-left: 5px;
   letter-spacing: -2px;
-  font-family: arial, sans-serif;
+
   vertical-align: text-top;
   font-weight: 400;
 }
