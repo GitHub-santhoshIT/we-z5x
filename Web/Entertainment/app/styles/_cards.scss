@@ -545,9 +545,11 @@
             height: 480px;
             filter: grayscale(100%);
             @include interaction2;
+
             @media(max-width: 1024px) {
-                height:auto;
+                height: auto;
             }
+
             @media(max-width: 767px) {
                 transform: scale(1);
                 height: auto;
@@ -560,7 +562,7 @@
     .hr-data-content {
         padding: 0 60px 0 30px;
 
-        @media(max-width: 767px) {
+        @media(max-width: 1024px) {
             padding: 0 0 0 0;
         }
 
