@@ -776,68 +776,6 @@
     background: transparent linear-gradient(180deg, #EFEEEE00 0%, #EFEEEE 100%) 0% 0% no-repeat padding-box;
 }
 
-#archiveCarousel .nav a small {
-    display: block;
-}
-
-#archiveCarousel .nav {
-    background: transparent;
-}
-
-#archiveCarousel .nav a {
-    border-radius: 0px;
-    padding: 00px 30px;
-    color: #614242;
-    font-weight: normal;
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
-}
-
-#archiveCarousel .nav a:hover {
-    border-radius: 0px;
-    padding: 30px;
-    text-decoration: none !important;
-}
-
-#archiveCarousel .nav li.active {
-    border-bottom: 3px solid #8941BB;
-}
-
-#archiveCarousel .nav li a.active {
-    color: #8941BB !important;
-}
-
-#archiveCarousel {
-    padding-top: 30px;
-
-    .carousel-inner {
-        background: #fff !important;
-        width: 100%;
-        height: 300px;
-    }
-
-    .carousel-item {
-        background-color: #fff !important;
-        border-top: 2px solid grey;
-
-        .carousel-caption {
-            position: relative !important;
-            left: 18px;
-            text-align: left;
-            top: 50px;
-
-            h3 {
-                color: #000 !important;
-            }
-
-            p {
-                padding-top: 30px;
-                color: #000 !important;
-            }
-        }
-    }
-}
 
 .articles-holder {
     padding: 60px 0;
