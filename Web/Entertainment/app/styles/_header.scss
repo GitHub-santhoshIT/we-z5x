@@ -9,6 +9,10 @@ header {
 
     background-color: transparent;
 
+    @media(max-width:1023px) {
+        padding: 10px 0;
+    }
+
     .navbar-brand {
         img {
             height: 40px;

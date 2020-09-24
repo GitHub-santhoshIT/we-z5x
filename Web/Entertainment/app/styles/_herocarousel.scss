@@ -2,7 +2,7 @@
     .slick-slide {
         height: 100vh;
 
-        @media(max-width:767px) {
+        @media(max-width:1023px) {
             height: auto;
         }
     }
@@ -84,7 +84,7 @@
                 height: 100vh;
                 position: relative;
 
-                @media(max-width:767px) {
+                @media(max-width:1023px) {
                     height: 400px;
 
                 }
@@ -115,6 +115,7 @@
                             height: 3px;
                             background-color: white;
                             bottom: 10px;
+
                             @media(max-width:767px) {
                                 bottom: 2px;
                                 height: 2px;
