@@ -1715,15 +1715,26 @@ footer .secondary-footer .social-links ul li a {
   border-right: 1px solid #B1B1B1;
 }
 
-.data-cards.about-cards .row > div {
+.data-cards.about-cards .row > div,
+.data-cards.social-cards .row > div {
   border-right: 1px solid #B1B1B1;
 }
 
-.data-cards.about-cards .row > div:last-child .carditem-1 {
+.data-cards.about-cards .row > div:last-child .carditem-1,
+.data-cards.social-cards .row > div:last-child .carditem-1 {
   margin-bottom: 0;
 }
 
 .data-cards.about-cards .row > div:last-child {
+  border-right: 0;
+}
+
+.data-cards.social-cards .carditem-1 .data-content p {
+  position: relative;
+  bottom: 0;
+}
+
+.data-cards.social-cards .row > div:last-child {
   border-right: 0;
 }
 
