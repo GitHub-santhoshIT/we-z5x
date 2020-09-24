@@ -35,11 +35,21 @@
 
     height: 100vh;
 
+    .vp-fullheight {
+        height: 100vh;
+
+        @media(max-width:1024px) {
+            height: 80vh;
+
+        }
+    }
+
     @media(max-width:1024px) {
         height: 80vh;
         padding: 30px 0 0px 0;
     }
-    @media(max-width:768px) {
+
+    @media(max-width:767px) {
         height: auto;
         padding: 60px 0 0px 0;
     }
@@ -88,10 +98,25 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    &.banner-gr-bg {
+        @media(max-width:1023px) {
+            padding: 90px 0 0 0;
+            height: auto;
+        }
+
+    }
+
+    @media(max-width:1024px) {
+        height: 80vh;
+
+    }
+
     @media(max-width:767px) {
         height: 400px;
 
     }
+
+
 
     h2 {
         line-height: 1;
