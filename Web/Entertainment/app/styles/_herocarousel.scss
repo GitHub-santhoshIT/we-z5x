@@ -9,7 +9,7 @@
 
     .slider__counter {
         position: absolute;
-        bottom: 2rem;   
+        bottom: 2rem;
         right: 3rem;
         z-index: 1;
         font-size: 36px;
@@ -114,6 +114,10 @@
                             height: 3px;
                             background-color: white;
                             bottom: 10px;
+                            @media(max-width:767px) {
+                                bottom: 2px;
+                                height: 2px;
+                            }
                         }
 
                     }

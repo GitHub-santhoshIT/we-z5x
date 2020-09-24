@@ -8,14 +8,12 @@
         width: 100%;
         height: 100%;
     }
-
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
-
 
     .work-block-content {
         position: relative;
@@ -60,6 +58,10 @@
 
     .subscribe-block {
         float: right;
+
+        .form-group {
+            margin-bottom: 0;
+        }
 
         label {
             margin-right: 15px;
@@ -137,8 +139,8 @@
 
 
             .carditem-2 {
-                border-bottom: 1px solid #b1b1b1;
-                padding-bottom: 15px;
+                border-top: 1px solid #b1b1b1;
+                padding-top: 15px;
             }
         }
 
@@ -156,6 +158,10 @@
 .entertainment-block {
     background-color: $semidark-bg;
     padding-bottom: 60px;
+
+    @media(max-width:767px) {
+        padding-bottom: 30px;
+    }
 
     h2 {
         margin-top: 90px;
@@ -265,17 +271,7 @@
 
         .counter-item {
             text-align: center;
-            // h2 {
-            //     display: inline-block;
-            // }
-            // span {
-            //     display: block;
-            //     line-height: normal;
-            //     text-align: right;
-            //     margin-top: 10px;
-            //     text-transform: uppercase;
-            //     font-size: 20px;
-            // }
+          
         }
     }
 }
@@ -285,13 +281,16 @@
 
     @media(max-width:767px) {
         padding-bottom: 30px;
-
     }
 
     p {
         color: #292833;
         font-size: 20px;
         font-weight: normal;
+
+        @media(max-width:767px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -347,28 +346,7 @@
                 }
             }
 
-            .carditem-1 {
-                // padding-right: 30px;
-                // margin-left: 30px;
-            }
 
-            &:first-child {
-                .carditem-1 {
-                    // padding-right: 30px;
-                    // margin-left: 0px;
-                }
-            }
-
-            &:last-child {
-
-                // padding-right: 0px;
-                // border-right: 0;
-                .carditem-1 {
-                    // padding-right: 0;
-                }
-
-                // margin-right: 0;
-            }
         }
     }
 }
@@ -450,13 +428,6 @@
     width: 100%;
 }
 
-// .round-block {
-//     margin: 20px;
-//     background-color: black;
-//   }
-//   .enlarge-circle {
-//     background-color: green;
-//   }
 .start-hr-stroke {
     position: relative;
 
@@ -584,7 +555,6 @@
     a {
         display: inline-block;
         padding-left: 30px;
-        // position: absolute;
     }
 
     img {
@@ -604,6 +574,10 @@
     border-top: 1px solid #b1b1b1;
     padding: 20px 0;
     margin-top: 30px;
+
+    @media(max-width:767px) {
+        margin-top: 0;
+    }
 }
 
 .about-cards {
@@ -863,11 +837,8 @@
 }
 
 .journey-stick-block {
-    // position: relative;
     background-color: red;
     height: 370px;
-
-    // overflow-y:scroll;
     .version-block {
         background-color: cyan;
     }
@@ -976,4 +947,8 @@
         border-right: 0;
 
     }
+}
+
+.scroll-indicator-controller {
+    display: none !important;
 }
