@@ -9,6 +9,12 @@
 .mb-10 {
   margin-bottom: 10px !important;
 }
+.r-mb-0 {
+  @media(max-width:767px) {
+    margin-bottom:0px !important;
+  }
+  
+}
 
 .pb-10 {
   padding-bottom: 10px !important;
