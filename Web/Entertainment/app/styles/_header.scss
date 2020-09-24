@@ -50,19 +50,19 @@ header {
                     line-height: 60px;
                     font-size: 16px;
 
-                    @media(max-width:767px) {
+                    @media(max-width:1023px) {
                         line-height: 30px;
                     }
 
                     &.dropdown-toggle::after {
-                        @media(min-width:767px) {
+                        @media(max-width:1023px) {
 
                             border-left: 0;
                             border-right: 0;
 
                         }
 
-                        @media(max-width:768px) {
+                        @media(max-width:1023px) {
                             float: right;
                             margin-top: 12px;
                             border-top-color: rgba(0, 0, 0, 0.2);
@@ -98,7 +98,7 @@ header {
                     border: 0;
                     margin: 0;
 
-                    @media(max-width:767px) {
+                    @media(max-width:1023px) {
                         background-color: $mediumdark-bg;
                     }
 
@@ -129,9 +129,9 @@ header {
                         width: 100%;
                         display: block;
 
-                        @media(min-width:768px) {}
 
-                        @media(max-width:768px) {
+
+                        @media(max-width:1023px) {
                             text-align: left;
                         }
 
@@ -151,7 +151,7 @@ header {
                                 top: 20px;
                             }
 
-                            @media(max-width:768px) {
+                            @media(max-width:1023px) {
                                 &:after {
                                     display: none;
 
@@ -160,7 +160,7 @@ header {
 
                             }
 
-                            @media(max-width:768px) {
+                            @media(max-width:1023px) {
                                 display: block;
                                 margin-right: 0px;
                             }
@@ -192,7 +192,7 @@ header {
             }
         }
 
-        @media(max-width:767px) {
+        @media(max-width:1023px) {
             .navbar-collapse {
                 background-color: white;
                 margin-top: 10px;
@@ -220,6 +220,7 @@ header {
 }
 
 .nav-icon3 {
+
     width: 40px;
     height: 28px;
     position: relative;
@@ -235,6 +236,12 @@ header {
     padding: 0;
     margin: 0;
     background-color: transparent;
+    display: none;
+
+    @media(max-width:1023px) {
+        display: block;
+
+    }
 
     &:hover,
     &:focus,
