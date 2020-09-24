@@ -393,7 +393,7 @@ $(document).ready(function() {
     var $src = $('.scroll-indicator-controller');
     var currentScrollTop = $(this).scrollTop()
    
-    if (currentScrollTop >= prevScrollTop && currentScrollTop < 44) {
+    if (currentScrollTop >= prevScrollTop && currentScrollTop > 44) {
      
       $src.css({
         'position': 'fixed',

@@ -558,11 +558,9 @@
         display: flex;
         align-items: center;
         top: 0;
-
         img {
             height: 16px;
         }
-
         &:hover {
             border: 0;
             background-color: transparent;
@@ -584,7 +582,6 @@
     a {
         display: inline-block;
         padding-left: 30px;
-        // position: absolute;
     }
 
     img {
@@ -608,7 +605,7 @@
 
 .about-cards {
     &.data-cards ul li:after {
-        border-color: red;
+        border-color: #b1b1b1;
     }
 }
 
@@ -641,7 +638,6 @@
 
     .profile-card {
         margin-bottom: 30px;
-
         &-holder {
             transition: all 0.5s ease;
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0), 0px -5px 10px 0px rgba(255, 255, 255, 0);
@@ -655,11 +651,9 @@
 
         &-media {
             height: 340px;
-
-            @media(max-width:768px) {
+            @media(max-width:768px){
                 height: 360px;
             }
-
             overflow: hidden;
             position: relative;
             background-color: $semidark-bg;
@@ -682,12 +676,11 @@
             }
 
             img {
-                width: 100%;
+                width:100%;
                 margin: 0 auto;
                 filter: grayscale(100%);
                 @include interaction2;
-
-                @media(max-width:767px) {
+                @media(max-width:767px){
                     height: 320px;
                     width: auto;
                 }
@@ -696,8 +689,9 @@
             &:hover {
                 .expand-circle {
                     bottom: 20px;
-
-                    @media(max-width:767px) {}
+                    @media(max-width:767px){
+                     
+                    }
                 }
 
                 img {
@@ -722,8 +716,7 @@
                 font-weight: 300;
                 transition: all 0.5s ease;
                 z-index: 1;
-
-                @media(max-width:767px) {
+                @media(max-width:767px){
                     bottom: 0;
                 }
             }
@@ -968,12 +961,5 @@
                 margin-bottom: 0;
             }
         }
-    }
-}
-
-.data-cards.about-cards {
-    .row>div:last-child {
-        border-right: 0;
-
     }
 }
