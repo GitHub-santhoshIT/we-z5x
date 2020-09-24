@@ -776,15 +776,15 @@
     background: transparent linear-gradient(180deg, #EFEEEE00 0%, #EFEEEE 100%) 0% 0% no-repeat padding-box;
 }
 
-#myCarousel .nav a small {
+#archiveCarousel .nav a small {
     display: block;
 }
 
-#myCarousel .nav {
+#archiveCarousel .nav {
     background: transparent;
 }
 
-#myCarousel .nav a {
+#archiveCarousel .nav a {
     border-radius: 0px;
     padding: 00px 30px;
     color: #614242;
@@ -794,21 +794,21 @@
     line-height: 50px;
 }
 
-#myCarousel .nav a:hover {
+#archiveCarousel .nav a:hover {
     border-radius: 0px;
     padding: 30px;
     text-decoration: none !important;
 }
 
-#myCarousel .nav li.active {
+#archiveCarousel .nav li.active {
     border-bottom: 3px solid #8941BB;
 }
 
-#myCarousel .nav li a.active {
+#archiveCarousel .nav li a.active {
     color: #8941BB !important;
 }
 
-#myCarousel {
+#archiveCarousel {
     padding-top: 30px;
 
     .carousel-inner {
