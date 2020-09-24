@@ -1,9 +1,20 @@
 .carditem-1 {
     position: relative;
 
+    @media(max-width:767px) {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
     &.large-height {
         .data-content {
             height: 400px;
+        }
+    }
+
+    &.medium-height {
+        .data-content {
+            height: 300px;
         }
     }
 
@@ -11,7 +22,7 @@
         &:hover {
             .has-bg {
                 opacity: 1;
-                transform: scale(1.1, 1.3);
+                // transform: scale(1.1, 1.3);
             }
         }
 
@@ -58,6 +69,8 @@
         .has-bg {
             background-color: $semidark-bg;
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.25), 0px -5px 10px 0px rgba(255, 255, 255, 1);
+            background-size: contain;
+            background-position: bottom;
         }
 
         &:hover {
@@ -122,7 +135,7 @@
                 a {
                     color: $fulldark-bg;
                     text-decoration: none;
-                    font-weight: 700;
+
                 }
             }
         }
@@ -146,6 +159,7 @@
 
                 a {
                     color: white;
+                    font-weight: 600;
 
                     &:hover {
                         color: $brand-secondary;
@@ -157,17 +171,31 @@
 
     .has-bg {
         position: absolute;
-        height: 100%;
-        border-radius: 15px;
-        width: calc(100%);
+        height: calc(100% + 60px);
+        width: calc(100% + 0px);
+        top: -30px;
+        left: 0;
+        right: 0;
+        transition-property: width;
         background-repeat: no-repeat;
         background-position: 0 0;
+        border-radius: 10px;
         background-size: cover;
+        background-color: #F1F0F0;
         opacity: 0;
         @include interaction2;
+        transition: all 0.3s ease-out;
         z-index: 1;
-
         margin: 0 auto;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 1), 0 -10px 20px -5px rgba(0, 0, 0, 0.25);
+
+        @media(max-width:767px) {
+            opacity: 1;
+            height: calc(100%);
+            top: 0;
+            background-color: #292833;
+        }
+
 
         &:before {
             content: "";
@@ -182,7 +210,17 @@
     &:hover {
         .has-bg {
             opacity: 1;
-            transform: scale(1.2, 1.2);
+            // transform: scale(1.2, 1.2);
+            width: calc(100% + 64px);
+            left: -32px;
+
+            @media(max-width:767px) {
+                width: calc(100%);
+                left: 0;
+                top: 0;
+                height: 100%;
+            }
+
         }
     }
 
@@ -220,17 +258,33 @@
         z-index: 1;
     }
 
+    h5 {
+        font-size: 18px;
+        font-weight: 600;
+
+        @media(max-width:767px) {
+            margin-bottom: 0;
+        }
+    }
+
+    h6 {
+        @media(max-width:767px) {
+            line-height: 28px;
+        }
+    }
+
+
     .has-bg {
         position: absolute;
         height: 120%;
         width: 100%;
         top: -10%;
-        left:0;  
+        left: 0;
         right: 0;
         transition-property: width;
         background-repeat: no-repeat;
         background-position: 0 0;
-        border-radius: 20px;
+        border-radius: 10px;
         background-size: cover;
         background-color: #F1F0F0;
         opacity: 0;
@@ -254,21 +308,42 @@
         .has-bg {
             opacity: 1;
             width: 120%;
-            left:-10%;
+            left: -10%;
+
             // transform: scale(1.15, 1.1)
+            @media(max-width:767px) {
+                width: 100%;
+                left: 0;
+                height: 100%;
+                opacity: 0;
+
+
+            }
         }
 
         h5 {
             color: white;
+
+            @media(max-width:767px) {
+                color: $fulldark-bg;
+            }
         }
 
         h6 {
-            color: white
+            color: white;
+
+            @media(max-width:767px) {
+                color: $fulldark-bg;
+            }
         }
 
         a.common-link-text {
             color: white;
             text-decoration: none;
+
+            @media(max-width:767px) {
+                color: $fulldark-bg;
+            }
         }
 
     }
@@ -279,24 +354,30 @@
         padding: 0;
         min-height: 180px;
 
+        @media(max-width:767px) {
+            min-height: auto;
 
+
+        }
     }
 
     a.common-link-text {
         color: $dark-bg;
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 16px;
         position: relative;
         z-index: 1;
 
         &:hover {
             color: $brand-secondary;
         }
+
+
     }
 }
 
 .hr-data-cards {
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 60px;
     @include interaction2;
     position: relative;
@@ -304,7 +385,7 @@
     &:before {
         content: "";
         width: 100%;
-        border-radius: 30px;
+        border-radius: 20px;
         height: 100%;
         position: absolute;
         left: 0;
@@ -316,12 +397,22 @@
         &:hover {
             background-color: $dark-bg;
 
+            @media(max-width:767px) {
+                background-color: transparent;
+            }
+
             // box-shadow:10px 10px 10px -5px #000000, 0px -5px 10px 0px rgba(255, 255, 255, 0.2);
             &:before {
                 content: "";
                 background-color: $dark-bg;
                 transform: scale(1.025, 1);
                 box-shadow: rgb(0, 0, 0) 10px 10px 10px -5px, rgba(255, 255, 255, 0.2) 0px -5px 10px 0px;
+
+                @media(max-width:767px) {
+                    box-shadow: none;
+                    transform: scale(1);
+                }
+
             }
 
             .hr-data-content {
@@ -338,10 +429,21 @@
         &:hover {
             background-color: #919095;
 
+            @media(max-width:767px) {
+                background-color: transparent;
+            }
+
             &:before {
                 content: "";
                 background-color: #919095;
                 transform: scale(1.025, 1);
+
+                @media(max-width:767px) {
+                    background-color: transparent;
+
+                    transform: scale(1);
+                }
+
             }
 
             .hr-data-content {
@@ -359,14 +461,26 @@
             content: "";
             background-color: $dark-bg;
             transform: scale(1.025, 1);
+
+            @media(max-width:767px) {
+                transform: scale(1);
+
+            }
         }
 
         .hr-data-media {
             transform: scale(1.05, 1);
 
+            @media(max-width:767px) {
+                transform: scale(1);
+            }
+
             img {
                 transform: scale(1, 1);
 
+                @media(max-width:767px) {
+                    transform: scale(1);
+                }
             }
         }
 
@@ -376,8 +490,17 @@
 
     .hr-data-media {
         overflow: hidden;
-        border-radius: 30px;
+        border-radius: 20px;
+
+        .hr-label-holder {
+            margin-bottom: 10px;
+        }
+
         @include interaction2;
+
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
 
         img {
             transform: scale(1.05, 1);
@@ -385,11 +508,22 @@
             height: 480px;
             filter: grayscale(100%);
             @include interaction2;
+
+            @media(max-width: 767px) {
+                transform: scale(1);
+                height: auto;
+                filter: grayscale(0%);
+
+            }
         }
     }
 
     .hr-data-content {
         padding: 0 60px 0 30px;
+
+        @media(max-width: 767px) {
+            padding: 0 0 0 0;
+        }
 
         h4 {
             color: white;
@@ -400,16 +534,21 @@
             color: white;
             position: absolute;
             bottom: 30px;
-            @media only screen and (max-width:480px)
-            {
-                position:inherit;
+
+            @media only screen and (max-width:480px) {
+                position: inherit;
                 bottom: 0px;
             }
 
             &:hover {
                 color: $brand-secondary !important;
-
             }
+
+            @media(max-width:767px) {
+                position: relative;
+                bottom: 0;
+            }
+
         }
 
     }

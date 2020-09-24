@@ -52,8 +52,7 @@ $('.home-block-carousel').slick({
   });
   $('.sider-counter').slick({
     slidesToShow: 1,
-  fade: true,
-
+    // fade: true,
     slidesToScroll: 1,
     autoplay: true,
     dots:true,

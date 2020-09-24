@@ -7,7 +7,6 @@
         @include light-shadow;
         width: 100%;
         height: 100%;
-
     }
 
     width: 100%;
@@ -16,6 +15,7 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+
 
     .work-block-content {
         position: relative;
@@ -63,7 +63,6 @@
 
         label {
             margin-right: 15px;
-
         }
 
         input[type=text] {
@@ -74,7 +73,6 @@
             margin-right: 15px;
             border-bottom: 1px solid #000;
         }
-
     }
 }
 
@@ -115,7 +113,6 @@
     }
 }
 
-
 * {
     border: 0;
     outline: 0 none;
@@ -125,77 +122,43 @@
     overflow: hidden;
 }
 
-
-
 .dark-bg {
     background-color: $dark-bg;
-
 }
-
-
-
 
 .microcards-block {
-    .row.large-guterrs{
-        // .wrap>div:nth-child(2) {
-        // }
-        .wrap>div:nth-child(2){
+    .row>div {
+        border-right: 1px solid #b1b1b1;
 
-        }
-    }
-    .row.large-gutters>div{
-            border-right: 1px solid #b1b1b1;
-            &:last-child{
-                border-right: 0;
-            }
-    }
-    ul {
-        // padding: 0;
-        // margin: 0;
-        // display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        @media(max-width:767px) {
-            display: block;
-        }
-        li {
-            display: table-cell;
-            list-style: none;
-            border-right: 1px solid #b1b1b1;
-            padding-right: 15px;
-            padding-left: 15px;
-            width: 20%;
+        @media(max-width: 767px) {
+            border-right: 0;
 
-            @media(max-width:767px) {
-                border-right: 0;
-                width: 100%;
-                display: block;
-            }
+            margin-top: 15px;
 
-            &:first-child {
-                padding-left: 0;
-            }
 
-            &:last-child {
-                border-right: 0;
-
+            .carditem-2 {
+                border-bottom: 1px solid #b1b1b1;
+                padding-bottom: 15px;
             }
         }
 
+        &:last-child {
+            border-right: 0;
 
+            @media(max-width: 767px) {
+                border-bottom: 1px solid #b1b1b1;
+
+            }
+        }
     }
-
 }
-
-
-
 
 .entertainment-block {
     background-color: $semidark-bg;
     padding-bottom: 60px;
 
     h2 {
-        margin-top: 120px;
+        margin-top: 90px;
 
         @media(max-width: 767px) {
             margin-top: 30px;
@@ -203,11 +166,10 @@
     }
 
     p {
-        margin-top: 180px;
+        margin-top: 210px;
 
         @media(max-width: 767px) {
             margin-top: 0px;
-
         }
     }
 }
@@ -217,7 +179,6 @@
 }
 
 .sider-counter-holder {
-
     .slick-dots {
         li {
             button {
@@ -249,6 +210,10 @@
             background-size: cover;
             background-repeat: no-repeat;
 
+            @media(max-width: 767px) {
+                height: 300px;
+            }
+
             h2 {
                 &.inside-bg {
                     span {
@@ -263,29 +228,20 @@
                         background-clip: text;
                         color: transparent;
                     }
-
-
-
-
                 }
 
                 position: relative;
-
                 margin-top: 30px;
                 transition: all 0.5s ease;
 
                 &.data-add {
                     &:after {
-
                         content: "+";
                     }
-
                 }
 
                 display: inline-block;
                 position: relative !important;
-
-
 
                 p.count-text {
                     font-size: 100px !important;
@@ -305,17 +261,13 @@
                 font-weight: 700;
                 padding-top: 30px;
             }
-
         }
 
         .counter-item {
             text-align: center;
-
             // h2 {
             //     display: inline-block;
-
             // }
-
             // span {
             //     display: block;
             //     line-height: normal;
@@ -331,12 +283,16 @@
 .data-cards-holder {
     padding-bottom: 60px;
 
+    @media(max-width:767px) {
+        padding-bottom: 30px;
+
+    }
+
     p {
         color: #292833;
         font-size: 20px;
         font-weight: normal;
     }
-
 }
 
 .view_all {
@@ -348,11 +304,25 @@
     padding: 120px;
 }
 
-
-
 .data-cards {
     margin-top: 60px;
 
+    @media(max-width:767px) {
+        margin-top: 30px;
+    }
+
+    // .wrap>div:nth-child(2)
+    .row>div {
+        border-right: 1px solid hsla(0, 0%, 100%, .16);
+
+        @media(max-width: 767px) {
+            border-right: 0;
+        }
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
 
     ul {
         padding-left: 0;
@@ -362,7 +332,6 @@
             position: relative;
 
             &:after {
-
                 content: "";
                 border-right: 1px solid #FFFFFF29;
                 position: absolute;
@@ -374,11 +343,8 @@
             &:last-child {
                 &:after {
                     content: "";
-
                     border-right: 0;
                 }
-
-
             }
 
             .carditem-1 {
@@ -407,10 +373,14 @@
     }
 }
 
-
-
 .round-block-holder {
     overflow: hidden;
+    height: 400px;
+    position: relative;
+
+    @media(max-width: 767px) {
+        height: 300px;
+    }
 
     .ring-contain-text {
         position: absolute;
@@ -421,15 +391,26 @@
         align-items: center;
         white-space: nowrap;
 
+        @media(max-width: 767px) {
+            height: 300px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
         h2 {
             color: $mediumdark-bg;
+            left: 0;
+            margin: 0 auto;
+            height: auto;
+            width: 100%;
 
-
+            @media(max-width: 767px) {
+                color: white;
+                text-align: center;
+            }
         }
     }
-
-    height: 400px;
-    position: relative;
 
     .round-block {
         position: relative;
@@ -440,11 +421,16 @@
         width: 400px;
         border-radius: 400px;
         background-size: cover;
-
         filter: grayscale(100%);
-
-
         @include interaction2;
+
+        @media(max-width: 767px) {
+            left: 0;
+            width: 100%;
+            border-radius: 0;
+            height: 300px;
+            filter: grayscale(0%);
+        }
 
         &.enlarge-circle {
             .ring-contain-text {
@@ -461,16 +447,13 @@
         }
     }
 
-
     width: 100%;
-
 }
 
 // .round-block {
 //     margin: 20px;
 //     background-color: black;
 //   }
-
 //   .enlarge-circle {
 //     background-color: green;
 //   }
@@ -488,15 +471,9 @@
     }
 }
 
-
-
 .vp-fullheight {
     height: 100vh;
 }
-
-
-
-
 
 .fullwidth-content-block {
     padding: 60px 0;
@@ -518,7 +495,6 @@
             margin: 0;
 
             li {
-
                 margin-bottom: 20px;
                 margin-right: 20px;
                 list-style: none;
@@ -530,14 +506,12 @@
                 position: relative;
                 ;
 
-
                 img {
                     width: 60%;
                     position: absolute;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
-
                 }
             }
         }
@@ -553,7 +527,6 @@
 
     input {
         &.form-control {
-
             width: 100%;
         }
     }
@@ -577,8 +550,6 @@
     }
 }
 
-
-
 .viewport-arrow {
     position: absolute;
     width: 100%;
@@ -586,7 +557,7 @@
     z-index: 9;
     bottom: 60px;
 
-    @media(max-width:767px) {
+    @media(max-width: 767px) {
         display: none;
     }
 
@@ -603,9 +574,8 @@
 .about-main-cards-block {
     padding: 60px 0;
 
-    @media(max-width:767px) {
+    @media(max-width: 767px) {
         padding: 30px 0;
-
     }
 }
 
@@ -613,7 +583,6 @@
     border-top: 1px solid #b1b1b1;
     padding: 20px 0;
     margin-top: 30px;
-
 }
 
 .about-cards {
@@ -624,6 +593,10 @@
 
 .two-block-holder {
     padding-top: 120px;
+
+    @media(max-width: 767px) {
+        padding-top: 30px;
+    }
 }
 
 .purpose-two-block {
@@ -636,7 +609,6 @@
     }
 
     padding-bottom: 60px;
-
 }
 
 .profile-block {
@@ -652,8 +624,6 @@
             box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0), 0px -5px 10px 0px rgba(255, 255, 255, 0);
             border-radius: 20px;
             margin-bottom: 10px;
-
-
 
             &:hover {
                 box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.2), 0px -5px 10px 0px white;
@@ -672,14 +642,10 @@
             &:after {
                 content: "";
                 position: absolute;
-
-
-
                 background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(241, 240, 240, 1) 100%);
                 background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(241, 240, 240, 1) 100%);
                 background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(241, 240, 240, 1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#f1f0f0', GradientType=0);
-
                 width: 100%;
                 height: 40%;
                 bottom: 0;
@@ -727,16 +693,13 @@
 }
 
 .profile-description-block {
-
     &-head {
         border-bottom: 1px solid #b1b1b1;
         padding-bottom: 5px;
         margin-bottom: 30px;
-
     }
 
     &-data {
-
         ul {
             padding-left: 15px;
 
@@ -749,21 +712,16 @@
                 }
             }
         }
-
-
     }
-
 }
 
 .profile-modal {
     .modal-content {
         background-color: $semidark-bg;
-
     }
 
     .modal-body {
         padding: 30px;
-
     }
 
     button.close {
@@ -773,7 +731,6 @@
         &:visited {
             border: 0;
             outline: 0;
-
         }
 
         cursor: pointer;
@@ -858,43 +815,33 @@
                 padding-top: 30px;
                 color: #000 !important;
             }
-
         }
     }
-
 }
 
 .articles-holder {
     padding: 60px 0;
-
 }
 
 .journey-stick-block {
     // position: relative;
     background-color: red;
     height: 370px;
-    // overflow-y:scroll;
 
+    // overflow-y:scroll;
     .version-block {
         background-color: cyan;
     }
-
 }
 
-
-
 .custom-sroll {
-
     .wrap {
         display: flex;
-
     }
 
     .wrap>div {
         flex: 1;
     }
-
-
 
     .sticky {
         position: -webkit-sticky;
@@ -906,17 +853,12 @@
         height: 400px;
         overflow-y: scroll;
 
-
-
         &::-webkit-scrollbar {
             display: none;
         }
-
-
     }
 
     .stick-points {
-
         padding: 60px 0;
 
         ol {
@@ -964,12 +906,15 @@
 .Granularity {
     .consistent_sec {
         li {
-            border-right: 1px solid #B1B1B1;
-
             &:last-child {
                 border-right: 0 !important;
-
             }
         }
+    }
+}
+
+.consistent_sec {
+    .row>div {
+        border-right: 1px solid #B1B1B1;
     }
 }
