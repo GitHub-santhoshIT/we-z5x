@@ -1,7 +1,15 @@
 .hero-slider {
+    .slick-slide {
+        height: 100vh;
+
+        @media(max-width:767px) {
+            height: auto;
+        }
+    }
+
     .slider__counter {
         position: absolute;
-        bottom: 2rem;
+        bottom: 2rem;   
         right: 3rem;
         z-index: 1;
         font-size: 36px;
@@ -52,7 +60,9 @@
     }
 
     .home-block-carousel {
+
         .slick-active {
+
             .slide {
                 h2 {
                     margin-top: 0;
