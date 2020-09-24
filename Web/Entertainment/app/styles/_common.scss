@@ -629,7 +629,10 @@
 
         &-media {
             height: 340px;
-            @media(max-width:768px){
+            @media(max-width:1023px){
+                height: 260px;
+            }
+            @media(max-width:767px){
                 height: 360px;
             }
             overflow: hidden;
@@ -658,6 +661,7 @@
                 margin: 0 auto;
                 filter: grayscale(100%);
                 @include interaction2;
+                
                 @media(max-width:767px){
                     height: 320px;
                     width: auto;
@@ -694,7 +698,7 @@
                 font-weight: 300;
                 transition: all 0.5s ease;
                 z-index: 1;
-                @media(max-width:767px){
+                @media(max-width:1024px){
                     bottom: 0;
                 }
             }
