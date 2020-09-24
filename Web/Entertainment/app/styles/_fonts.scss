@@ -54,6 +54,7 @@ h3 {
 h4 {
     font-size: 36px;
     font-weight: 600;
+
     @media(max-width:1023px) {
         font-size: 30px;
     }
@@ -72,13 +73,19 @@ h6 {
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
-  
+
 }
 
 p {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
+
+    small {
+        font-size: 16px;
+        font-weight: 500;
+
+    }
 
     @media(max-width:767px) {
         font-size: 16px;
