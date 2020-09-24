@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 .scroll_icon #site_content {
   width: 100%;
   overflow: hidden;
@@ -146,6 +148,7 @@ table tr td {
   color: #47433F;
   border-top: 1px solid #FFF;
 }
+>>>>>>> 44c80ca9c2b971ce1179ae124780f60246fc9b69
 
 
 .scroll-indicator-controller {
@@ -156,7 +159,7 @@ table tr td {
   z-index: 2;
   opacity: 0;
 
-  @media(max-width:767px) {
+  @media(max-width:1024px) {
     display: none !important;
   }
 }
