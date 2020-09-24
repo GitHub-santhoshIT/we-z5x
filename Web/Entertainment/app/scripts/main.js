@@ -487,15 +487,15 @@ $('#myCarousel').on('click', '.nav a', function() {
 
 
 
-var xxxx = document.querySelector('.xxxx');
-var origOffsetY = header.offsetTop;
+// var xxxx = document.querySelector('.xxxx');
+// var origOffsetY = header.offsetTop;
 
-function onScroll(e) {
-  window.scrollY >= origOffsetY ? header.classList.add('sticky') :
-                                  header.classList.remove('sticky');
-}
+// function onScroll(e) {
+//   window.scrollY >= origOffsetY ? header.classList.add('sticky') :
+//                                   header.classList.remove('sticky');
+// }
 
-document.addEventListener('scroll', onScroll);
+// document.addEventListener('scroll', onScroll);
 
 
 
