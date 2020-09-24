@@ -70,6 +70,19 @@
   }
 }
 
+
+.common-link-light {
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+
+  &:hover {
+    color: $brand-secondary;
+
+  }
+}
+
 .mediumdark-bg {
   background-color: $mediumdark-bg;
 }

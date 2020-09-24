@@ -141,3 +141,37 @@
         }
     }
 }
+
+.with-bg-banner {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(max-width:1024px) {
+        height: 80vh;
+    }
+
+    @media(max-width:1023px) {
+        height: 400px;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+        line-height: 1;
+    }
+
+    p {
+        color: white;
+    }
+
+}
