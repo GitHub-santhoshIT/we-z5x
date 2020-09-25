@@ -1,9 +1,10 @@
-body{
-    @media(max-width:767px){
+body {
+    @media(max-width:767px) {
         overflow-x: hidden;
 
     }
 }
+
 .work-block {
     position: relative;
 
@@ -1127,20 +1128,24 @@ body{
 .generic-data-holder {
     padding-top: 120px;
     position: relative;
-@media(max-width:1024px){
-    padding-top: 60px;
-}
+
+    @media(max-width:1024px) {
+        padding-top: 100px;
+    }
+  
+
     &:before {
         content: "";
         height: 100px;
         @include bannergrbg;
         // background-color: $semidark-bg;
-        
+
         height: 100vh;
         left: 0;
         width: 100%;
         position: absolute;
         top: 0;
+        z-index: -1;
     }
 }
 
