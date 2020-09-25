@@ -161,6 +161,10 @@
         height: 460px;
     }
 
+    @media(max-width:767px) {
+        height: 400px;
+    }
+
     h3 {
         color: white;
     }

@@ -460,12 +460,12 @@ if($this.attr('style')){
 
 
 $(document).ready( function() {
-  $('#myCarousel').carousel({
+  $('#archiveCarousel').carousel({
   interval:   4000
 });
 
 var clickEvent = false;
-$('#myCarousel').on('click', '.nav a', function() {
+$('#archiveCarousel').on('click', '.nav a', function() {
     clickEvent = true;
     $('.nav li').removeClass('active');
     $(this).parent().addClass('active');		
