@@ -22,16 +22,24 @@
     background-size: cover;
     background-position: center right;
 
-    &-content {
-        .date-stamp {}
+    @media(max-width:1024px) {
+        height: 360px;
+        padding: 30px;
+
 
     }
 
+    &-content {
+        .date-stamp {}
+    }
     .common-link-dark {
         position: absolute;
         left: 30px;
         bottom: 40px;
 
+        @media(max-width:1024px) {
+            bottom: 30px;
+        }
     }
 
 

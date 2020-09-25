@@ -3,6 +3,21 @@
 
 }
 
+@mixin interaction1 {
+  transition: all 0.3s ease;
+
+}
+
+@mixin interaction2 {
+  transition: all 0.5s ease;
+
+}
+
+@mixin bannergrbg{
+  background: transparent linear-gradient(180deg, #B1B1B1 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  // background-color: red;
+}
+
 @mixin light-shadow {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,ffffff+100&0+0,0.65+100 */
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
@@ -15,14 +30,3 @@
   /* IE6-9 */
 
 }
-
-@mixin interaction1 {
-  transition: all 0.3s ease;
-
-}
-
-@mixin interaction2 {
-  transition: all 0.5s ease;
-
-}
-
