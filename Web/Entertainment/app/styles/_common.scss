@@ -984,6 +984,73 @@
 
 
 
+
+
+.data-cards.social-cards {
+    .row>div {
+        border-right: 1px solid #B1B1B1;
+        margin-bottom: 30px;
+
+        &:last-child {
+
+            .carditem-1 {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .carditem-1 {
+        .has-bg {
+            height: calc(100% + 10px);
+            top: -10px;
+        }
+
+
+        &.light-view.light-text:hover h3 {
+            color: white;
+        }
+
+        .data-content {
+            padding: 30px 0;
+            height: 360px;
+
+            @media(max-width:1024px) {
+                height: 440px;
+            }
+
+            @media(max-width:1023px) {
+                height: 480px;
+            }
+
+            @media(max-width:767px) {
+                height: 380px;
+            }
+
+            h3 {
+                margin-bottom: 30px;
+
+                @media(max-width:767px) {
+                    color: white;
+                }
+            }
+
+            p {
+                position: relative;
+                bottom: 0;
+
+            }
+        }
+    }
+
+
+
+    .row>div:last-child {
+        border-right: 0;
+
+    }
+}
+
+
 .regular-card {
     &-media {
         @media(max-width: 767px) {
