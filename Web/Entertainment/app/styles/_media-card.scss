@@ -93,8 +93,8 @@
                     line-height: auto;
                 }
 
-                &:last-child {
-                    border-bottom: 0;
+                &:first-child {
+                    border-top: 1px solid #b1b1b1;
                 }
 
                 .date-stamp {
