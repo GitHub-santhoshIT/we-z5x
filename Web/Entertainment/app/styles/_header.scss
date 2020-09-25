@@ -43,8 +43,7 @@ header {
             }
 
             .nav-item {
-                font-size: 18px;
-                margin-right: 15px;
+                margin-right: 40px;
                 font-weight: 400;
                 letter-spacing: 1px;
 
@@ -52,7 +51,26 @@ header {
                     color: white;
                     position: relative;
                     line-height: 60px;
+                    padding-left: 0;
+                    padding-right: 0;
                     font-size: 16px;
+
+                    &.active {
+                        position: relative;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: white;
+                            bottom: 0;
+                            margin: 0 auto;
+                            transition: all 0.5s ease;
+                        }
+                    }
 
                     @media(max-width:1023px) {
                         line-height: 30px;
@@ -62,15 +80,15 @@ header {
                         display: none;
 
                         @media(max-width:1023px) {
-                          
-                            
-                            border-top-color:rgba(0,0,0,0.25);
+
+
+                            border-top-color: rgba(0, 0, 0, 0.25);
                             float: right;
                             margin-top: 12px;
                             display: block;
                         }
 
-                    
+
                     }
 
 
