@@ -928,13 +928,32 @@ body {
 }
 
 
+.investor-lsit-cards {
+    // padding-bottom: 15px;
+    // margin-bottom: 15px;
 
+
+    .row>div {
+        border-right: 1px solid #B1B1B1;
+
+        &:last-child {
+            border-right: 0;
+
+
+        }
+
+        @media(max-width:767px) {
+
+            border-right: 0;
+
+        }
+    }
+}
 
 
 .data-cards.social-cards {
     .row>div {
         border-right: 1px solid #B1B1B1;
-        margin-bottom: 30px;
 
         &:last-child {
 
@@ -1132,7 +1151,7 @@ body {
     @media(max-width:1024px) {
         padding-top: 100px;
     }
-  
+
 
     &:before {
         content: "";
@@ -1148,5 +1167,3 @@ body {
         z-index: -1;
     }
 }
-
-
