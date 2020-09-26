@@ -188,7 +188,7 @@
     align-items: center;
     background-position: center center;
     width: 100%;
-    background-size: contain;
+    background-size:60vh;
     background-repeat: no-repeat;
     position: relative;
 
@@ -199,6 +199,7 @@
         width: 100%;
         height: 100vh;
         background: transparent linear-gradient(180deg, #B1B1B1 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        z-index: -1;
 
     }
 
