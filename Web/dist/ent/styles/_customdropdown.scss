@@ -1,0 +1,40 @@
+.custom-dropdown {
+    margin-left: 30px;
+    position: relative;
+
+    button {
+        background-color: transparent;
+
+        &:focus,
+        &:hover,
+        &:visited {
+            border: 0;
+            outline: 0;
+        }
+
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .dropdown-menu {
+        // position: relative;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        border: 0;
+
+        a.dropdown-item {
+            font-size: 16px;
+            // padding-left: 20px;
+
+        }
+    }
+
+    .year-dropdown {
+        right: 0 !important;
+        left: inherit !important;
+        margin: 0 auto !important;
+        transform: translate3d(0px, 32px, 0px) !important;
+
+        @media(max-width: 1024px) {}
+    }
+}
