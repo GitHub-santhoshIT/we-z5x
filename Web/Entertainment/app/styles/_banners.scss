@@ -180,7 +180,6 @@
 
 }
 
-
 .circle-bg-banner {
     width: 100%;
     height: 100vh;
@@ -188,10 +187,13 @@
     align-items: center;
     background-position: center center;
     width: 100%;
-    background-size: 60vh;
+    // background-size: 60vh;
+    background-size: 70vh;
     background-repeat: no-repeat;
     position: relative;
-
+    &.bg-cover {
+        background-size: cover;
+    }
     &:before {
         content: "";
         position: absolute;
