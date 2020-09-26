@@ -59,7 +59,7 @@
                 height: auto;
                 width: 100%;
                 filter: grayscale(0%);
-           
+
             }
         }
     }
@@ -76,7 +76,7 @@
         }
 
         .common-link-dark {
-          
+
             &:hover {
                 color: $brand-secondary !important;
 
@@ -89,14 +89,16 @@
         .hr-data-content {
             h4 {
                 color: white;
-                @media(max-width:767px){
+
+                @media(max-width:767px) {
                     color: $fulldark-bg;
                 }
             }
 
             p {
                 color: white;
-                @media(max-width:767px){
+
+                @media(max-width:767px) {
                     color: $fulldark-bg;
                 }
             }
@@ -104,7 +106,8 @@
             .common-link-dark {
 
                 color: white;
-                @media(max-width:767px){
+
+                @media(max-width:767px) {
                     color: $fulldark-bg;
                 }
 
@@ -144,7 +147,7 @@
         img {
             position: relative;
             filter: grayscale(100%);
-         
+
             @include interaction2;
         }
 
@@ -213,12 +216,24 @@
 
         left: 0;
     }
-    &.light-view{
-        color:white;
-    &::before {
-        content: "";
-        background-color: white;
 
+    &.light-view {
+        color: white;
+
+        &::before {
+            content: "";
+            background-color: white;
+
+        }
     }
+
+    &.fulldark-view {
+        color: $fulldark-bg;
+
+        &::before {
+            content: "";
+            background-color: $fulldark-bg;
+
+        }
     }
 }
