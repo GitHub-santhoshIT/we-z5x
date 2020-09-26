@@ -16,7 +16,9 @@
       type="text/css" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" type="text/css" />
    <!-- build:css styles/main.css -->
+   <link rel="stylesheet" href="styles/autocomplete.css">
    <link rel="stylesheet" href="styles/main.css">
+   <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
    <!-- endbuild -->
    <!-- build:js scripts/modernizr.js -->
    <script src="scripts/modernizr.js"></script>
@@ -29,8 +31,11 @@
       <![endif]-->
    <header>
       <nav id="navbar_top" class="navbar navbar-expand-lg">
-         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/zee-logo-white.png" alt="logo" /></a>
+         <div class="container position-relative">
+            <a class="navbar-brand" href="index.html"><img src="images/zee-logo-white.png" alt="logo" /></a>            
+            <a class="nav-link search_img d-md-none d-sm-block searchbtn searchbtn-mobile" href="#">
+               <img src="images/icon_Search.svg" width="40" alt="Search Icon" />
+            </a>
             <button class="nav-icon3" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false"
                aria-label="Toggle navigation">
                <span></span>
@@ -219,8 +224,10 @@
                         </li>
                      </ul>
                   </li>
-                  <li class="nav-item d-none d-sm-block"><a class="nav-link search_img" href="#"><img
-                           src="images/icon_Search.svg"></a>
+                  <li class="nav-item d-none d-sm-block">
+                     <a class="nav-link search_img searchbtn" href="#">
+                        <img src="images/icon_Search.svg" alt="Search Icon" />
+                     </a>
                   </li>
                </ul>
             </div>
@@ -229,25 +236,121 @@
    </header>
    <div id='main'>
       <div class="generic-data-holder">
-         <section>
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="hr-label-holder light-view">Channel pricing</div>
-                     <h2>Search</h2>
-                  </div>
-               </div>
-            </div>
-         </section>
          <section class="mb-30">
             <div class="container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iusto dolorem, accusantium possimus enim molestiae animi velit commodi? Asperiores explicabo nobis beatae id ipsam eos neque dolor excepturi enim error.</p>
+               <div class="search-result">
+                  <h1>Search results</h1>      
+                  <ul>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <h6>Search result heading</h6>
+                           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+                        </a>
+                     </li>
+                  </ul> 
+                </div>
             </div>
-         </section>
-        
-        
+         </section>        
       </div>
    </div>
+   <div id="searchmodal" class="search-modal">
+      <div class="search-container">
+         <div class="container">
+            <div class="search-header row"> 
+               <div class="col-12 col-md-1 mb-2">
+                  <a href="index.html"><img src="images/zee-logo-white.png" width="40" alt="logo" /></a>
+               </div>
+               <div class="col-12 col-md-11">
+                  <div class="search-input">
+                     <span class="search-icon">
+                        <img src="images/icon_Search_gray.svg" alt="Search Icon" />
+                     </span>
+                     <input type="text" class="autocomplete form-control" placeholder="Search" name="users"
+                     id="users" />
+                     <span class="close-icon" id="Closemodal">&times;</span>
+                  </div>
+               </div>
+             </div>
+             <div class="search-content">
+               <div class="row">
+                  <div class="col-12 col-md-1"></div>
+                  <div class="col-12 col-md-10">
+                     <div class="suggested-title">Suggested keywords</div>
+                     <div class="suggested-keaywords">
+                        <a href="">Covid-19</a>
+                        <a href="">Music and theatre</a>
+                        <a href="">Policies</a>
+                        <a href="">Governance</a>
+                        <a href="">Zee Plex</a>
+                        <a href="">Annual report 2019-20</a>
+                        <a href="">Great Place to Work</a>
+                     </div>                     
+                     <div class="suggested-title">Quick Links</div>
+                     <div class="row">
+                        <div class="col-12 col-md-4">
+                           <div class="quick-link-box">
+                              <p>ZEE brings movie theatres to consumers homes</p>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                           <div class="quick-link-box">
+                              <p>ZEE brings back the acclaimed content brand 'Zindagi' on ZEE5</p>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                           <div class="quick-link-box quick-link-box-img">
+                              <p>ZEE fights against COVID-19</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+             </div>
+         </div>
+      </div>
+    </div>
    <footer>
       <div class="primary-footer">
          <div class="container">
@@ -335,6 +438,89 @@
    <!-- build:js scripts/main.js -->
    <script src="scripts/main.js"></script>
    <!-- endbuild -->
+
+   <script src="scripts/autocomplete.js"></script>
+   <script src="scripts/stylehint.js"></script>
+
+   <script>
+      $(document).ready(function () {
+
+         $(".searchbtn").click(function(){
+            $("#searchmodal").css("display", "block")
+            $("body").css("overflow", "hidden")
+         });
+
+         $("#Closemodal").click(function(){
+            $("#searchmodal").css("display", "none")
+            $("body").css("overflow", "auto")
+         });
+  
+        $('.pre').stylehint();
+  
+        $('#users').autocomplete({
+          dataSource: usersList,
+          textProperty: 'Name',
+          valueProperty: 'Id',
+          closeOnSelect: true,
+        });
+  
+  
+        $('#userEvents').autocomplete({
+          dataSource: usersList,
+          textProperty: 'Name',
+          valueProperty: 'Id',
+          closeOnSelect: true,
+          onClick: function (selectedItem) {
+            const result = JSON.stringify(selectedItem);
+            $('#OutputContainer').html(result);
+          }
+        });
+  
+      });
+  
+  
+      $.ajax({
+        url: 'Options.json',
+        success: function (data) {
+          if (!data) {
+            return;
+          }
+  
+          const tbody = $('#tblSettings tbody');
+          $.each(data, function (index, item) {
+            const tr = $('<tr><td class="Property"></td><td class="Default"></td><td class="Description"></td></tr>');
+            tr.find('.Property').html(item.Property);
+            tr.find('.Default').html(item.Default);
+            tr.find('.Description').html(item.Description);
+            tbody.append(tr);
+          })
+        }
+      })
+  
+  
+      const usersList = [];
+      for (let i = 0; i < 1000; i++) {
+        const user = {
+          id: i + 1,
+          Name: Math.random()
+            .toString(36)
+            .substring(7)
+        };
+        usersList.push(user);
+      }
+      usersList.push({ Id: 10001, Name: 'India' });
+  
+  
+      function GetSelectedValue() {
+        const $element = $('#users');
+        const value = $element.val();
+        const data = $('#users').data('autocomplete').data;
+  
+        alert('Selected Value\n' + JSON.stringify(data));
+  
+      }
+  
+    </script>
 </body>
 
 </html>
