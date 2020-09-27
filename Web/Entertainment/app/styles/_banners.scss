@@ -290,7 +290,6 @@
 
 .product-banner {
     height: 400px;
-
     width: 100%;
     border-radius: 20px;
     background-position: center center;
@@ -298,7 +297,10 @@
     background-size: cover;
     filter: grayscale(1);
     transition: all 0.5s ease;
-
+@media(max-width:767px){
+    height: 260px;
+    filter: grayscale(0);
+}
     &:hover {
         filter: grayscale(0);
 
