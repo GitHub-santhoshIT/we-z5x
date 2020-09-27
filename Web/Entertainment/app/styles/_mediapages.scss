@@ -1,1 +1,261 @@
 //test
+/** starts here*/
+
+
+
+.cat_text{
+font-weight: 600;
+    }
+    
+    .border-right{
+        border-right: 1px solid #B1B1B1;
+    }
+.digital-block #archiveCarousel .carousel-inner {
+    background: #fff !important;
+    width: 100%;
+    height: auto;
+}
+
+.publisher-logo{
+    width: 55%;
+}
+
+// .events-block #archiveCarousel .nav li {
+//     width: 22%;
+//     margin: 0 15px;
+//     font-weight: 600;
+   
+// }
+.block-events img {
+    filter: grayscale(100%);
+  }
+  
+  .block-events img:hover{
+    filter: grayscale(0%);
+    }
+.domestic img {
+    filter: grayscale(100%);
+  }
+  .domestic  img:hover{
+  filter: grayscale(0%);
+  }
+  .international img {
+    filter: grayscale(100%);
+  }
+  .international img:hover{
+  filter: grayscale(0%);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .domestic img.img-fluid.rounded-lg {
+        width: 50%;
+    }
+    .international img.img-fluid.rounded-lg {
+        width: 50%;
+    }
+        .zee-logo-height {
+            height: auto;
+            width: 50%;
+            margin-top: -30px;
+         
+    }
+    .events-block #archiveCarousel .nav li {
+     font-size: 12px;
+        margin: 0px;
+    }
+    .events-block #archiveCarousel .nav li a {
+        border-radius: 0px;
+        padding: 0 0px;
+        color: #614242;
+        height: auto;
+        line-height: initial;
+    }
+    .movies-block h4.text-mediumdark {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .movies-block h3.pb-5 {
+        padding-bottom: 2rem !important;
+        font-size: 24px;
+    }
+    .movies-block h6.cat_text {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .movies-block .pt-5, .py-5 {
+        padding-top: 1rem!important;
+    }
+    .ott-logo-responsive{
+        width: 45%;
+    }
+    img.p-5.ott-logo-responsive {
+        padding: 1rem !important;
+    }
+    .responsive-ott-details {
+        padding-top: 0rem !important;
+    }
+   h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 16px;
+    
+   }
+   #archiveCarousel {
+    padding-top: 0px !important;
+} 
+.events-logo-responsive {
+    width: 75%;
+}
+}
+   @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+ .zee-logo-height{
+        height: auto !important;
+        width: 60% !important;
+    }
+   }
+   
+/** starts close here*/
+
+.broadcast-background {
+    background-color: #f1f0f0;
+}
+
+#archiveCarousel .nav li {
+    margin: 0;
+}
+.domestic{
+    #archiveCarousel .carousel-inner {
+        height: auto !important;
+    }
+    .carousel-inner {
+        overflow: visible !important; 
+    }
+}
+
+
+
+#archiveCarousel1 .nav a small {
+    display: block;
+}
+#archiveCarousel1 {
+    .nav {
+        background: transparent;
+
+        li {
+            width: 16%;
+            margin: 0;
+            font-weight: 600;
+            font-size: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                border-radius: 0px;
+                padding: 0;
+                color: #614242;
+
+                height: 50px;
+                line-height: 50px;
+
+                &:hover {
+                    border-radius: 0px;
+                    text-decoration: none !important;
+                }
+            }
+            &.active {
+                a {
+                    color: #8941bb !important;
+                }
+
+                border-bottom: 4px solid #8941bb;
+            }
+        }
+    }
+}
+#archiveCarousel1 {
+    padding-top: 60px;
+
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+        overflow: unset;
+    }
+
+    .carousel-item {
+        border-top: 1px solid #b1b1b1;
+
+        .carousel-caption {
+            position: relative !important;
+            left: 0px;
+            text-align: left;
+            top: 50px;
+
+            @media (max-width: 1024px) {
+                top: 10px;
+            }
+
+            h3 {
+                color: #000 !important;
+
+                @media (max-width: 1024px) {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            p {
+                padding-top: 30px;
+                color: #000 !important;
+
+                @media (max-width: 1024px) {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.modal-body {
+    .form-control {
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: inherit;
+    }
+    .form-control:focus {
+        box-shadow: none;
+    }
+    .input-group-text {
+        background: none;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: inherit;
+    }
+}
+
+
+
+
+@media (max-width: 560px) {
+    .purpose-two-block {
+        padding: 30px !important;
+    }
+   
+}
+@media (max-width:360px){
+    h4 {
+        font-size: 24px !important;
+    }
+    #archiveCarousel1 .nav li {
+        width: 30%;
+    }
+    .w-25 {
+        width: auto; 
+        display: flex;
+    }
+}
+
+.border-radius{
+    border-radius: 1.3rem;
+}
