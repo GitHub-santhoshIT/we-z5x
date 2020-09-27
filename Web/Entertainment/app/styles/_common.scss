@@ -1196,6 +1196,9 @@ body {
 }
 
 .support-block {
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 30px;
+
     .row.large-gutters>div {
         border-right: 1px solid #B1B1B1;
 
@@ -1203,7 +1206,6 @@ body {
             border-right: 0;
         }
     }
-
     .support-data {
         padding: 30px 0;
 
@@ -1211,5 +1213,13 @@ body {
             padding: 15px 0;
 
         }
+    }
+}
+.support-info-bottom{
+    padding: 30px 0;
+    border-bottom: 1px solid #b1b1b1;
+    @media(max-width: 1024px) {
+        padding: 15px 0;
+
     }
 }
