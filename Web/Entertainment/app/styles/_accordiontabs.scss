@@ -109,3 +109,32 @@ ul#expandmenu {
     }
 
 }
+
+#expandmenu .channel_accordian .accordion a, .fillings a {
+    @media(max-width: 767px) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+    }
+
+}
+
+#expandmenu .channel_accordian .accordion .card-header {
+    @media(max-width: 767px) {
+        padding-right: 0;
+        display: flex;
+        position: relative;
+        span.title{
+            width: 90%;
+        }
+        span.accicon.rotate-icon{
+            width: 10%;
+            position: absolute;
+            right: 0;
+            top:10px;
+        }
+    
+
+    }
+ 
+}

@@ -636,7 +636,11 @@
     box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0), 0px -5px 10px 0px rgba(255, 255, 255, 0);
     border-radius: 20px;
     // margin-bottom: 30px;
-
+@media(max-width:767px){
+    height: 230px;
+    background-color: #F1F0F0;
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.2), 0px -5px 10px 0px white;
+}
     @media(max-width:767px) {
         padding: 15px;
         margin-bottom: 15px;
