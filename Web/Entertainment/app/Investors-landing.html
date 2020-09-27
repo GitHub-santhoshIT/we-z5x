@@ -384,7 +384,7 @@
             <div class="investor-lsit-cards">
                <div class="row no-gutters">
                   <div class="col-sm-12">
-                     <h3>Financials</h3>
+                     <h4>Financials</h4>
                   </div>
                   <div class="col-sm-3">
                      <div class="info-data-card">
@@ -448,7 +448,7 @@
             <div class="investor-lsit-cards">
                <div class="row no-gutters">
                   <div class="col-sm-12">
-                     <h3>Corporate governance</h3>
+                     <h4>Corporate governance</h4>
                   </div>
                   <div class="col-sm-4">
                      <div class="info-data-card">
@@ -498,7 +498,7 @@
             <div class="investor-lsit-cards">
                <div class="row no-gutters">
                   <div class="col-sm-12">
-                     <h3>Regulatory filings</h3>
+                     <h4>Regulatory filings</h4>
                   </div>
                   <div class="col-sm-3">
                      <div class="info-data-card">
@@ -562,7 +562,7 @@
             <div class="investor-lsit-cards">
                <div class="row no-gutters">
                   <div class="col-sm-12">
-                     <h3>Shareholder services</h3>
+                     <h4>Shareholder services</h4>
                   </div>
                   <div class="col-sm-4">
                      <div class="info-data-card">
@@ -608,6 +608,71 @@
                   </div>
                </div>
             </div>
+      </section>
+      <section>
+         <div class="semidark-bg common-gutter-block">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <h4 class="mb-15">Share information</h4>
+                     <section>
+                        <div class="container investors_tabs">
+                           <div class="row">
+                              <div class="col-sm-12">
+
+                                 <ul id="expandmenu">
+                                    <li>
+                                       <a href="#">BSE</a>
+                                       <section class="mb-0">
+                                          <div class="channel_accordian mt-60">
+
+                                             <div class="row">
+                                                <div class="col-sm-12">
+                                                   <h4>₹193.35</h4>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <p class="mb-0 lh-normal"><small class="fw-600">BSE: 505537</small>
+                                                   </p>
+                                                   <p class="mb-0 lh-normal"><small>15:55 IST</small></p>
+                                                   <p class="mb-0 lh-normal"><small>September 25, 2020</small></p>
+                                                </div>
+                                                <div class="ml-auto mr-xl-3">
+                                                   <p class="mb-0 lh-normal"><small>
+                                                         <span class="fw-600">Change:</span> +8.30 ( 4.37%)</small></p>
+                                                   <p><small><span class="fw-600">Volume:</span> 1,360,228</small></p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </li>
+                                    <li>
+                                       <a href="#">NSE</a>
+                                       <section>
+                                          <div class="fillings">
+                                             <div class="container">
+                                                <div class="row mt-60 large-gutters">
+                                                   <div class="col-sm-12">
+                                                      <div class="support-data">
+                                                         <p>
+                                                      NSE data holder
+                                                         </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </li>
+                                 </ul>
+                                 <div style="clear: both;"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
    </div>
    <section class="mb-0">
@@ -718,6 +783,23 @@
    <!-- build:js scripts/main.js -->
    <script src="scripts/main.js"></script>
    <!-- endbuild -->
+   <script>$('#expandmenu').children('li').first().children('a').addClass('active')
+         .next().addClass('is-open').show();
+
+      $('#expandmenu').on('click', 'li > a', function () {
+
+         if (!$(this).hasClass('active')) {
+
+            $('#expandmenu .is-open').removeClass('is-open').hide();
+            $(this).next().toggleClass('is-open').toggle();
+
+            $('#expandmenu').find('.active').removeClass('active');
+            $(this).addClass('active');
+         } else {
+
+         }
+      });
+   </script>
 </body>
 
 </html>
