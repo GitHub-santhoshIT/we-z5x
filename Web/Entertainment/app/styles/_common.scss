@@ -1171,11 +1171,25 @@ body {
 .investors_tabs {
     #expandmenu {
         border-bottom: 1px solid #B1B1B1;
+        li 
+        {
+            @media only screen and (max-width:992px)
+            {
+                margin-right: 0px !important;
+            }
+            a
+            {
+                @media only screen and (max-width:480px)
+                {
+                    border-bottom: 0px !important;
+                }
+            }
 
-        section {
-            border-top: 0 !important;
-            width: 100%;
         }
+    section
+    {
+        border-top: 0 !important;
+        width: 100%;
     }
 
     .fillings {
