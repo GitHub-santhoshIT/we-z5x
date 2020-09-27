@@ -1,0 +1,75 @@
+#expandmenu {
+	width: 80%; 
+	position: relative; 
+	border: none;
+  }
+  
+  ul#expandmenu {
+	padding: 0;
+  }
+  
+  #expandmenu li {
+	list-style: none;
+	display: inline;
+  }
+  #expandmenu li a {
+	  padding: 10px 15px;
+	  background: #ccc;
+	  text-decoration: none;
+	  color: #000;
+	  display: inline-block;
+  }
+  #expandmenu li a:hover, #expandmenu li a.active {
+	  background: #B3B3B3;
+	  color: #F2F2F2;
+  }
+  
+  
+  
+  #expandmenu section {
+	display: none; /* I NEED TO FIX THIS */
+	float: left;
+	background: #B3B3B3;
+	overflow: hidden; 
+	padding: 1%; 
+	position: relative; 
+	top: 0	; 
+	left: 0;
+  }
+  
+  .no-js #expandmenu section {
+	display: block; /* I NEED TO FIX THIS */
+  }
+  #expandmenu li ul li a {
+	  padding: 10px 25px;
+	  border-bottom: 1px dotted #ccc;
+  }
+  
+  @media only screen and (max-width: 30em) { 
+	  #expandmenu {
+	  border-top: 1px solid #999;
+	  border-right: 1px solid #999;
+	  border-left: 1px solid #999;
+	  width: 95%;
+  }
+  
+  ul#expandmenu {
+	padding: 0;
+  }
+  
+  #expandmenu li {
+	  display:block;
+  }
+  #expandmenu li a {
+	  display: block;
+	  border-top: 1px solid #eee;
+	  border-bottom: 1px solid #999;
+  }
+  
+  #expandmenu section {
+	float: none;
+	padding: 1% 3% 0 3%;
+	position:static;
+  }
+	  
+  }
