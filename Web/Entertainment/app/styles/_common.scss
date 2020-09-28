@@ -1167,3 +1167,34 @@ body {
         z-index: -1;
     }
 }
+
+.investors_tabs
+{  
+    #expandmenu
+    { 
+        border-bottom: 1px solid #B1B1B1;
+    section
+    {
+        border-top: 0 !important;
+        width: 100%;
+    }
+}
+
+.fillings
+{
+    .d-flex
+    {
+        border-bottom: 1px solid #B1B1B1;
+        p
+        {
+            padding-top: 10px;
+           
+        }
+        .grey_text
+        {
+            color:#B1B1B1;
+        }
+    }
+
+}
+}
