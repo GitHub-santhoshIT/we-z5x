@@ -1193,6 +1193,22 @@ body {
     }
 
     .fillings {
+        .support-data
+        {
+            border-bottom: 1px solid #B1B1B1;
+          
+        }
+        .email_id
+        {
+            padding-bottom :30px;
+            a
+            {
+                padding:0 !important;
+                color: #000 !important;
+                font-weight: normal !important  ;
+              
+            }
+        }
         .d-flex {
             border-bottom: 1px solid #B1B1B1;
 
@@ -1226,4 +1242,5 @@ body {
 
         }
     }
+}
 }
