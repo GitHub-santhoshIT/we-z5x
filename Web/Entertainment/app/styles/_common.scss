@@ -700,7 +700,7 @@ body {
                 position: absolute;
                 right: 20px;
                 bottom: -40px;
-                background-color: $brand-secondary;
+                background-color:transparent;
                 width: 40px;
                 height: 40px;
                 border-radius: 40px;
@@ -765,7 +765,7 @@ body {
         position: absolute;
         right: 20px;
         top: 20px;
-        background-color: $brand-secondary;
+        background-color: transparent;
         width: 40px;
         height: 40px;
         border-radius: 40px;
@@ -1170,6 +1170,24 @@ body {
 }
 
 .investors_tabs {
+    .support-data
+    {
+        border-bottom: 1px solid #b1b1b1 !important;
+        .email_id
+        {
+            padding-bottom: 30px;
+           
+            a
+            {
+                padding: 0 !important;
+                &:hover
+                {
+                    color: #b1b1b1 !important;
+                }
+            }
+           
+        }
+    }
     .directors_tab
     {
         border-bottom: 1px solid #b1b1b1;
