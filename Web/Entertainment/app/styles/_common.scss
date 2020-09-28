@@ -407,6 +407,7 @@ body {
         width: 400px;
         border-radius: 400px;
         background-size: cover;
+        background-position: center center;
         filter: grayscale(100%);
         @include interaction2;
 

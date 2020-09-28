@@ -1,163 +1,189 @@
-.r-tabs .r-tabs-nav {
-    margin: 0;
-    padding: 0;
-}
+.tabs-custom{
 
-.r-tabs .r-tabs-tab {
-    display: inline-block;
-    margin: 0;
-    list-style: none;
-}
-
-.r-tabs .r-tabs-panel {
-    padding: 15px;
-    display: none;
-}
-
-.r-tabs .r-tabs-accordion-title {
-    display: none;
-}
-
-.r-tabs .r-tabs-panel.r-tabs-state-active {
-    display: block;
-}
-
-@media only screen and (max-width: 768px) {
-    .r-tabs .r-tabs-nav {
-        display: none;
-    }
-
-    .r-tabs .r-tabs-accordion-title {
-        display: block;
-    }
-}
-
-.r-tabs {
-	position: relative;
-
-	// background-color: #00c5ad;
-
-	// border-top: 1px solid #00c5ad;
-	// border-right: 1px solid #00c5ad;
-	// border-left: 1px solid #00c5ad;
-	// border-bottom: 4px solid #00c5ad;
-	border-radius: 4px;
-
-}
-
-/* Tab element */
-.r-tabs .r-tabs-nav .r-tabs-tab {
-	position: relative;
-}
-
-/* Tab anchor */
-.r-tabs .r-tabs-nav .r-tabs-anchor {
-	display: inline-block;
-	padding: 10px 12px;
-
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 600;
-	color:#b1b1b1;
-}
-
-/* Disabled tab */
-.r-tabs .r-tabs-nav .r-tabs-state-disabled {
-	opacity: 0.5;
-}
-
-/* Active state tab anchor */
-.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
-	color: $brand-secondary;
-	text-shadow: none;
-
-	background-color: white;
-
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-}
-
-/* Tab panel */
-.r-tabs .r-tabs-panel {
-	background-color: white;
-
-	border-bottom: 4px solid white;
-
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-
-}
-
-/* Accordion anchor */
-.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
-	display: block;
-	padding: 10px;
-
-	background-color: #00c5ad;
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-	font-size: 14px;
-
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-}
-
-/* Active accordion anchor */
-.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
-	background-color: #fff;
-	color: #00c5ad;
-	text-shadow: none;
-}
-
-/* Disabled accordion button */
-.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
-	opacity: 0.5;
-}
-
-/* Buttons */
-button {
-	display:inline-block;
-	margin-top: 10px;
-	margin-right: 10px;
-	padding: 10px 20px;
-	line-height: 100%;
-
-	color: #fff;
-	font-size: 14px;
-	text-align: center;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	vertical-align: middle;
-	font-weight: bold;
+	.r-tabs .r-tabs-nav {
+		margin: 0;
+		padding: 0;
+		
+		border-bottom: 1px solid #b1b1b1;
+	}
 	
-	border: 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #00c5ad;
-	box-shadow: 0px 3px 0px 0px #00ab94;
+	.r-tabs .r-tabs-tab {
+		display: inline-block;
+		margin: 0;
+		list-style: none;
+	}
 	
-	cursor: pointer;
+	.r-tabs .r-tabs-panel {
+		padding: 0;
+		margin-top: 30px;
+		display: none;
+	}
+	
+	.r-tabs .r-tabs-accordion-title {
+		display: none;
+	}
+	
+	.r-tabs .r-tabs-panel.r-tabs-state-active {
+		display: block;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.r-tabs .r-tabs-nav {
+			display: none;
+		}
+	
+		.r-tabs .r-tabs-accordion-title {
+			display: block;
+		}
+	}
+	
+	.r-tabs {
+		position: relative;
+	
+		// background-color: #00c5ad;
+	
+		// border-top: 1px solid #00c5ad;
+		// border-right: 1px solid #00c5ad;
+		// border-left: 1px solid #00c5ad;
+		// border-bottom: 4px solid #00c5ad;
+		border-radius: 4px;
+	
+	}
+	
+	/* Tab element */
+	.r-tabs .r-tabs-nav .r-tabs-tab {
+		position: relative;
+		margin-right: 60px;
+	}
+	
+	/* Tab anchor */
+	.r-tabs .r-tabs-nav .r-tabs-anchor {
+		display: inline-block;
+		padding: 10px 25px;
+	
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: 600;
+		color:#100F0F;
+	}
+	
+	/* Disabled tab */
+	.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+		opacity: 0.5;
+	}
+	
+	/* Active state tab anchor */
+	.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+		color: $brand-secondary;
+		text-shadow: none;
+	
+		background-color: white;
+	
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
+		background-color: transparent;
+		position: relative;
+		
+	}
+	.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+		height: 4px;
+		background-color: #8941BB;
+	}
+	
+	/* Tab panel */
+	.r-tabs .r-tabs-panel {
+		background-color: transparent;
+	
+	
+	
+	
+	}
+	
+	/* Accordion anchor */
+	.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+		display: block;
+		padding: 10px 0px;
+		color: #B1B1B1;
+		font-size: 16px;
+		font-weight: 600;
+		border-bottom: 1px solid #b1b1b1;
+	
+	
+	}
+	
+	/* Active accordion anchor */
+	.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+	
+		color: #8941BB;
+		position: relative;
+		text-decoration: none;
+		position: relative;
+	
+	}
+	.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor:after{
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+		height: 4px;
+		background-color: #8941BB;
+	
+	}
+	
+	/* Disabled accordion button */
+	.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+		opacity: 0.5;
+	}
+	
+	/* Buttons */
+	button {
+		display:inline-block;
+		margin-top: 10px;
+		margin-right: 10px;
+		padding: 10px 20px;
+		line-height: 100%;
+	
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+		vertical-align: middle;
+		font-weight: bold;
+		
+		border: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		background-color: #00c5ad;
+		box-shadow: 0px 3px 0px 0px #00ab94;
+		
+		cursor: pointer;
+	}
+	
+	/* Info bar */
+	.info {
+		display:inline-block;
+		margin-top: 10px;
+		margin-right: 10px;
+		padding: 10px 20px;
+		width: 300px;
+		line-height: 100%;
+	
+		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		font-size: 14px;
+		color: #00c5ad;
+		border: 2px solid #00ab94;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		background-color: #fff;
+	
+		cursor: pointer;
+	} 
 }
-
-/* Info bar */
-.info {
-	display:inline-block;
-	margin-top: 10px;
-	margin-right: 10px;
-	padding: 10px 20px;
-	width: 300px;
-	line-height: 100%;
-
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 14px;
-	color: #00c5ad;
-	border: 2px solid #00ab94;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #fff;
-
-	cursor: pointer;
-} 
