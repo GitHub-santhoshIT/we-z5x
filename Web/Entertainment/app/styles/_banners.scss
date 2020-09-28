@@ -172,6 +172,13 @@
     h2 {
         color: white;
         line-height: 1;
+        
+        br{
+            @media(max-width:767px) {
+                display: none;
+            }
+       
+        }
     }
 
     p {

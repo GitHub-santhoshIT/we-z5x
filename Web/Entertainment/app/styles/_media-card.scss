@@ -1,5 +1,16 @@
 .media-card-block {
+
     // padding: 60px 0;
+    // .row>div {
+    //     border-right: 1px solid #B1B1B1;
+
+    //     &:last-child {
+
+
+    //         border-right: 0;
+
+    //     }
+    // }
 
     ul {
         padding-left: 0;
@@ -8,6 +19,7 @@
             list-style-type: none;
         }
     }
+
 }
 
 .media-card-holder {
@@ -16,7 +28,7 @@
     position: relative;
     height: 420px;
     padding: 40px 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: $semidark-bg;
     margin-bottom: 30px;
     background-size: cover;
@@ -41,6 +53,7 @@
         @media(max-width:1024px) {
             bottom: 30px;
         }
+
         // i{
         //     width: 50px;
         //     height: 50px;
