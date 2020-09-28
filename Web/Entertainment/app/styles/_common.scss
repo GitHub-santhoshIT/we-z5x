@@ -1169,6 +1169,16 @@ body {
 }
 
 .investors_tabs {
+    .directors_tab
+    {
+        border-bottom: 1px solid #b1b1b1;
+        padding: 15px ;
+        p 
+        {
+            margin: 0;
+            padding:0;
+        }
+    }
     #expandmenu {
         border-bottom: 1px solid #B1B1B1;
 
