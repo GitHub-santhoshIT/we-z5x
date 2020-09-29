@@ -209,8 +209,35 @@ body {
     .sider-counter {
         .slick-active {
             .single-item {
+                .blink-text {
+
+                    em {
+                        animation: blink 1s linear infinite;
+                    }
+
+                    @keyframes blink {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: .5;
+                        }
+
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                    em.plus-text {
+                        color: $fulldark-bg;
+                        font-style: normal;
+                    }
+                }
+
                 h2 {
                     margin-top: 0;
+
                 }
             }
         }
@@ -700,7 +727,7 @@ body {
                 position: absolute;
                 right: 20px;
                 bottom: -40px;
-                background-color:transparent;
+                background-color: transparent;
                 width: 40px;
                 height: 40px;
                 border-radius: 40px;
@@ -799,6 +826,27 @@ body {
 }
 
 .custom-sroll {
+    .content-part.grid-list-view {
+        li {
+            cursor: default;
+            color: #b1b1b1;
+            transition: all 0.3s ease;
+
+            .hr-label-holder {
+                color: #b1b1b1;
+                transition: all 0.3s ease;
+            }
+
+            &:hover {
+                color: $fulldark-bg;
+
+                .hr-label-holder {
+                    color: $fulldark-bg;
+                }
+            }
+        }
+
+    }
 
     .content-part {
         margin: 30px 30px 0px 30px;
@@ -1170,34 +1218,33 @@ body {
 }
 
 .investors_tabs {
-    .support-data
-    {
+    .support-data {
         border-bottom: 1px solid #b1b1b1 !important;
-        .email_id
-        {
+
+        .email_id {
             padding-bottom: 30px;
-           
-            a
-            {
+
+            a {
                 padding: 0 !important;
-                &:hover
-                {
+
+                &:hover {
                     color: #b1b1b1 !important;
                 }
             }
-           
+
         }
     }
-    .directors_tab
-    {
+
+    .directors_tab {
         border-bottom: 1px solid #b1b1b1;
-        padding: 15px ;
-        p 
-        {
+        padding: 15px;
+
+        p {
             margin: 0;
-            padding:0;
+            padding: 0;
         }
     }
+
     #expandmenu {
         border-bottom: 1px solid #B1B1B1;
 
@@ -1289,4 +1336,3 @@ body {
 }
 
 //@include
- 
