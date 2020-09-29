@@ -209,31 +209,7 @@ body {
     .sider-counter {
         .slick-active {
             .single-item {
-                .blink-text {
-
-                    em {
-                        animation: blink 1s linear infinite;
-                    }
-
-                    @keyframes blink {
-                        0% {
-                            opacity: 0;
-                        }
-
-                        50% {
-                            opacity: .5;
-                        }
-
-                        100% {
-                            opacity: 1;
-                        }
-                    }
-
-                    em.plus-text {
-                        color: $fulldark-bg;
-                        font-style: normal;
-                    }
-                }
+                background-size: 80%;
 
                 h2 {
                     margin-top: 0;
@@ -243,13 +219,40 @@ body {
         }
 
         .single-item {
+            .blink-text {
+
+                em {
+                    animation: blink 2s linear infinite;
+                }
+
+                @keyframes blink {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    50% {
+                        opacity: .5;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                em.plus-text {
+                    color: $fulldark-bg;
+                    font-style: normal;
+                }
+            }
+
             display: flex;
             align-items: center;
             justify-content: center;
             height: 460px;
             background-position: center center;
-            background-size: contain;
+            background-size: 0;
             background-repeat: no-repeat;
+            transition: all 1s ease;
 
             @media(max-width: 767px) {
                 height: 300px;
