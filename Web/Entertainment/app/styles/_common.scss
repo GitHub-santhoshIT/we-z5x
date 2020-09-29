@@ -221,7 +221,7 @@ body {
             justify-content: center;
             height: 460px;
             background-position: center center;
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
 
             @media(max-width: 767px) {
