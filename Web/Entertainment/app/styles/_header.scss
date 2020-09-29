@@ -21,7 +21,7 @@ header {
 
     nav.navbar {
         padding: 0px 15px;
-
+transition: all 0.5s ease;
         &.fixed-top {
             background-color: #B1B1B1;
 
