@@ -46,7 +46,7 @@
   transform: translateX(10px);
   transition: all 0.4s ease;
   will-change: transition;
-  color: #464646;
+  color: #b1b1b1;
   font-weight: 600;
 }
 @media(max-width:1366px){
@@ -99,6 +99,9 @@
 .scroll-indicator-controller>div.active {
   background: #000;
   border-color: rgba(0, 0, 0, 0.25);
+  span{
+    color: $fulldark-bg;
+  }
 }
 
 @supports (-ms-ime-align:auto) {

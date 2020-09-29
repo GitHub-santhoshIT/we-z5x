@@ -239,22 +239,22 @@ font-weight: 600;
 
 @media (max-width: 560px) {
     .purpose-two-block {
-        padding: 30px !important;
+        padding: 0px !important;
     }
    
 }
-@media (max-width:360px){
-    h4 {
-        font-size: 24px !important;
-    }
-    #archiveCarousel1 .nav li {
-        width: 30%;
-    }
-    .w-25 {
-        width: auto; 
-        display: flex;
-    }
-}
+// @media (max-width:360px){
+//     h4 {
+//         font-size: 24px !important;
+//     }
+//     #archiveCarousel1 .nav li {
+//         width: 30%;
+//     }
+//     .w-25 {
+//         width: auto; 
+//         display: flex;
+//     }
+// }
 
 .border-radius{
     border-radius: 1.3rem;
