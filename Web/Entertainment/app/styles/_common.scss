@@ -1356,4 +1356,79 @@ body {
 
 }
 
-//@include
+/*feedback form*/
+.feedback_form
+{
+    .shape_bg
+    {
+       img
+       {
+           position: relative;
+       }
+        p
+        {
+           top: 0;
+            text-align: center;
+            padding: 30px 43px;
+            color: #fff;
+            font-weight: 500;
+            position: absolute;
+            cursor: pointer;
+        }
+
+      
+    }
+    .modal-content
+    {
+        background-image: url('../images/feedback-bg.png');
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .modal-body
+    {
+        label.btn.btn-secondary{
+            
+            border-radius: 5px;
+        }
+        button.btn.dropdown-toggle {
+            border-bottom: 1px solid #b1b1b1;
+        }
+        .form-control,.input,.others_text
+        {
+            border-bottom: 1px solid #b1b1b1 !important;
+        }
+        .Submit_text
+        {
+            background-color: #000 !important;
+            color: #fff !important;
+            img
+            {
+                color: #fff !important;
+            }
+        }
+    }
+    .textarea-sec
+    {
+        .textarea
+        {
+            position: relative;
+
+        }
+        img
+        {
+            position: absolute;
+            bottom: 0px;
+            padding: 5px;
+        }
+        p
+        {
+            position: absolute;
+            bottom: 0px;
+            padding: 0px;
+            right: 15px;
+            margin: 0;
+            font-size: 8px;
+            color: #b1b1b1;
+        }
+    }
+}
