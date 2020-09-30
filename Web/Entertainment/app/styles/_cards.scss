@@ -218,7 +218,7 @@
         background-position: 0 0;
         border-radius: 10px;
         background-size: cover;
-        background-color: #F1F0F0;
+        background-color: $dark-bg;
         opacity: 0;
         @include interaction2;
         transition: all 0.3s ease-out;

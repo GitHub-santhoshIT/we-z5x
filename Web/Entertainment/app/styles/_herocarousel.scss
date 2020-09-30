@@ -8,6 +8,7 @@
     }
 
     .slider__counter {
+        display: none;
         position: absolute;
         bottom: 2rem;
         right: 3rem;
@@ -241,9 +242,11 @@
             height: 90%;
             padding: 0 30px;
             text-align: center;
+            display: none !important;
         }
 
         .slick-next {
+            display: none !important;
             right: 0;
             z-index: 999;
             height: 90%;
