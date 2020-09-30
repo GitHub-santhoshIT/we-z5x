@@ -1,4 +1,16 @@
 console.log('\'Allo \'Allo!');
+$(document).ready(function () {
+  if($(window).width() > 1024){
+      // Mouse over
+  $('body').on('mouseover', '.dropdown', function (e) {
+    $(this).children('.dropdown-toggle').dropdown('show');
+ });
+ // Mouse leave
+ $('body').on('mouseleave', '.dropdown', function (e) {
+    $(this).children('.dropdown-toggle').dropdown('hide');
+ });
+  }
+});
 
 if ($(window).width() > 992) {
   $(window).scroll(function(){  
@@ -565,31 +577,31 @@ $(document).ready(function() {
 
 /*hero carousel*/
 
-var $slider = $('.hero-slider');
+// var $slider = $('.hero-slider');
 
-if ($slider.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounter = document.createElement('div');
-  sliderCounter.classList.add('slider__counter');
+// if ($slider.length) {
+//   var currentSlide;
+//   var slidesCount;
+//   var sliderCounter = document.createElement('div');
+//   sliderCounter.classList.add('slider__counter');
   
-  var updateSliderCounter = function(slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounter).text(currentSlide + '/' +'5') 
-  };
+//   var updateSliderCounter = function(slick, currentIndex) {
+//     currentSlide = slick.slickCurrentSlide() + 1;
+//     slidesCount = slick.slideCount;
+//     $(sliderCounter).text(currentSlide + '/' +'5') 
+//   };
 
-  $slider.on('init', function(event, slick) {
-    $slider.append(sliderCounter);
-    updateSliderCounter(slick);
-  });
+//   $slider.on('init', function(event, slick) {
+//     $slider.append(sliderCounter);
+//     updateSliderCounter(slick);
+//   });
 
-  $slider.on('afterChange', function(event, slick, currentSlide) {
-    updateSliderCounter(slick, currentSlide);
-  });
+//   $slider.on('afterChange', function(event, slick, currentSlide) {
+//     updateSliderCounter(slick, currentSlide);
+//   });
 
-  $slider.slick();
-}
+//   $slider.slick();
+// }
 
 
 
@@ -841,4 +853,13 @@ $('#nav').children('li').first().children('a').addClass('active')
         
       }
    });
+
+
+
+
+
+
+
+   //Nav hover state
+
 
