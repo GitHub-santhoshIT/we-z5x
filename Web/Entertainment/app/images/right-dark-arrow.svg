@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="91.203" height="60.243" viewBox="0 0 91.203 60.243">
   <g id="right-dark-arrow" transform="translate(89.703 2.121) rotate(90)">
-    <path id="Path_1" data-name="Path 1" d="M0,88.2V0" transform="translate(28 0.003)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-    <path id="Path_2" data-name="Path 2" d="M56,28,28,0,0,28" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_1" data-name="Path 1" d="M0,88.2V0" transform="translate(28 0.003)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_2" data-name="Path 2" d="M56,28,28,0,0,28" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
   </g>
 </svg>

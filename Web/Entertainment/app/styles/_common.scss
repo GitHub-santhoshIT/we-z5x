@@ -1359,30 +1359,125 @@ body {
 /*feedback form*/
 .feedback_form
 {
+    position: relative;
+    top: -60px;
+
     .shape_bg
     {
+        position: relative;
+        width: 135px;
+
        img
        {
            position: relative;
        }
         p
         {
-           top: 0;
             text-align: center;
-            padding: 30px 43px;
             color: #fff;
-            font-weight: 500;
             position: absolute;
             cursor: pointer;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 57px;
+            margin: auto;
+            font-size: 16px;
         }
 
       
     }
-    .modal-content
-    {
-        background-image: url('../images/feedback-bg.png');
-        background-position: right;
-        background-repeat: no-repeat;
+    .modal-content {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-image: url(../images/feedback-bg.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            width: 340px;
+            height: 530px;
+            background-size: cover;
+            z-index: 99;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #100F0F;
+        }
+        p {
+            font-size: 12px;
+            color: #100F0F;
+            margin-bottom: 0;
+            line-height: 14px;
+        }
+        .col-3 {
+            -ms-flex: 0 0 16%;
+            flex: 0 0 16%;
+            max-width: 16%;
+
+            .youare-text {
+                position: relative;
+                font-size: 16px;
+                color: #100F0F;
+                font-weight: 700;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -9px;
+                    width: 128%;
+                    height: 1px;
+                    background-color: #b1b1b1;
+                }
+            }
+        }
+        .custom-select::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-image: url(../images/drop_down.png);
+        }
+        .like-section {
+            h5 {
+                font-size: 16px;
+                color: #100F0F;
+                font-weight: 700;
+            }
+            .btn-secondary {
+                background-color: #efeeee !important;
+                border-color: #efeeee !important;
+                border-radius: 4px !important;
+                color: #4D4D4D !important;
+                font-size: 14px !important;
+                padding: 9px 6px !important;
+                font-weight: 600;
+                margin-right: 8px;
+            }
+            textarea {
+                height: 72px;
+                overflow: hidden;
+                overflow-y: auto;
+                border: 0 !important;
+            }
+            .attach-icon {
+                position: absolute;
+                bottom: 0px;
+                padding: 5px;
+                left: 0;
+                width: 24px;
+            }
+            .upload-brder {
+                border-bottom: 1px solid #b1b1b1 !important;
+            }
+        }
     }
     .modal-body
     {
@@ -1392,6 +1487,9 @@ body {
         }
         button.btn.dropdown-toggle {
             border-bottom: 1px solid #b1b1b1;
+            padding-left: 0;
+            padding-right: 8px;
+            border-radius: 0;
         }
         .form-control,.input,.others_text
         {
