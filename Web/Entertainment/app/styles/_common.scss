@@ -1359,6 +1359,25 @@ body {
 /*feedback form*/
 .feedback_form
 {
+    .shape_bg
+    {
+       img
+       {
+           position: relative;
+       }
+        p
+        {
+           top: 0;
+            text-align: center;
+            padding: 30px 43px;
+            color: #fff;
+            font-weight: 500;
+            position: absolute;
+            cursor: pointer;
+        }
+
+      
+    }
     .modal-content
     {
         background-image: url('../images/feedback-bg.png');
