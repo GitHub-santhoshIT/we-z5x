@@ -51,7 +51,7 @@ header {
             }
 
             .nav-item {
-                margin-right: 50px;
+                margin-right: 20px;
                 font-weight: 400;
                 letter-spacing: 1px;
                 @media(max-width:1024px){
@@ -66,8 +66,8 @@ header {
                     color: white;
                     position: relative;
                     line-height: 60px;
-                    padding-left: 0;
-                    padding-right: 0;
+                    padding-left: 15px;
+                    padding-right: 15px;
                     font-size: 16px;
 
                     &.active {
@@ -167,7 +167,7 @@ header {
                         text-align: left;
                         width: 100%;
                         display: block;
-                        margin-left: 25px;
+                        margin-left: 10px;
                         @media(max-width:1024px) {
                             margin-left: -45px;
                         }
