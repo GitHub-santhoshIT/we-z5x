@@ -429,7 +429,7 @@ if ($slider.length) {
   var updateSliderCounter = function(slick, currentIndex) {
     currentSlide = slick.slickCurrentSlide() + 1;
     slidesCount = slick.slideCount;
-    $(sliderCounter).text(currentSlide + '/' +'7') 
+    $(sliderCounter).text(currentSlide + '/' +'5') 
   };
 
   $slider.on('init', function(event, slick) {
