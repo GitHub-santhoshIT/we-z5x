@@ -1,4 +1,3 @@
-
 .table-data-holder {
     .data-grid {
 
@@ -38,6 +37,11 @@
 
                 h6 {
                     margin-bottom: 0;
+
+                    a {
+                        color: $dark-bg;
+                        transition: all 0.3s ease;
+                    }
                 }
 
                 margin-bottom: 0;
