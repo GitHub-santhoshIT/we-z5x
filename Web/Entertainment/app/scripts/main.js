@@ -448,9 +448,9 @@ $.fn.visible = function(partial) {
   return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 }
 
-$(document).ready(function(e) {
-  checkVisible();
-});
+// $(document).ready(function(e) {
+//   checkVisible();
+// });
 
 $(window).scroll(function(e) {
   checkVisible();
