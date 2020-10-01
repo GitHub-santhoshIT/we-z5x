@@ -1575,5 +1575,30 @@ body {
 }
 
 .slick-slide {
-	height: inherit !important;
+	// height: inherit !important;
+}
+.anualreposrt-ul {
+    position: relative;
+
+    .r-tabs-tab {
+        position: relative;
+        width: 22%;
+        margin-right: 0 !important;
+    }
+    
+    .year_filter {
+        position: absolute !important;
+        right: 0;
+        bottom: 10px;
+        margin-right: 0 !important;
+        min-width: 70px;
+
+        select {
+            background-color: transparent;
+            width: 33%;
+            position: absolute;
+            right: 0;
+            top: -25px;
+        }
+    }
 }
