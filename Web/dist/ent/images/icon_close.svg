@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
-  <g id="plus-icon" transform="translate(-332 -429)">
-    <circle id="Ellipse_122" data-name="Ellipse 122" cx="25.5" cy="25.5" r="25.5" transform="translate(332 429)" fill="#8941bb"/>
-    <g id="Plus" transform="translate(-218.999 387.118) rotate(-45)">
-      <rect id="Rectangle_480" data-name="Rectangle 480" width="3" height="24" transform="translate(358 444)" fill="#fff"/>
-      <rect id="Rectangle_481" data-name="Rectangle 481" width="3" height="24" transform="translate(348 458) rotate(-90)" fill="#fff"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51"><g transform="translate(-332 -429)"><circle data-name="Ellipse 122" cx="25.5" cy="25.5" r="25.5" transform="translate(332 429)" fill="#8941bb"/><g fill="#fff"><path data-name="Rectangle 480" d="M348.1 447.93l2.122-2.122 16.97 16.97-2.12 2.122z"/><path data-name="Rectangle 481" d="M350.93 464.9l-2.122-2.122 16.97-16.97 2.122 2.121z"/></g></g></svg>
