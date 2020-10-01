@@ -1356,6 +1356,8 @@ body {
 
 }
 
+
+
 /*feedback form*/
 .feedback_form
 {
@@ -1388,13 +1390,26 @@ body {
 
       
     }
+    
+    .lets_close {
+        position: absolute;
+        top: 25px;
+        right: 24px;
+        z-index: 99;
+        padding: 0;   
+    }
     .modal-content {
         position: relative;
+
+        .modal-header {
+            padding: 0;
+            border-bottom: 0px solid #dee2e6;
+        }
 
         &::after {
             content: '';
             position: absolute;
-            top: 40px;
+            top: 80px;
             right: 0;
             background-image: url(../images/feedback-bg.png);
             background-position: right;
@@ -1529,4 +1544,36 @@ body {
             color: #b1b1b1;
         }
     }
+}
+
+@media (max-width: 1023px) {
+    .feedback_form .modal-content::after {
+        display: none;
+    }
+    .feedback_form .modal-content .col-3 .youare-text::after {
+        bottom: -7px;
+    }
+    .feedback_form .col-form-label {
+        padding-left: 0;
+        padding-right: 14px !important;
+    }
+    .feedback_form .col-md-9.col-12.pl-0.pr-0 {
+        padding-right: 14px !important;
+    }
+    .like-section {
+        padding-left: 0;
+        padding-right: 0;
+
+        .col-12 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .feedback_form .modal {
+        padding-right: 0 !important;
+    }
+}
+
+.slick-slide {
+	height: inherit !important;
 }
