@@ -176,7 +176,7 @@ $(window).on('resize.slickVideoPlayer', function() {
 $('.home-block-carousel').slick({
 	infinite: true,
 	autoplay: true,
-	autoplaySpeed: 6000,
+	autoplaySpeed: 5000,
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: true,
@@ -221,7 +221,7 @@ $('.sider-counter').slick({
 	autoplay: true,
 	dots: true,
 	arrows: false,
-	autoplaySpeed: 4000,
+	autoplaySpeed: 4000
 });
 /*vertical nav*/
 function dotsThrottle(func, wait, options) {
