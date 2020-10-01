@@ -173,6 +173,16 @@ $(window).on("resize.slickVideoPlayer", function(){
 //video player-x
 
 $('.home-block-carousel').slick({
+  // dots: false,
+  // infinite: true,
+  // fade: true,
+  // autoplay: false,
+  // autoplaySpeed: 6000,
+  // draggable: false,
+  // slidesToShow: 1,
+  // slidesToScroll: 1,
+  // arrows: true,
+  
   dots: false,
   infinite: true,
   fade: true,
@@ -185,7 +195,9 @@ $('.home-block-carousel').slick({
   
 
 
-  
+//  vertical: true,
+//   verticalSwiping: true,
+
   responsive: [
     {
       breakpoint: 1024,
@@ -555,8 +567,9 @@ $(document).ready(function() {
   $(window).on('scroll', function(e) {
     var $src = $('.scroll-indicator-controller');
     var currentScrollTop = $(this).scrollTop()
-   
-    if (currentScrollTop >= prevScrollTop && currentScrollTop > 44) {
+   ///currentScrollTop >= prevScrollTop &&
+    if ( currentScrollTop > 300) {
+
      
       $src.css({
         'position': 'fixed',
@@ -565,7 +578,7 @@ $(document).ready(function() {
       });
       
       $('.scroll-indicator-controller').slideDown();
-    } else {
+    } else { 
       $src.css({
         'position': 'static',
       });
