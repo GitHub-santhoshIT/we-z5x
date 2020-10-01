@@ -182,6 +182,10 @@ $('.home-block-carousel').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
+  
+
+
+  
   responsive: [
     {
       breakpoint: 1024,
