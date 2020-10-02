@@ -61,7 +61,7 @@
                         &:before {
                             content: "";
                             transform: translateX(0px);
-                            transition: all 1s linear;
+
                         }
 
                     }
@@ -69,7 +69,7 @@
 
                 h2 {
                     transform: translatey(0px);
-                    transition: all 1s linear;
+                    transition: all 1.5s linear;
 
                     span {
                         &:before {
@@ -149,8 +149,8 @@
                             margin: 0 auto;
                             bottom: -8px;
                             transform: translateX(0px);
-                            transition: all 2s linear;
                             margin-left: 0;
+                            transition: all 1.75s linear;
                             text-align: left;
 
                             @media(max-width:1024px) {
