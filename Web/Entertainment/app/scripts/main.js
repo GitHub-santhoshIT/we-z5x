@@ -1,4 +1,4 @@
-console.log("'Allo 'Allo!");
+console.log('\'Allo \'Allo!');
 
 $(document).ready(function() {
 	if ($(window).width() > 1024) {
