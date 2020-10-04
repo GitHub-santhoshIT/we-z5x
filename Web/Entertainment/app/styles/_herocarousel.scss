@@ -57,19 +57,12 @@
             .slide {
 
                 p {
-                    a {
-                        &:before {
-                            content: "";
-                            transform: translateX(0px);
-
-                        }
-
-                    }
+                    transform: translateX(0px);
                 }
 
                 h2 {
                     transform: translatey(0px);
-                    transition: all 1.5s linear;
+                    transition: all 1s linear;
 
                     span {
                         &:before {
@@ -104,10 +97,11 @@
 
                 h2 {
                     color: white;
-                    transition-duration: 1s;
+                
                     position: relative;
                     margin-bottom: 0;
                     transform: translatey(60px);
+                    transition-duration: 1s;
                     transition: all 1s linear;
                     line-height: 100px;
 
@@ -150,7 +144,7 @@
                             bottom: -8px;
                             transform: translateX(0px);
                             margin-left: 0;
-                            transition: all 1.75s linear;
+                            transition: all 1.25s linear;
                             text-align: left;
 
                             @media(max-width:1024px) {
@@ -201,6 +195,8 @@
                 right: 140px;
                 margin-bottom: 0;
                 bottom: 100px;
+                transform: translateX(20px);
+                transition: all 1s linear;
 
                 @media(max-width:1024px) {
                     bottom: 40px;
@@ -226,6 +222,7 @@
                     color: white;
                     position: relative;
                     text-decoration: none;
+               
 
                     @media(max-width:767px) {
                         br {
@@ -241,8 +238,7 @@
                         width: 100px;
                         height: 2px;
                         background: rgba(255, 255, 255, 1);
-                        transform: translateX(20px);
-                        transition: all 1s linear;
+
                         left: -120px;
 
                         @media(max-width:767px) {
