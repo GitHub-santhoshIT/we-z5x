@@ -1295,7 +1295,7 @@ body {
                 border-bottom: 1px solid #B1B1B1;
 
                 p {
-                    padding-top: 10px;
+                    padding-top: 15px;
 
                 }
 
@@ -1397,12 +1397,13 @@ body {
         right: 24px;
         z-index: 99;
         padding: 0;
-        @media(max-width:1024px){
-            img{
-width: 30px;
+
+        @media(max-width:1024px) {
+            img {
+                width: 30px;
             }
         }
-        
+
     }
 
     .modal-content {
@@ -1597,8 +1598,9 @@ width: 30px;
 }
 
 .slick-slide {
-	// height: inherit !important;
+    // height: inherit !important;
 }
+
 .anualreposrt-ul {
     position: relative;
 
@@ -1607,7 +1609,7 @@ width: 30px;
         width: 22%;
         margin-right: 0 !important;
     }
-    
+
     .year_filter {
         position: absolute !important;
         right: 0;
@@ -1624,6 +1626,7 @@ width: 30px;
         }
     }
 }
+
 // .slick-slide {
 // 	height: inherit !important;
 // }
