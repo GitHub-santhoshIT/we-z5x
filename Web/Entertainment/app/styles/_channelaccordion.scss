@@ -41,6 +41,19 @@ p {
     border-top: 1px solid #ddd;
     padding-left: 0;
 
+    a {
+      img {
+        filter: grayscale(1);
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+
     .card_submenu {
       border-bottom: 1px solid #ddd !important;
       margin-bottom: 10px;

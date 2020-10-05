@@ -694,17 +694,21 @@
 
     &-holder {
         height: 100%;
-
-
-
-
+        a {
+            img {
+                filter: grayscale(1);
+                transition: all 0.3s ease;
+            }
+            &:hover {
+                img {
+                    filter: grayscale(0);
+                }
+            }
+        }
         h5 {
             font-weight: 600;
         }
-
-
     }
-
     &:hover {
         box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.2), 0px -5px 10px 0px white;
         background-color: $semidark-bg;
