@@ -722,7 +722,7 @@ body {
             }
 
             img {
-                width: 100%;
+                // width: 100%;
                 margin: 0 auto;
                 filter: grayscale(100%);
                 @include interaction2;
@@ -817,8 +817,8 @@ body {
         right: 20px;
         top: 20px;
         background-color: transparent;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         border-radius: 40px;
         text-align: center;
         color: white;
@@ -1413,6 +1413,9 @@ body {
             padding: 0;
             border-bottom: 0px solid #dee2e6;
         }
+        #alert-message {
+            background-color: #8941bb !important;
+        }
 
         &::after {
             content: '';
@@ -1488,6 +1491,16 @@ body {
                 padding: 9px 6px !important;
                 font-weight: 600;
                 margin-right: 8px;
+
+                &.active {
+                    color: #ffffff !important;
+                    background-color: #8941bb !important;
+                    border-color: #8941bb !important;
+                }
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 0 transparent;
+                }
             }
 
             textarea {
@@ -1531,11 +1544,17 @@ body {
         }
 
         .Submit_text {
-            background-color: #000 !important;
-            color: #fff !important;
+            background-color: rgb(0, 0, 0) !important;
+            color: rgb(255, 255, 255) !important;
+            width: 130px;
+            text-align: left !important;
+            position: relative;
 
             img {
-                color: #fff !important;
+                color: rgb(255, 255, 255) !important;
+                position: absolute;
+                right: 10px;
+                top: 13px;
             }
         }
     }
