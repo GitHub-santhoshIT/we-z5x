@@ -30,7 +30,18 @@ header {
                 .nav-item {
                     .dropdown-menu {
                         background-color: rgba(204, 204, 204, 0.95);
-                      
+
+                        .child-nav {
+                            li {
+                                a {
+                                    &:hover {
+                                        color: $fulldark-bg;
+
+                                    }
+                                }
+                            }
+                        }
+
                     }
 
 
@@ -54,8 +65,9 @@ header {
                 margin-right: 20px;
                 font-weight: 400;
                 letter-spacing: 1px;
-                @media(max-width:1024px){
-                    margin-right: 30px;
+
+                @media(max-width:1024px) {
+                    margin-right: 10px;
                 }
 
                 &:last-child {
@@ -167,11 +179,12 @@ header {
                         text-align: left;
                         width: 100%;
                         display: block;
-                        margin-left: 10px;
+                        margin-left: 45px;
+
                         @media(max-width:1024px) {
-                            margin-left: -45px;
+                            margin-left: -90px;
                         }
-                        
+
                         @media(max-width:1023px) {
                             text-align: left;
                             margin-left: 0;

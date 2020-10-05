@@ -24,7 +24,7 @@
                <div class="collapse navbar-collapse dropdown-view" id="main_nav">
                   <ul class="navbar-nav ml-auto">
                      <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">The ZEE story</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our story</a>
                         <ul class="dropdown-menu w-100 p-0" id="navbarDropdownMega">
                            <li class="dropdown-item">
                               <div class="container">
@@ -578,7 +578,7 @@
                                  <div class="row large-gutters">
                                     <div class="col-xl-4 col-md-6">
                                        <div class="carditem-1 dark-view">
-                                          <div class="has-bg" style="background-image: url(images/goodwill-slide-1.jpg);"></div>
+                                          <div class="has-bg" style="background-image:url(images/goodwill-slide-1.jpg)"></div>
                                           <div class="data-content">
                                              <div class="hr-label-holder">Title</div>
                                              <h4>Giving back to society</h4>
@@ -831,42 +831,39 @@
             </div>
          </div>
       </footer>
-	
-      <script src="scripts/vendor.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
-	  </script><script src="scripts/main.js"></script>
+      <script src="scripts/vendor.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	  <script src="scripts/main.js"></script>
 	  
-	  
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	    <script>
-	$(document).ready(function(evt) {
-	var $el = $('.newcount'),
-		value = 1.3;
-	// evt.preventDefault();
-	$({ percentage: 0 })
-		.stop(true)
-		.animate(
-			{ percentage: value },
-			{
-				duration: 4000,
-				easing: 'easeOutExpo',
-				step: function() {
-					// percentage with 1 decimal;
-					var percentageVal = Math.round(this.percentage * 10) / 10;
+	     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+   <script>
+      $(document).ready(function (evt) {
+         var $el = $('.newcount'),
+            value = 1.3;
+         // evt.preventDefault();
+         $({ percentage: 0 })
+            .stop(true)
+            .animate(
+               { percentage: value },
+               {
+                  duration: 4000,
+                  easing: 'easeOutExpo',
+                  step: function () {
+                     // percentage with 1 decimal;
+                     var percentageVal = Math.round(this.percentage * 10) / 10;
 
-					$el.text(percentageVal);
-				}
-			}
-		)
-		.promise()
-		.done(function() {
-			// hard set the value after animation is done to be
-			// sure the value is correct
-			// $el.text(value + "x");
-		});
-});
+                     $el.text(percentageVal);
+                  }
+               }
+            )
+            .promise()
+            .done(function () {
+               // hard set the value after animation is done to be
+               // sure the value is correct
+               // $el.text(value + "x");
+            });
+      });
 
-	  </script>
-	  
+   </script>
+
    </body>
 </html>

@@ -1,32 +1,6 @@
-console.log('\'Allo \'Allo!');
+console.log("'Allo 'Allo!");
 
 
-$(document).ready(function(evt) {
-	var $el = $('.newcount'),
-		value = 1.3;
-	// evt.preventDefault();
-	$({ percentage: 0 })
-		.stop(true)
-		.animate(
-			{ percentage: value },
-			{
-				duration: 4000,
-				easing: 'easeOutExpo',
-				step: function() {
-					// percentage with 1 decimal;
-					var percentageVal = Math.round(this.percentage * 10) / 10;
-
-					$el.text(percentageVal);
-				}
-			}
-		)
-		.promise()
-		.done(function() {
-			// hard set the value after animation is done to be
-			// sure the value is correct
-			// $el.text(value + "x");
-		});
-});
 
 $(document).ready(function() {
 	if ($(window).width() > 1024) {
