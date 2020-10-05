@@ -1,7 +1,5 @@
 console.log("'Allo 'Allo!");
 
-
-
 $(document).ready(function() {
 	if ($(window).width() > 1024) {
 		// Mouse over
@@ -176,6 +174,7 @@ $(window).on('resize.slickVideoPlayer', function() {
 //video player-x
 
 $('.home-block-carousel').slick({
+	pauseOnHover: false,
 	infinite: true,
 	autoplay: true,
 	autoplaySpeed: 5000,
@@ -217,6 +216,7 @@ $('.management-talk-carousel').slick({
 	autoplaySpeed: 10000
 });
 $('.sider-counter').slick({
+	pauseOnHover: false,
 	slidesToShow: 1,
 	// fade: true,
 	slidesToScroll: 1,
